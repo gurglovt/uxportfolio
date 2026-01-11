@@ -1,0 +1,183 @@
+/* Fonts */
+.lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.lato-thin-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.lato-light-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.lato-regular-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lato-bold-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.lato-black-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.syne-mono-regular {
+  font-family: "Syne Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cairo-<uniquifier > {
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+/* Styles */
+html {
+  font-family: "Syne Mono", Arial, sans-serif;
+  background-color: #efefef;
+}
+h1,
+h2 {
+  text-align: center;
+}
+
+header,
+footer {
+  color: #171717;
+}
+header p {
+  font-size: 120%;
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 60px;
+  margin-bottom: 0px;
+}
+h2 {
+  font-size: 2.4rem;
+  margin: 20px;
+}
+em {
+  font-size: 120%;
+  line-height: 200%;
+  font-family: "Syne Mono", Arial, sans-serif;
+}
+p {
+  font-family: "Cairo", Arial, sans-serif;
+  line-height: 110%;
+  font-size: 16px;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: center;
+  margin: 40px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  max-width: 278px;
+  height: 420px;
+}
+
+p {
+  margin: 10px;
+  text-align: center;
+}
+
+a {
+  color: #2e2e2e;
+}
+
+footer {
+  font-size: 12px;
+  text-align: center;
+  padding: 20px;
+}
+
+button {
+  font-family: "Cairo", Arial, sans-serif;
+  font-size: 16px;
+  border-radius: 100px;
+  border: none;
+  padding: 8px 15px;
+  background-color: #efefef;
+}
+
+button:hover,
+button:focus {
+  background-color: #a7a7a7;
+}
+
+img {
+  width: 238px;
+  border-radius: 10px;
+  height: 238px;
+  object-fit: cover;
+  object-position: top;
+  margin-top: 10px;
+}
+
+.email {
+  line-height: 16px;
+}
+.email:hover {
+  text-decoration: none;
+}
+.email:hover span {
+  display: none;
+}
+.email:hover:before {
+  content: "[golovitt@gmail.com]";
+  color: darkred;
+  font-family: "Syne Mono";
+  font-size: 14px;
+}
