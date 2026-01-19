@@ -82,6 +82,19 @@ html {
 h1,
 h2 {
   text-align: center;
+  cursor: default;
+}
+h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.h1left:hover,
+.h1geo:hover,
+.h1lov:hover,
+.h1right:hover,
+.h2span:hover {
+  color: rgb(218, 15, 110);
 }
 
 header,
