@@ -118,7 +118,7 @@ main {
   gap: 15px;
   justify-content: center;
   margin: 40px;
-  overflow: auto;
+  overflow: visible;
 }
 
 .card {
@@ -129,15 +129,31 @@ main {
   text-align: center;
   width: 300px;
   height: 420px;
+  margin: 10px;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+a {
+  color: #2e2e2e;
+  cursor: pointer;
+}
+
+.cardlink {
+  all:unset;
+  cursor: pointer;
+  display: block;
+}
+.cardlink.mada {
+  cursor: not-allowed;
 }
 
 p {
   margin: 10px;
   text-align: center;
-}
-
-a {
-  color: #2e2e2e;
 }
 
 footer {
@@ -153,6 +169,7 @@ button {
   border: none;
   padding: 8px 15px;
   background-color: #efefef;
+  cursor: pointer;
 }
 
 button:hover,
