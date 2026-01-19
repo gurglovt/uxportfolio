@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes App - Design Process</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    
+    <!-- Title Slide -->
+    <section class="slide title-slide">
+      <div class="slide-content">
+        <h1>Notes App</h1>
+        <h2>Design Process Documentation</h2>
+        <p class="description">A personal project exploring rapid note-taking and idea capture</p>
+      </div>
+    </section>
+
+    <!-- Brief -->
+    <section class="slide content-slide">
+      <div class="slide-content">
+        <div class="section-label">Brief</div>
+        <h2>Project Brief</h2>
+        <ul class="bullet-list">
+          <li>Create a notes app that allows users to record their ideas as quickly as possible.</li>
+          <li>This is a personal project. I was not hired by anyone to design a notes app.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Empathise Title -->
+    <section class="slide title-slide">
+      <div class="slide-content">
+        <h1>Empathise</h1>
+        <h2>Understanding User Needs</h2>
+        <p class="description">Initial user interviews and findings</p>
+      </div>
+    </section>
+
+    <!-- Interview 1 -->
+    <section class="slide two-column-slide">
+      <div class="slide-content">
+        <div class="section-label">User Interviews</div>
+        <h2>Interviewee 1: 26F</h2>
+        <div class="two-columns">
+          <div class="column">
+            <ul class="bullet-list-small">
+              <li>Uses iPhone Notes app to record ideas</li>
+              <li>A new note per idea</li>
+              <li>Says this is messy and inconvenient</li>
+              <li>It takes time to find a relevant note</li>
+              <li>Deletes them when task is complete</li>
+            </ul>
+          </div>
+          <div class="column">
+            <ul class="bullet-list-small">
+              <li>Mostly tasks</li>
+              <li>Doesn't write down artistic ideas as much</li>
+              <li>Uses Microsoft Teams for work-related info</li>
+              <li>Messages themselves on Instagram to record ideas</li>
+            </ul>
+          </div>
+        </div>
+        <div class="highlight">
+          Maybe we could have a dedicated tasks section and a dedicated ideas section.
+        </div>
+      </div>
+    </section>
+
+    <!-- Interview 2 -->
+    <section class="slide two-column-slide">
+      <div class="slide-content">
+        <div class="section-label">User Interviews</div>
+        <h2>Interviewee 2: 23F</h2>
+        <div class="two-columns">
+          <div class="column">
+            <ul class="bullet-list-small">
+              <li>Uses Google Calendar for events/chores</li>
+              <li>Can easily visualise the week</li>
+              <li>Uses Google Keep with reminder feature</li>
+              <li>New idea: new note, unless related to older note</li>
+              <li>Keeps sticky notes at work (no phone access)</li>
+            </ul>
+          </div>
+          <div class="column">
+            <ul class="bullet-list-small">
+              <li>Keeps a paper journal for thoughts</li>
+              <li>Annual maintenance in Google Keep</li>
+              <li>Gripes: needs wifi/device to record</li>
+              <li>Google Keep doesn't sync with Calendar well</li>
+              <li>Generally content with current system</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interview 3 -->
+    <section class="slide two-column-slide">
+      <div class="slide-content">
+        <div class="section-label">User Interviews</div>
+        <h2>Interviewee 3: 27M</h2>
+        <div class="two-columns">
+          <div class="column">
+            <ul class="bullet-list-small">
+              <li>Work: A6 notepad with to-do on left, notes on right</li>
+              <li>One double page per day</li>
+              <li>Transfers to proper documents at end of day</li>
+              <li>Personal use: private Discord server</li>
+              <li>Dedicated channels for different content types</li>
+            </ul>
+          </div>
+          <div class="column">
+            <ul class="bullet-list-small">
+              <li>Doesn't really delete stuff</li>
+              <li>Handy for transferring between phone and desktop</li>
+              <li>Important things are pinned</li>
+              <li>Uses Notes app as "whiteboard"</li>
+              <li>Uses ChatGPT for theories/ideas/recipes</li>
+            </ul>
+          </div>
+        </div>
+        <div class="highlight">
+          Less friction in Notes for editing than Discord messages
+        </div>
+      </div>
+    </section>
+
+    <!-- Interview 4 -->
+    <section class="slide two-column-slide">
+      <div class="slide-content">
+        <div class="section-label">User Interviews</div>
+        <h2>Interviewee 4: 25M</h2>
+        <div class="two-columns">
+          <div class="column">
+            <ul class="bullet-list-small">
+              <li>Samsung phone's native notes app</li>
+              <li>A note per broad theme</li>
+              <li>Includes to-do and grocery lists</li>
+              <li>Mostly goal-oriented, rarely conceptual</li>
+            </ul>
+          </div>
+          <div class="column">
+            <ul class="bullet-list-small">
+              <li>Sometimes deletes to-do and grocery lists</li>
+              <li>Retains notes related to language and work</li>
+              <li>Phone's native calendar app for appointments</li>
+              <li>Push notifications are handy</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Findings -->
+    <section class="slide findings-slide">
+      <div class="slide-content">
+        <div class="section-label">Research Findings</div>
+        <h2>Key Insights</h2>
+        <div class="findings-grid">
+          <div class="finding-card">
+            <h3>Convenience Over Organization</h3>
+            <p>Users use whatever is at hand and convenient. They will use solutions that are impractical in the long term if they work in the instant.</p>
+          </div>
+          <div class="finding-card">
+            <h3>Offline Support Essential</h3>
+            <p>Sometimes the user doesn't have internet. Offline support with auto-sync when connection is established is crucial.</p>
+          </div>
+          <div class="finding-card">
+            <h3>Multi-Functionality</h3>
+            <p>Users tend towards solutions that serve multiple functions (e.g., calendar + reminders, notes + media transfer).</p>
+          </div>
+          <div class="finding-card">
+            <h3>Intuitive Organization</h3>
+            <p>Organization should be intuitive and automatic. The user shouldn't need to think so much.</p>
+          </div>
+          <div class="finding-card">
+            <h3>Notes Are Ephemeral</h3>
+            <p>Notes are often edited and deleted. The app should make these easy to do, while allowing easy error recovery.</p>
+          </div>
+          <div class="finding-card">
+            <h3>Whiteboard Space Needed</h3>
+            <p>It's useful to have a "whiteboard" space with immediately important information that can be easily updated.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Personas - Lily -->
+    <section class="slide quote-slide">
+      <div class="slide-content">
+        <div class="section-label">Personas</div>
+        <h2>Lily</h2>
+        <div class="quote-mark">"</div>
+        <p class="quote">Lily needs an app that collects her ideas cohesively and effortlessly. Note-taking shouldn't be an active task, but one that is ready for her whenever her brain conjures something up.</p>
+        <p class="author">She needs a net that catches and catalogues her ideas as they appear.</p>
+      </div>
+    </section>
+
+    <!-- Personas - Alan -->
+    <section class="slide quote-slide">
+      <div class="slide-content">
+        <div class="section-label">Personas</div>
+        <h2>Alan</h2>
+        <div class="quote-mark">"</div>
+        <p class="quote">Alan needs an app that can hold onto all the things he wants to remember, for business and for pleasure. He needs something that's ready for him whenever he needs it without complication.</p>
+        <p class="author">He needs impermanent lists and reminders, but also permanent study notes.</p>
+      </div>
+    </section>
+
+    <!-- Competitive Audit Title -->
+    <section class="slide title-slide">
+      <div class="slide-content">
+        <h1>Competitive Audit</h1>
+        <h2>Market Analysis</h2>
+        <p class="description">Evernote, Notion, and Google Keep</p>
+      </div>
+    </section>
+
+    <!-- Competitive Audit - Advantages -->
+    <section class="slide content-slide">
+      <div class="slide-content">
+        <div class="section-label">Competitive Audit</div>
+        <h2>Competitor Advantages</h2>
+        <ul class="bullet-list">
+          <li>Significantly refined and capable feature sets</li>
+          <li>Powerful search and audio transcription features</li>
+          <li>Evernote's "scratchpad" serves the whiteboard need</li>
+          <li>Notion's block system makes notes versatile and easily editable</li>
+          <li>Focus on minimal taps and widget integration</li>
+          <li>Personalization with icons and cover images (Notion)</li>
+          <li>Built-in calendars or calendar companion apps</li>
+          <li>Friendly tone with illustrations and personality touches</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Competitive Audit - Disadvantages -->
+    <section class="slide content-slide">
+      <div class="slide-content">
+        <div class="section-label">Competitive Audit</div>
+        <h2>Competitor Disadvantages</h2>
+        <ul class="bullet-list">
+          <li>Free options feel bare without customization</li>
+          <li>Paid options feel bloated and run slowly</li>
+          <li>Note organization limited to pinning (Google Keep)</li>
+          <li>Poor optimization causing loading times</li>
+          <li>Limited image support across all apps</li>
+          <li>Widgets don't allow editing or appending notes</li>
+          <li>Expensive for individuals with little free tier value</li>
+          <li>Hard text limits or storage restrictions</li>
+          <li>Poor file navigation systems (tile view only)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Define Section -->
+    <section class="slide title-slide">
+      <div class="slide-content">
+        <h1>Define</h1>
+        <h2>Feature Planning</h2>
+        <p class="description">Initial ideas and architecture</p>
+      </div>
+    </section>
+
+    <!-- Feature List -->
+    <section class="slide content-slide">
+      <div class="slide-content">
+        <div class="section-label">Define</div>
+        <h2>Core Features</h2>
+        <ul class="bullet-list">
+          <li>Architecture: Notepads section and Lists/Reminders section</li>
+          <li>Block system like Notion for flexible content</li>
+          <li>Whiteboard/scratchpad feature (the "Dump")</li>
+          <li>Keyboard-ready typing zone for quick entry</li>
+          <li>Options to wipe, convert to new note, or append to existing note</li>
+          <li>File browser-style note navigation</li>
+          <li>Expand/collapse all notebooks, recent sort, favorites</li>
+          <li>Focus on functional, offline, digital notepad</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Ideate Section -->
+    <section class="slide title-slide">
+      <div class="slide-content">
+        <h1>Ideate</h1>
+        <h2>Wireframes & Testing</h2>
+        <p class="description">Initial designs and user feedback</p>
+      </div>
+    </section>
+
+    <!-- Test 1 - User 1 -->
+    <section class="slide two-column-slide">
+      <div class="slide-content">
+        <div class="section-label">Test 1 Results</div>
+        <h2>User 1 Feedback</h2>
+        <div class="two-columns">
+          <div class="column">
+            <ul class="bullet-list-small">
+              <li>Correctly identified as note-taking app</li>
+              <li>Confusion about lists and notebooks being separate</li>
+              <li>Identified subnote creation and navigation</li>
+              <li>Unclear about expand/contract all buttons</li>
+            </ul>
+          </div>
+          <div class="column">
+            <ul class="bullet-list-small">
+              <li>Assumption that bell icon sets time (incorrect)</li>
+              <li>Unclear if + button makes list or list item</li>
+              <li>Understood "Dump" as disorganized writing space</li>
+              <li>Home page has a lot going on</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Test 1 - User 2 -->
+    <section class="slide two-column-slide">
+      <div class="slide-content">
+        <div class="section-label">Test 1 Results</div>
+        <h2>User 2 Feedback</h2>
+        <div class="two-columns">
+          <div class="column">
+            <ul class="bullet-list-small">
+              <li>Compared to Obsidian, Miro, and Notion</li>
+              <li>Confused by Dump expansion arrow</li>
+              <li>Wants note and list functions consolidated</li>
+              <li>Praises organization with grey borders</li>
+            </ul>
+          </div>
+          <div class="column">
+            <ul class="bullet-list-small">
+              <li>Misinterprets expand/contract as full-screen</li>
+              <li>"I don't get why it's called Dump!"</li>
+              <li>Structure of app somewhat confusing</li>
+              <li>States all should be on one page</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Test 1 - Actions -->
+    <section class="slide findings-slide">
+      <div class="slide-content">
+        <div class="section-label">Test 1 Insights</div>
+        <h2>Actions Taken</h2>
+        <div class="findings-grid">
+          <div class="finding-card">
+            <h3>Dump Presentation</h3>
+            <p>The Dump is our USP. Its presentation needs reworking as it confused users. The expand icon needs consistency.</p>
+          </div>
+          <div class="finding-card">
+            <h3>List Consolidation</h3>
+            <p>List section will be consolidated with notebooks to reduce separation. Lists can be made within notes.</p>
+          </div>
+          <div class="finding-card">
+            <h3>Icon Clarity</h3>
+            <p>Expand/contract buttons confused users. Icons need to be more intuitive or users need to discover through interaction.</p>
+          </div>
+          <div class="finding-card">
+            <h3>Navigation Rework</h3>
+            <p>Need to rework function and access between notes and notebook levels of navigation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Prototype Section -->
+    <section class="slide title-slide">
+      <div class="slide-content">
+        <h1>Prototype</h1>
+        <h2>Low-Fidelity Prototype</h2>
+        <p class="description">Version 1 focusing on core functionality</p>
+      </div>
+    </section>
+
+    <!-- Prototype Goals -->
+    <section class="slide content-slide">
+      <div class="slide-content">
+        <div class="section-label">Prototype v1</div>
+        <h2>Prototype Goals</h2>
+        <ul class="bullet-list">
+          <li>Demonstrate layout and general navigation through the app</li>
+          <li>Show how the "Dump" feature fits in</li>
+          <li>Show how the text toolbar will work</li>
+          <li>Focus on the USP rather than standard note creation</li>
+          <li>Functionality similar to Notion for standard notes</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Home Screen Structure -->
+    <section class="slide content-slide">
+      <div class="slide-content">
+        <div class="section-label">Prototype v1</div>
+        <h2>Home Screen Structure</h2>
+        <ul class="bullet-list">
+          <li>Search bar at the top</li>
+          <li>Notebooks section (horizontal scroll with emojis)</li>
+          <li>Notes section (shows notes within selected notebook)</li>
+          <li>Dump section at the bottom</li>
+          <li>Quick text input bar for rapid note entry</li>
+          <li>Expand/collapse for Dump preview</li>
+          <li>Options to move content or clear Dump</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Text Toolbar Features -->
+    <section class="slide two-column-slide">
+      <div class="slide-content">
+        <div class="section-label">Prototype v1</div>
+        <h2>Text Toolbar Features</h2>
+        <div class="two-columns">
+          <div class="column">
+            <ul class="bullet-list-small">
+              <li>Back button (undo changes)</li>
+              <li>Image insertion</li>
+              <li>Bold and Italic</li>
+              <li>Sans serif/serif toggle</li>
+              <li>List toggle</li>
+            </ul>
+          </div>
+          <div class="column">
+            <ul class="bullet-list-small">
+              <li>Reminder with date/time picker</li>
+              <li>Text alignment options</li>
+              <li>Justify text</li>
+              <li>Move blocks up/down</li>
+              <li>Horizontal scrollable toolbar</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Test 2 Section -->
+    <section class="slide title-slide">
+      <div class="slide-content">
+        <h1>Test 2</h1>
+        <h2>Usability Testing</h2>
+        <p class="description">Structured testing of prototype flows</p>
+      </div>
+    </section>
+
+    <!-- Test 2 Methodology -->
+    <section class="slide content-slide">
+      <div class="slide-content">
+        <div class="section-label">Test 2</div>
+        <h2>Testing Aims</h2>
+        <ul class="bullet-list">
+          <li>See if users can understand what the app is and does</li>
+          <li>Compare what users would do with how the app is structured</li>
+          <li>Find areas of confusion or frustration</li>
+          <li>Understand expectations for unfinished features</li>
+          <li>Gather feedback on the Dump feature specifically</li>
+          <li>Observe natural navigation patterns</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Summary Slide -->
+    <section class="slide title-slide">
+      <div class="slide-content">
+        <h1>Design Process Complete</h1>
+        <h2>Next Steps</h2>
+        <p class="description">High-fidelity prototype and further testing</p>
+      </div>
+    </section>
+
+  </div>
+</body>
+</html>
