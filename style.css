@@ -78,6 +78,7 @@ html {
   font-family: "Syne Mono", Arial, sans-serif;
   background-color: #efefef;
 }
+
 h1,
 h2 {
   text-align: center;
@@ -136,6 +137,9 @@ main {
 .card:hover {
   transform: scale(1.02);
 }
+.cardlink:hover em {
+  color: rgb(218, 15, 110);
+}
 
 a {
   color: #2e2e2e;
@@ -143,7 +147,7 @@ a {
 }
 
 .cardlink {
-  all:unset;
+  all: unset;
   cursor: pointer;
   display: block;
 }
@@ -174,7 +178,8 @@ button {
 
 button:hover,
 button:focus {
-  background-color: #a7a7a7;
+  background-color: rgb(218, 15, 110);
+  color: white;
 }
 
 img {
@@ -188,16 +193,19 @@ img {
 
 .email {
   line-height: 16px;
+  height: 16px;
+  display: inline-block;
 }
 .email:hover {
   text-decoration: none;
+  line-height: 16px;
 }
 .email:hover span {
   display: none;
 }
 .email:hover:before {
   content: "[golovitt@gmail.com]";
-  color: darkred;
+  color: rgb(218, 15, 110);
   font-family: "Syne Mono";
   font-size: 14px;
 }
