@@ -3,623 +3,512 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Notes App - Design Process</title>
+  <title>Notes App - UX Case Study</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    
-    <h1>Notes App</h1>
-    <p><em><strong>Brief: </strong>Create a notes app that allows users to record their ideas as quickly as possible.</em></p>
-    <p class="highlight-red">This is a personal project. I was not hired by anyone to design a notes app.</p>
+  
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="overline">UX CASE STUDY</p>
+      <h1>Notes App</h1>
+      <p class="subtitle">Creating a notes app that allows users to record their ideas as quickly as possible.</p>
+      <p class="disclaimer">This is a personal project. I was not hired by anyone to design a notes app.</p>
+    </div>
+  </section>
 
-    <h2>Empathise</h2>
-    
-    <h3>Initial User Interviews</h3>
-    <p>Interviews with users about their approach to notes and how they make and maintain them.</p>
+  <!-- Empathise Section -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Empathise</h2>
+      
+      <div class="subsection">
+        <h3>Initial User Interviews</h3>
+        <p class="lead">Interviews with users about their approach to notes and how they make and maintain them.</p>
+      </div>
 
-    <h4>Interview Notes</h4>
-    
-    <h5>Interviewee 1: 26F</h5>
-    <ul>
-      <li>Uses iPhone Notes app to record ideas.
-        <ul>
-          <li>A new note per idea.
-            <ul>
-              <li><span class="highlight-orange">Says this is messy and inconvenient</span>.</li>
-              <li>It <span class="highlight-orange">takes time to find a relevant note</span>, so a new note is more convenient.</li>
-              <li>Deletes them when the task is complete.</li>
-              <li>Mostly tasks
-                <ul>
-                  <li><em>Maybe we could have a dedicated tasks section and a dedicated ideas section.</em></li>
-                </ul>
-              </li>
-              <li>Doesn't write down (interesting/artistic) ideas as much.</li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li>Mostly uses Microsoft Teams messages to record work-related information.</li>
-      <li>Messages themselves on Instagram to record ideas sometimes, too.</li>
-    </ul>
+      <div class="interview-grid">
+        <div class="interview-card">
+          <h5>Interviewee 1: 26F</h5>
+          <ul>
+            <li>Uses iPhone Notes app to record ideas</li>
+            <li>A new note per idea</li>
+            <li class="highlight-problem">Says this is messy and inconvenient</li>
+            <li class="highlight-problem">Takes time to find a relevant note</li>
+            <li>Deletes them when the task is complete</li>
+            <li>Mostly tasks</li>
+            <li>Messages themselves on Instagram to record ideas</li>
+          </ul>
+        </div>
 
-    <h5>Interviewee 2: 23F</h5>
-    <ul>
-      <li>Uses Google Calendar to record events/chores.
-        <ul>
-          <li>Can easily visualise the week.</li>
-        </ul>
-      </li>
-      <li>For more in-depth notes (like a birthday present with certain specifications), they use Google Keep and use the built-in reminder feature.
-        <ul>
-          <li>Generally, new idea: new note, unless the new idea is related to some older note.</li>
-        </ul>
-      </li>
-      <li>During work, they can't use their phone, so they keep sticky notes and a pencil handy.</li>
-      <li>Keeps a paper journal for thoughts, scrapbooking and reference items</li>
-      <li>Maintenance in Google Keep (maybe) annually, that involves deleting stuff that isn't needed anymore.</li>
-      <li>Gripes: need wifi/device to record notes; Google Keep doesn't sync with Google Calendar well anymore.
-        <ul>
-          <li>However, they are generally content (because they haven't come across better ideas).</li>
-        </ul>
-      </li>
-    </ul>
+        <div class="interview-card">
+          <h5>Interviewee 2: 23F</h5>
+          <ul>
+            <li>Uses Google Calendar to record events/chores</li>
+            <li>Can easily visualise the week</li>
+            <li>Uses Google Keep with built-in reminder feature</li>
+            <li>Keeps sticky notes and a pencil at work</li>
+            <li>Keeps a paper journal for thoughts</li>
+            <li>Annual maintenance, deleting old notes</li>
+            <li>Gripes: need wifi/device; Google Keep doesn't sync well</li>
+          </ul>
+        </div>
 
-    <h5>Interviewee 3: 27M</h5>
-    <ul>
-      <li>For work:
-        <ul>
-          <li>A6 notepad with to-do on the left and notes on the right — one double page per day.</li>
-          <li>Notes, contact details and appointments are transferred to proper work-internal documents/file system (Word document or other internal documentation system) at the end of the day.</li>
-        </ul>
-      </li>
-      <li>Personal use relies on a private Discord server.
-        <ul>
-          <li>Dedicated channel for random stuff (interesting stuff, PDF files, links).</li>
-          <li>General channel used for appointment dates and important things to remember.</li>
-          <li>Doesn't really delete stuff. Sometimes there's a channel dedicated to a particular project and if they want it out of their mind they delete the channel.</li>
-          <li><span class="highlight-yellow">Handy for transferring things between phone and desktop.</span></li>
-          <li>Important things are pinned (temporarily?) in the channel.</li>
-          <li>Problem with potentially getting banned; Relies on having an alt account in the server as a failsafe.</li>
-        </ul>
-      </li>
-      <li>Uses Notes app as more of a "whiteboard"; information that's being constantly overwritten (Animal Crossing turnip prices).
-        <ul>
-          <li>Mostly because editing a message in Discord has a lot of friction; Less friction in Notes.</li>
-          <li>Transfers this data to a web-based turnip price calculator.</li>
-        </ul>
-      </li>
-      <li>Uses ChatGPT for recording theories/ideas/vegan recipes/work profile.
-        <ul>
-          <li>ChatGPT subscribers have access to a powerful memory system.</li>
-        </ul>
-      </li>
-    </ul>
+        <div class="interview-card">
+          <h5>Interviewee 3: 27M</h5>
+          <ul>
+            <li>A6 notepad: to-do on left, notes on right</li>
+            <li>Transfers to proper documents at end of day</li>
+            <li>Uses private Discord server for personal notes</li>
+            <li class="highlight-insight">Handy for transferring things between phone and desktop</li>
+            <li>Uses Notes app as a "whiteboard"</li>
+            <li>Constantly overwritten information</li>
+            <li>Uses ChatGPT for theories/ideas/recipes</li>
+          </ul>
+        </div>
 
-    <h5>Interviewee 4: 25M</h5>
-    <ul>
-      <li>Samsung phone's native notes app for ideas.
-        <ul>
-          <li>A note per broad theme, I gather (e.g. one for trading strategies, one for Japanese phrases).
-            <ul>
-              <li>Among these are to-do lists and grocery lists.</li>
-            </ul>
-          </li>
-          <li>Mostly goal-oriented; notes rarely conceptual (artistic/poetic/funny).</li>
-          <li>Sometimes deletes the to-do and grocery lists, otherwise retains.
-            <ul>
-              <li>Specifically retains notes related to language and work.</li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li>Phone's native calendar app for appointments/plans.
-        <ul>
-          <li>Push notifications are handy.</li>
-        </ul>
-      </li>
-    </ul>
-
-    <h4>Findings</h4>
-    <p><strong>Users use whatever is at hand and convenient.</strong></p>
-    <ul>
-      <li>They will use solutions that are impractical in the long term if they at least work in the instant that they are needed to.
-        <ul>
-          <li class="insight">A notes app should do both: work now, and not at the expense of organisation later.</li>
-          <li class="insight">A notes app should be at hand and it should be quick to make notes and set reminders.</li>
-        </ul>
-      </li>
-      <li>They split their notes among a lot of different apps that are convenient to them in different situations.</li>
-      <li>Sometimes the user doesn't have internet.
-        <ul>
-          <li class="insight">Offline support should be included. If there's a multi-device transfer feature, it should auto-sync when a connection is established.</li>
-        </ul>
-      </li>
-    </ul>
-
-    <p><strong>Users tend towards solutions that happen to serve multiple functions.</strong></p>
-    <ul>
-      <li>E.g. a notes app that allows the user to transfer media between devices.</li>
-      <li>E.g. a calendar app with built-in reminders/push notification function.</li>
-    </ul>
-
-    <ul>
-      <li>Notes are transient and the user can come up with organisation solutions wherever needed.
-        <ul>
-          <li>One interviewee struggled to find relevant notes sometimes, others have rudimentary organisation methods.</li>
-          <li class="insight">Organisation should be intuitive and automatic. The user shouldn't need to think so much.</li>
-        </ul>
-      </li>
-      <li class="insight">The app should be multi-functional.</li>
-    </ul>
-
-    <p><strong>Notes are ephemeral</strong></p>
-    <ul>
-      <li>Notes are often edited and deleted.
-        <ul>
-          <li class="insight">The app should make these easy to do, while allowing easy error recovery.</li>
-        </ul>
-      </li>
-      <li>It's useful to have a 'whiteboard' space with immediately important information that can be easily updated.
-        <ul>
-          <li class="insight">This could be a note or a dedicated 'whiteboard' section.</li>
-        </ul>
-      </li>
-    </ul>
-
-    <h3>Personas</h3>
-    <img src="images/image18.png" alt="Lily Persona" class="persona-image">
-    <p>Lily needs an app that collects her ideas cohesively and effortlessly. Note-taking shouldn't be an active task, but one that is ready for her whenever her brain conjures something up. She needs a net that catches and catalogues her ideas as they appear.</p>
-
-    <img src="images/image32.png" alt="Alan Persona" class="persona-image">
-    <p>Alan needs an app that can hold onto all the things he wants to remember, for business <em>and</em> for pleasure. He needs something that's ready for him whenever he needs it <em>without complication</em>. He needs impermanent lists and reminders, but also permanent study notes.</p>
-
-    <h3>Competitive Audit</h3>
-    
-    <h4>Competitor screenshots</h4>
-    
-    <div class="screenshots-grid">
-      <div class="screenshot-set">
-        <h4 class="center">Evernote 2025/12/03</h4>
-        <div class="screenshot-row">
-          <img src="images/image5.png" alt="Evernote screenshot 1">
-          <img src="images/image35.png" alt="Evernote screenshot 2">
-          <img src="images/image30.png" alt="Evernote screenshot 3">
+        <div class="interview-card">
+          <h5>Interviewee 4: 25M</h5>
+          <ul>
+            <li>Samsung phone's native notes app</li>
+            <li>One note per broad theme</li>
+            <li>To-do lists and grocery lists</li>
+            <li>Mostly goal-oriented notes</li>
+            <li>Retains notes related to language and work</li>
+            <li>Phone's native calendar app for appointments</li>
+            <li>Push notifications are handy</li>
+          </ul>
         </div>
       </div>
 
-      <div class="screenshot-set">
-        <h4 class="center">Notion 2025/12/03</h4>
-        <div class="screenshot-row">
-          <img src="images/image19.png" alt="Notion screenshot 1">
-          <img src="images/image3.png" alt="Notion screenshot 2">
-          <img src="images/image1.png" alt="Notion screenshot 3">
+      <div class="findings">
+        <h4>Key Findings</h4>
+        
+        <div class="finding-card">
+          <h5>Users use whatever is at hand and convenient</h5>
+          <p>They will use solutions that are impractical in the long term if they at least work in the instant that they are needed to.</p>
+          <div class="insights">
+            <div class="insight">A notes app should do both: work now, and not at the expense of organisation later.</div>
+            <div class="insight">A notes app should be at hand and it should be quick to make notes and set reminders.</div>
+            <div class="insight">Offline support should be included. If there's a multi-device transfer feature, it should auto-sync when a connection is established.</div>
+          </div>
+        </div>
+
+        <div class="finding-card">
+          <h5>Users tend towards solutions that serve multiple functions</h5>
+          <p>E.g. a notes app that allows the user to transfer media between devices, or a calendar app with built-in reminders.</p>
+          <div class="insights">
+            <div class="insight">Organisation should be intuitive and automatic. The user shouldn't need to think so much.</div>
+            <div class="insight">The app should be multi-functional.</div>
+          </div>
+        </div>
+
+        <div class="finding-card">
+          <h5>Notes are ephemeral</h5>
+          <p>Notes are often edited and deleted. It's useful to have a 'whiteboard' space with immediately important information.</p>
+          <div class="insights">
+            <div class="insight">The app should make these easy to do, while allowing easy error recovery.</div>
+            <div class="insight">This could be a note or a dedicated 'whiteboard' section.</div>
+          </div>
         </div>
       </div>
 
-      <div class="screenshot-set">
-        <h4 class="center">Google Keep 2025/12/03</h4>
-        <div class="screenshot-row">
-          <img src="images/image21.png" alt="Google Keep screenshot 1">
-          <img src="images/image4.png" alt="Google Keep screenshot 2">
-          <img src="images/image29.png" alt="Google Keep screenshot 3">
+      <div class="subsection">
+        <h3>Personas</h3>
+        <div class="persona-grid">
+          <div class="persona-card">
+            <img src="images/image18.png" alt="Lily Persona">
+            <p>Lily needs an app that collects her ideas cohesively and effortlessly. Note-taking shouldn't be an active task, but one that is ready for her whenever her brain conjures something up. She needs a net that catches and catalogues her ideas as they appear.</p>
+          </div>
+          <div class="persona-card">
+            <img src="images/image32.png" alt="Alan Persona">
+            <p>Alan needs an app that can hold onto all the things he wants to remember, for business <em>and</em> for pleasure. He needs something that's ready for him whenever he needs it <em>without complication</em>. He needs impermanent lists and reminders, but also permanent study notes.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="subsection">
+        <h3>Competitive Audit</h3>
+        <p class="audit-link"><a href="https://docs.google.com/spreadsheets/d/1CIaSqfdV3nMtzBq9Lat-D7YgCt-TjuKtjeHT_BFdZWI/edit?usp=sharing" target="_blank">View full competitive audit spreadsheet →</a></p>
+        
+        <div class="competitor-section">
+          <div class="competitor-app">
+            <h5>Evernote</h5>
+            <div class="screenshot-row">
+              <img src="images/image5.png" alt="Evernote screenshot 1">
+              <img src="images/image35.png" alt="Evernote screenshot 2">
+              <img src="images/image30.png" alt="Evernote screenshot 3">
+            </div>
+          </div>
+
+          <div class="competitor-app">
+            <h5>Notion</h5>
+            <div class="screenshot-row">
+              <img src="images/image19.png" alt="Notion screenshot 1">
+              <img src="images/image3.png" alt="Notion screenshot 2">
+              <img src="images/image1.png" alt="Notion screenshot 3">
+            </div>
+          </div>
+
+          <div class="competitor-app">
+            <h5>Google Keep</h5>
+            <div class="screenshot-row">
+              <img src="images/image21.png" alt="Google Keep screenshot 1">
+              <img src="images/image4.png" alt="Google Keep screenshot 2">
+              <img src="images/image29.png" alt="Google Keep screenshot 3">
+            </div>
+          </div>
+        </div>
+
+        <div class="audit-findings">
+          <div class="audit-column">
+            <h4>Advantages</h4>
+            <ul class="advantages-list">
+              <li>Evernote's "scratchpad" serves as a whiteboard feature</li>
+              <li>Notion has a great system of blocks, pages and subpages</li>
+              <li>All apps focus on making everything easy to do with very few taps</li>
+              <li>Notion includes icons and cover images for personalisation</li>
+              <li>Great AI integration for paid apps</li>
+              <li>Paid apps have introductory tutorials</li>
+              <li>Friendly tone through characters and illustrations</li>
+              <li>Built-in or companion calendar apps</li>
+            </ul>
+          </div>
+          <div class="audit-column">
+            <h4>Disadvantages</h4>
+            <ul class="disadvantages-list">
+              <li>Note organisation is limited in Google Keep</li>
+              <li>More powerful apps tend to be poorly optimised</li>
+              <li>Image support is limited across all apps</li>
+              <li>Widgets don't go far enough</li>
+              <li>Paid apps are expensive for individuals</li>
+              <li>Keep was impersonal and not delightful</li>
+              <li>All apps had limits to the amount of text in a note</li>
+              <li>Problems with file navigation systems</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
+  </section>
 
-    <h4><a href="https://docs.google.com/spreadsheets/d/1CIaSqfdV3nMtzBq9Lat-D7YgCt-TjuKtjeHT_BFdZWI/edit?usp=sharing" target="_blank">Notes App Competitive Audit</a></h4>
-    <p>Above is a link to the competitive audit spreadsheet.</p>
-    <p>Below is a summary of the findings across 3 competitor apps: <strong>Evernote</strong>, <strong>Google Keep</strong> and <strong>Notion</strong>.</p>
+  <!-- Define Section -->
+  <section class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Define</h2>
+      
+      <div class="subsection">
+        <h3>Initial Ideas</h3>
+        <img src="images/image34.png" alt="Initial ideas sketch" class="full-image">
+      </div>
 
-    <h4>Competitor advantages</h4>
-    <p>Notes apps today are significantly more refined and capable than we could ever have hoped for. Paid options have full suites of features to allow users to do little things like write shopping lists, all the way up to running and managing entire projects using only one note app's tools. Free options have powerful search and audio transcription features to make them more versatile without creating any amount of depth that might be difficult for an average user (they have a very broad target audience).</p>
-    <ul>
-      <li>Evernote's <strong class="insight">"scratchpad"</strong> serves the whiteboard feature that Interviewee 3 needed.
-        <ul>
-          <li>It would be nice if you could add the scratchbook contents to an existing note, or even if there was a 'copy text' button, but you can only wipe it or make it into a new note.</li>
-        </ul>
-      </li>
-      <li>Notion has a great <strong class="insight">system of blocks, pages and subpages</strong> that makes every note versatile, quickly and easily editable, and integrates note organisation that avoids the user having to make too many conscious decisions.
-        <ul>
-          <li>Evernote's division of notes and lists is maybe easier to use but less versatile.</li>
-        </ul>
-      </li>
-      <li><strong class="insight">All apps focus on making everything easy to do with very few taps.</strong> This extends to the use of widgets to allow the user to even skip opening the app.</li>
-      <li>Notion includes <strong class="insight">the ability to add identifying elements (icons, cover images)</strong>, which improves navigation and personalisation.
-        <ul>
-          <li>Deeper personalisation with different font types within notes.</li>
-        </ul>
-      </li>
-      <li>Great <strong class="insight">AI integration</strong> for the paid apps.</li>
-      <li>Paid apps have an <strong class="insight">introductory tutorial</strong> when you first launch the app; Keep was pretty intuitive even without one.</li>
-      <li>Friendly tone achieved through <strong class="insight">characters</strong>, <strong class="insight">illustrations</strong> in empty space (i.e. when you have no notes), <strong class="insight">and general touches of personality</strong>.</li>
-      <li>Evernote has a <strong class="insight">built-in calendar</strong>, and Notion and Keep have <strong class="insight">calendar companion apps</strong>
-        <ul>
-          <li>I think it's advantageous to have the calendar be a dedicated product, as users would open the notes or calendar app depending on what they need.</li>
-          <li>Sync between them, or compatibility with other calendars, is the target utility.</li>
-        </ul>
-      </li>
-    </ul>
-
-    <h4>Competitor disadvantages</h4>
-    <p>Options that are free have little incentive to improve, making for an experience that feels a little bare and without the customisation of alternatives. On the other hand, paid options tend to overload the app with features, causing the app to feel bloated and run slowly, which can extend the learning period for new users.</p>
-    <ul>
-      <li><strong class="disadvantage">Note organisation is limited</strong> to just 'pinning' in Google Keep.</li>
-      <li>The more powerful apps tend to be <strong class="disadvantage">poorly optimised</strong>; losing seconds to loading times makes the user lose trust in the fact that this app is ready at all times.</li>
-      <li><strong class="disadvantage">Image support is limited</strong> across all apps.</li>
-      <li><strong class="disadvantage">Widgets don't quite go far enough</strong> – I can't have a note open and editable from my widget, and I can't append existing notes from the widget, only make new notes (all competitors) or open specific existing notes (Notion only).</li>
-      <li><strong class="disadvantage">Paid apps are expensive for individuals</strong>, and offer very little for free; Some anti-consumer practices, especially from Evernote.</li>
-      <li>Keep was pretty <strong class="disadvantage">impersonal</strong> and didn't seem to aim to be 'delightful' to use.</li>
-      <li>All apps had <strong class="disadvantage">limits to the amount of text in a note</strong>, like Keep's hard limit, or the paid apps' soft limit on the number of blocks or storage you can use without paying more.</li>
-      <li>All apps have <strong class="disadvantage">problems with their file navigation systems</strong>, but with Keep and Evernote, it's particularly hard to find notes – there is only a tile view and no list view.
-        <ul>
-          <li>Both seem to rely on search and pinning.</li>
-          <li>Folders ("Notebooks") only granted to Evernote users who pay the premium price.</li>
-        </ul>
-      </li>
-    </ul>
-
-    <h2>Define</h2>
-    
-    <h3>Initial ideas</h3>
-    <img src="images/image34.png" alt="Initial ideas sketch" class="full-width-image">
-
-    <h3>Feature list</h3>
-    <ul>
-      <li>Architecture: a Notepads section and a Lists/Reminders section (footer navigation).
-        <ul>
-          <li>Notepads have notes and subnotes, lists are just lists.</li>
-          <li>Lists can also be implemented in notes.</li>
-        </ul>
-      </li>
-      <li>Note architecture has a system of "blocks" like notion. After typing, press the return key to finish the current block and make a new one.</li>
-      <li>Whiteboard/scratchpad feature that works like a messenger.
-        <ul>
-          <li>Keyboard-ready, clear "typing zone" that lets you type a new block.</li>
-          <li>Options to wipe, convert the contents to a new note, or append it to an existing note.</li>
-        </ul>
-      </li>
-      <li>A note browser system that looks similar to a file browser system that users are probably used to.
-        <ul>
-          <li>Expand/collapse all notebooks option; Recent sort; Favourites section.</li>
-        </ul>
-      </li>
-      <li><em>For this version, the focus is on making a functional, offline, digital notepad.</em>
-        <ul>
-          <li><em>Notion-style icon/cover image personalisation on notes potentially out of scope.</em></li>
-          <li><em>No sign-up/share feature for now, or anything related to the internet.</em></li>
-        </ul>
-      </li>
-    </ul>
-
-    <h2>Ideate</h2>
-    
-    <h4>Wireframes</h4>
-    <img src="images/image10.png" alt="Wireframes 1" class="full-width-image">
-    <img src="images/image23.png" alt="Wireframes 2" class="full-width-image">
-
-    <h2>Test 1</h2>
-    <p>This is a brief and less rigidly-structured user test to understand how well the initial design is understood. This will inform further ideation before entering the prototype phase.</p>
-
-    <h3>Aims:</h3>
-    <ul>
-      <li>To see if users can understand what the app is and does.</li>
-      <li>To see if users find the placement and implied navigation to be intuitive.</li>
-      <li>To identify areas of confusion to inform ideation before making the prototype.</li>
-    </ul>
-
-    <h3>Methodology:</h3>
-    <ol>
-      <li>Preface by saying that these are screenshots and aren't interactable.</li>
-      <li>For each of the four screens, ask:
-        <ol>
-          <li>Could you tell me what this is?</li>
-          <li>Could you tell me what you think you can do here?</li>
-        </ol>
-      </li>
-    </ol>
-    <p>And finally:</p>
-    <ol start="3">
-      <li>What are your overall thoughts when you look at the four screens together?</li>
-    </ol>
-
-    <h3>Results</h3>
-    
-    <h4>User 1</h4>
-    <p><strong>Home:</strong></p>
-    <ul>
-      <li>Correctly identifies it as a note-taking app.</li>
-      <li>Confusion about whether/why lists and notebooks are separate.</li>
-    </ul>
-    
-    <p><strong>Notebooks:</strong></p>
-    <ul>
-      <li>Described it as "tabs for notes".</li>
-      <li>Identified that they can make notes and subnotes
-        <ul>
-          <li>+ button makes new subnotes, the arrow on the side of each note expands/hides it, and the kebab menu opens either options for the note or edit options.</li>
-        </ul>
-      </li>
-      <li>Wasn't sure about what the expand all/contract all buttons (top right) did.</li>
-      <li>Identified that they can change their notebook with the tabs at the top.</li>
-    </ul>
-
-    <p><strong>Lists:</strong></p>
-    <ul>
-      <li>Identified that there are no more notebooks.
-        <ul>
-          <li><strong>Potentially confusing to include lists under the big notebook name heading on the home screen.</strong></li>
-        </ul>
-      </li>
-      <li>Assumption that you can make lists, list items and sub-items.</li>
-      <li>Assumption that the bell icon opens a popup that lets you set the time
-        <ul>
-          <li>This is incorrect; it is a toggle to turn reminders on/off for that list item.</li>
-        </ul>
-      </li>
-      <li>Unsure if the + button in the bottom right makes a new list or a new list item.</li>
-    </ul>
-
-    <p><strong>Dump:</strong></p>
-    <ul>
-      <li>"Looks like a disorganised place where you can just write in a section."</li>
-      <li>Maybe the text toolbar lets you add an image?</li>
-      <li>Seems to understand it; not many thoughts to convey.</li>
-    </ul>
-
-    <p><strong>Overall:</strong></p>
-    <ul>
-      <li>The home page has a lot going on.</li>
-      <li>"Dump"'s purpose is unclear.</li>
-    </ul>
-
-    <h4>User 2</h4>
-    <p><strong>Home:</strong></p>
-    <ul>
-      <li>First impression that it's a notes app or mind-mapper; They compare it to Obsidian, Miro and Notion.</li>
-      <li><strong>Confused by the arrow that expands the Dump section</strong> on the homepage.
-        <ul>
-          <li>Maybe it expands the section? Or maybe it pushes the content in the dump up to the current notebook?</li>
-        </ul>
-      </li>
-      <li>"New note? New list? Can't I make a new list with a note?"
-        <ul>
-          <li>States that they want these functions consolidated.</li>
-        </ul>
-      </li>
-    </ul>
-
-    <p><strong>Notebooks:</strong></p>
-    <ul>
-      <li>Identifies this as the section where all your notebooks are.
-        <ul>
-          <li>"This is my note library".</li>
-        </ul>
-      </li>
-      <li>Says it "looks fine" and praises the organisation by separating notes with grey borders.
-        <ul>
-          <li>"Not much confusion."</li>
-        </ul>
-      </li>
-      <li><strong>Misinterprets the expand/contract all buttons as a full-screen mode.</strong></li>
-      <li>Finds the notepad section on the top, identifies it correctly.
-        <ul>
-          <li>This is the same UI as on the home-page; <strong>Is it global?</strong></li>
-        </ul>
-      </li>
-    </ul>
-
-    <p><strong>Lists:</strong></p>
-    <ul>
-      <li><strong>"I don't get why it's called 'Dump'!"</strong> when they see the list called "Dump".
-        <ul>
-          <li>Is it user-controlled?</li>
-        </ul>
-      </li>
-      <li>Identifies the ability to make lists, sub-items within lists and reminders.</li>
-      <li>The structure of the app is somewhat confusing.
-        <ul>
-          <li>"What is a sub-item in a list?"</li>
-          <li><strong>Reveals that the app has a lot of different kinds of things that look the same, and their interaction isn't necessarily clear on first glance.</strong></li>
-        </ul>
-      </li>
-    </ul>
-
-    <p><strong>Dump:</strong></p>
-    <ul>
-      <li>"Dumps are when I write stuff without structure."
-        <ul>
-          <li>I can structure it later? Is it for brainstorming?</li>
-          <li>"I would just use dump or new notes and format it myself."</li>
-        </ul>
-      </li>
-    </ul>
-
-    <p><strong>Overall:</strong></p>
-    <ul>
-      <li>States that all of this should be on one page.
-        <ul>
-          <li>I assume this means that the separation of notes and lists isn't useful. Incidentally Google Keep allows users to make new lists with their big floating + button, with no sections to separate notes from lists — This may be something worth imitating.</li>
-        </ul>
-      </li>
-      <li>Assumes that "notes" and "lists" are like templates that are there to save mental bandwidth but reduce user control.</li>
-    </ul>
-
-    <h3>Action</h3>
-    <p>The tests showed confusion around the <em>Dump</em> and <em>Lists</em> section most of all.</p>
-    
-    <p><strong>Dump:</strong></p>
-    <ul>
-      <li>The Dump is our USP and allows users to create notes quicker than any other app, so <strong>the <em>Dump</em>'s presentation to new users may have to be reworked.</strong></li>
-      <li>The expand icon on the home page is admittedly not consistent with the iconography of 'expand' in the notebooks section. "Expand" should be represented the same way in different parts of the app.</li>
-    </ul>
-
-    <p><strong>Lists:</strong></p>
-    <ul>
-      <li>The <em>List</em> section's main function is to provide a quicker way to allow users to make and store lists and quickly toggle reminders. <strong>The list section may be consolidated with the notebooks section</strong> to reduce unnecessary separation of features.</li>
-      <li>I intend to make it possible to make lists within notes, anyway, so <strong>I can adopt the ability to make lists from the <em>Notebooks</em> section's '+' icon, and put the 'reminder' toggle on list item-type blocks.</strong></li>
-    </ul>
-
-    <p><strong>Other:</strong></p>
-    <ul>
-      <li>The expand/contract buttons confused both users. I don't think this is a serious problem, since it would be easy for a user to simply press it and see what it does, but it did imply that <strong>the icons on the buttons to expand/contract all notes were hard to understand</strong>. I'll keep this in mind for when I make the high-fidelity prototype.</li>
-      <li>The notebooks tab easily allows a user to switch between recent notebooks, but the use of the same UI in the <em>Home</em> screen and the <em>Notebooks</em> section caused confusion. At the same time, there's no way to see all of your notebooks in a nice full-screen tile view.
-        <ul>
-          <li><strong>I will rework the function and means of access to the separate 'notes' and 'notebook' levels of the navigation.</strong></li>
-        </ul>
-      </li>
-    </ul>
-
-    <h4>Iteration 2</h4>
-    <img src="images/image14.png" alt="Iteration 2 wireframe" class="iteration-image">
-    <p>The image shows paper wireframes for a new iteration of the app. For this version, I have removed the bottom navigation and merged the note and list functionality into a single navigation screen. The dump takes up a portion of the bottom half of the screen, and the notebook navigation takes up the rest of the screen.</p>
-
-    <h2>Prototype</h2>
-    
-    <h3>Low-fidelity prototype (version 1)</h3>
-    <img src="images/image2.png" alt="Low-fidelity prototype" class="full-width-image">
-    <p>Above is the first version of the low-fidelity prototype. All assets were made by me with the exception of the iPhone keyboard asset (<a href="https://www.figma.com/@rojcyk" target="_blank">Denis Rojčyk</a> at <a href="https://www.figma.com/community/file/768726574016795759" target="_blank">https://www.figma.com/community/file/768726574016795759</a>, accessed on 5<sup>th</sup> January 2026).</p>
-
-    <p>As this is an early version of a complex application, the prototype does not demonstrate every interaction and combination of interactions.</p>
-
-    <p>Functionality for creating new notes will be pretty much identical to other apps, especially Notion. For that reason, I decided to focus on prototyping our USP, the Dump.</p>
-
-    <p>For this version, the goals are:</p>
-    <p class="indent">(i) to demonstrate the layout and general navigation through the app;</p>
-    <p class="indent">(ii) show how the "Dump" feature fits in;</p>
-    <p class="indent">(iii) show how the text toolbar will work.</p>
-
-    <h4>Home screen</h4>
-    <img src="images/image17.png" alt="Home screen" class="prototype-image">
-    <p>The home screen contains 4 major sections (top to bottom): the search bar, the notebooks section, the notes (within the currently-selected notebook) section, and the dump.</p>
-    <p class="note">※ <em>The home button in the top corner is used only in the prototype to allow the user to return to the start of the flow. Most modern mobile interfaces allow users to 'go back' by swiping from the left or right side of the screen, making 'back' buttons unnecessary. This functionality is clunky to implement in Figma, so the 'home' button was my band-aid solution.</em></p>
-
-    <p><strong>The search bar</strong> will match whatever is typed in and find all notebooks and notes that include the matched text.</p>
-
-    <p><strong>The notebooks section</strong> is a horizontal scroll of icons, likely user-set emojis, with the name of the notebook beneath it. When a user taps a notebook, it pins to the left side, the text for the title is made bold and the notes section below updates to show all the notes and sub-notes within that notebook. Tapping the &gt; should take the user to a tile view of all their notebooks, but it may not be necessary to keep this feature depending on how many notebooks users tend to really need. In the current prototype, users can swap between the 'Travel' and 'Journal' notebooks; other notebooks are currently only present to demonstrate the horizontal scroll.</p>
-
-    <p><strong>The notes section</strong> displays the notes and subnotes within the selected notebook, and allows users to open, delete and move notes, as well as expand and contract notes with subnotes, and show/hide a preview of the note below the title. It is the workspace where users can manage their notes. This section is mostly static in this prototype save for the vertical scroll and size change depending on the size of the dump.</p>
-
-    <p><strong>The dump</strong> is a readily-available, open note that users can quickly "dump" ideas, links, images, etc. The user can show/hide a preview of the content already in the dump, and can tap the '...' meatball menu to open a window that lets them move the content to a note, or clear the dump. Tapping the 'Dump &gt;' text takes the user to a full-screen version of the dump. Users can also tap the text input bar at the bottom of the screen to open a keyboard to allow them to quickly "dump" something from the homescreen:</p>
-    
-    <div class="center-image">
-      <img src="images/image24.png" alt="Dump input" class="mobile-screenshot">
+      <div class="subsection">
+        <h3>Feature List</h3>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <h5>Architecture</h5>
+            <p>A Notepads section and a Lists/Reminders section with footer navigation. Notepads have notes and subnotes, lists are just lists.</p>
+          </div>
+          <div class="feature-card">
+            <h5>Block System</h5>
+            <p>Note architecture has a system of "blocks" like Notion. After typing, press the return key to finish the current block and make a new one.</p>
+          </div>
+          <div class="feature-card">
+            <h5>Whiteboard/Scratchpad</h5>
+            <p>A feature that works like a messenger with a keyboard-ready typing zone. Options to wipe, convert to a new note, or append to existing note.</p>
+          </div>
+          <div class="feature-card">
+            <h5>Note Browser</h5>
+            <p>A system that looks similar to a file browser. Expand/collapse all notebooks option, recent sort, favourites section.</p>
+          </div>
+        </div>
+        <p class="scope-note"><em>For this version, the focus is on making a functional, offline, digital notepad. No sign-up/share feature for now.</em></p>
+      </div>
     </div>
+  </section>
 
-    <h4>The Dump and text tools</h4>
-    <div class="center-image">
-      <img src="images/image31.png" alt="Dump screen" class="mobile-screenshot-large">
+  <!-- Ideate Section -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Ideate</h2>
+      
+      <div class="subsection">
+        <h4>Wireframes</h4>
+        <div class="wireframe-gallery">
+          <img src="images/image10.png" alt="Wireframes 1">
+          <img src="images/image23.png" alt="Wireframes 2">
+        </div>
+      </div>
     </div>
-    <p>The user can open the dump from the home screen and see it full-screen. On tapping the text input bar at the bottom of the screen or ideally anywhere on the screen, a cursor and keyboard appear.</p>
+  </section>
 
-    <img src="images/image16.png" alt="Text toolbar" class="toolbar-image">
-    <p>The text toolbar has a horizontal scroll, and almost every button has some functionality in the current prototype. From left to right:</p>
-    <ul>
-      <li><img src="images/image33.png" alt="Back" class="inline-icon"> A back button: reverses changes.</li>
-      <li><img src="images/image11.png" alt="Image" class="inline-icon"> An image insertion button: This currently has no functionality.</li>
-      <li><img src="images/image26.png" alt="Bold" class="inline-icon"> Bold: applies 'bold' font weight to the current block/selected text.</li>
-      <li><img src="images/image15.png" alt="Italic" class="inline-icon"> Italic: applies 'italic' font style to the current block/selected text.</li>
-      <li><img src="images/image9.png" alt="Font" class="inline-icon"> Sans serif/serif toggle: toggles (currently) between the 'Inter' and 'Inika' fonts on the current block/selected text.</li>
-      <li><img src="images/image28.png" alt="List" class="inline-icon"> List toggle (shown below): toggles current block between a 'list'-type block and a normal text block.</li>
-      <li><img src="images/image37.png" alt="Reminder" class="inline-icon"> Reminder (shown below): adds a reminder to the current block and adds a little bell icon to the block in the text space.</li>
-      <li><img src="images/image12.png" alt="Left align" class="inline-icon"> Left-, <img src="images/image20.png" alt="Center align" class="inline-icon"> center- and <img src="images/image6.png" alt="Right align" class="inline-icon"> right-align, and <img src="images/image22.png" alt="Justify" class="inline-icon">justify: changes the alignment of the current block.</li>
-      <li><img src="images/image25.png" alt="Move" class="inline-icon-wide"> Move down/move up: moves the current block down or up relative to other blocks in the text space.</li>
-    </ul>
+  <!-- Test 1 Section -->
+  <section class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Test 1</h2>
+      <p class="lead">A brief and less rigidly-structured user test to understand how well the initial design is understood.</p>
 
-    <div class="two-screenshots">
-      <img src="images/image36.png" alt="List toggle">
-      <img src="images/image13.png" alt="Reminder toggle">
+      <div class="test-methodology">
+        <div class="method-card">
+          <h4>Aims</h4>
+          <ul>
+            <li>See if users can understand what the app is and does</li>
+            <li>See if users find the placement and navigation intuitive</li>
+            <li>Identify areas of confusion before making the prototype</li>
+          </ul>
+        </div>
+        <div class="method-card">
+          <h4>Methodology</h4>
+          <ol>
+            <li>Preface that these are screenshots and aren't interactable</li>
+            <li>For each of the four screens, ask:
+              <ul>
+                <li>Could you tell me what this is?</li>
+                <li>What do you think you can do here?</li>
+              </ul>
+            </li>
+            <li>What are your overall thoughts when you look at the four screens together?</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="test-results">
+        <h4>Key Findings</h4>
+        <div class="result-grid">
+          <div class="result-card problem">
+            <h5>Confusion around "Dump"</h5>
+            <p>Both users were confused about the Dump's purpose and the arrow that expands it. User 2 stated: "I don't get why it's called 'Dump'!"</p>
+          </div>
+          <div class="result-card problem">
+            <h5>Lists vs Notebooks separation unclear</h5>
+            <p>Users questioned why lists and notebooks are separate. User 2 wanted these functions consolidated onto one page.</p>
+          </div>
+          <div class="result-card problem">
+            <h5>Expand/contract buttons misunderstood</h5>
+            <p>User 2 misinterpreted the expand/contract all buttons as a full-screen mode.</p>
+          </div>
+          <div class="result-card neutral">
+            <h5>Navigation concerns</h5>
+            <p>The use of the same UI on both Home and Notebooks screens caused confusion about whether it was global.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="action-items">
+        <h4>Actions Taken</h4>
+        <div class="action-grid">
+          <div class="action-card">
+            <div class="action-label">Dump</div>
+            <p>Rework the Dump's presentation to new users. Make expand icon consistent with iconography used elsewhere.</p>
+          </div>
+          <div class="action-card">
+            <div class="action-label">Lists</div>
+            <p>Consolidate the List section with the Notebooks section. Add reminder toggle to list item-type blocks.</p>
+          </div>
+          <div class="action-card">
+            <div class="action-label">Navigation</div>
+            <p>Rework the function and means of access to separate 'notes' and 'notebook' levels of navigation.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="subsection">
+        <h4>Iteration 2</h4>
+        <img src="images/image14.png" alt="Iteration 2 wireframe" class="iteration-image">
+        <p>For this version, I removed the bottom navigation and merged the note and list functionality into a single navigation screen. The dump takes up a portion of the bottom half of the screen, and the notebook navigation takes up the rest.</p>
+      </div>
     </div>
-    <p><strong>The list-toggle</strong> (above and left) converts the block to a list item that can be ticked and crossed off.</p>
-    <p><strong>The reminder toggle</strong> (above and right) allows the user to set the date and time of the reminder from the text toolbar. In the current prototype the user can only turn the reminder on/off by pressing the bell icon on the toolbar. An icon showing that the block has a reminder attached to it also appears in the text space.</p>
+  </section>
 
-    <div class="two-screenshots">
-      <img src="images/image7.png" alt="Clear dump 1">
-      <img src="images/image27.png" alt="Clear dump 2">
+  <!-- Prototype Section -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Prototype</h2>
+      
+      <div class="subsection">
+        <h3>Low-fidelity Prototype (Version 1)</h3>
+        <img src="images/image2.png" alt="Low-fidelity prototype overview" class="full-image">
+        <p class="caption">Above is the first version of the low-fidelity prototype. All assets were made by me with the exception of the iPhone keyboard asset.</p>
+
+        <div class="prototype-goals">
+          <h5>Goals for this version:</h5>
+          <ol>
+            <li>Demonstrate the layout and general navigation through the app</li>
+            <li>Show how the "Dump" feature fits in</li>
+            <li>Show how the text toolbar will work</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="prototype-section">
+        <h4>Home Screen</h4>
+        <div class="prototype-details">
+          <img src="images/image17.png" alt="Home screen" class="prototype-image">
+          <div class="prototype-description">
+            <p>The home screen contains 4 major sections:</p>
+            <ul>
+              <li><strong>Search bar</strong> - Matches typed text and finds all notebooks and notes</li>
+              <li><strong>Notebooks section</strong> - Horizontal scroll of icons with notebook names</li>
+              <li><strong>Notes section</strong> - Displays notes and subnotes within the selected notebook</li>
+              <li><strong>The Dump</strong> - A readily-available, open note for quick "dumping" of ideas</li>
+            </ul>
+            <img src="images/image24.png" alt="Dump input" class="inline-screenshot">
+          </div>
+        </div>
+      </div>
+
+      <div class="prototype-section">
+        <h4>The Dump & Text Tools</h4>
+        <div class="dump-features">
+          <img src="images/image31.png" alt="Dump screen" class="mobile-proto">
+          <div class="tools-explanation">
+            <p>The user can open the dump from the home screen and see it full-screen. The text toolbar provides comprehensive formatting options:</p>
+            <img src="images/image16.png" alt="Text toolbar" class="toolbar-image">
+            <ul class="tools-list">
+              <li><strong>Undo</strong> - Reverses changes</li>
+              <li><strong>Image insertion</strong> - Add images to notes</li>
+              <li><strong>Bold / Italic</strong> - Text formatting</li>
+              <li><strong>Font toggle</strong> - Switch between sans-serif and serif</li>
+              <li><strong>List toggle</strong> - Convert block to a list item that can be ticked off</li>
+              <li><strong>Reminder</strong> - Add time-based reminders to blocks</li>
+              <li><strong>Alignment</strong> - Left, center, right, or justify</li>
+              <li><strong>Move</strong> - Reorder blocks up or down</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="feature-showcase">
+          <div class="feature-example">
+            <img src="images/image36.png" alt="List toggle">
+            <p><strong>List toggle</strong> - Converts the block to a list item that can be ticked and crossed off</p>
+          </div>
+          <div class="feature-example">
+            <img src="images/image13.png" alt="Reminder toggle">
+            <p><strong>Reminder toggle</strong> - Set date and time for reminders. Icon appears in text space showing the block has a reminder</p>
+          </div>
+        </div>
+
+        <div class="feature-showcase">
+          <div class="feature-example">
+            <img src="images/image7.png" alt="Clear dump 1">
+            <img src="images/image27.png" alt="Clear dump 2">
+            <p><strong>Clear dump</strong> - Tap the meatball menu to clear the dump or move content to a note</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="prototype-section">
+        <h4>Dump Expand/Contract Button</h4>
+        <img src="images/image8.png" alt="Dump expand/contract" class="centered-image">
+        <p>As a final update, I added a button to expand/contract the dump and removed the button to go to the 'Notebooks' screen. This creates a more intuitive full-screen mode and helps convey that the app's full functionality is within one main screen.</p>
+      </div>
     </div>
-    <p>Users can also <strong>clear the dump</strong> by tapping the meatball menu button in the top corner and selecting 'Clear dump'. The 'Move content to note' button currently has no functionality.</p>
+  </section>
 
-    <h4>Dump expand/contract button</h4>
-    <p>As a final update and in contrast to the screenshots above, I have <strong>added a button to expand/contract the dump and removed the button to go to the 'Notebooks' screen</strong>.</p>
-    <div class="center-image">
-      <img src="images/image8.png" alt="Dump expand/contract" class="prototype-image-medium">
+  <!-- Test 2 Section -->
+  <section class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Test 2</h2>
+      <p class="lead">A more structured user test to examine how users interact with the existing flows.</p>
+
+      <div class="test-methodology">
+        <div class="method-card">
+          <h4>Aims</h4>
+          <ul>
+            <li>See if users can understand what the app is and does</li>
+            <li>Compare what users would do with how the app is actually structured</li>
+            <li>Find areas where users are confused or frustrated</li>
+            <li>See what users think buttons with no functionality will do</li>
+          </ul>
+        </div>
+        <div class="method-card">
+          <h4>Methodology</h4>
+          <p>8-step structured test including:</p>
+          <ul>
+            <li>Pre-test setup and warnings</li>
+            <li>Home screen tasks and observations</li>
+            <li>Dump interaction tasks</li>
+            <li>Post-test questions about overall impressions</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="results-pending">
+        <h4>Results</h4>
+        <div class="pending-cards">
+          <div class="pending-card">
+            <h5>User 1</h5>
+            <p><em>Results to be added</em></p>
+          </div>
+          <div class="pending-card">
+            <h5>User 2</h5>
+            <p><em>Results to be added</em></p>
+          </div>
+          <div class="pending-card">
+            <h5>User 3</h5>
+            <p><em>Results to be added</em></p>
+          </div>
+        </div>
+      </div>
     </div>
-    <p>In the first user test, icons that looked similar to these expand/contract buttons were mistaken for a 'full-screen' mode, so it made sense to use them for the implementation of what is essentially a real 'full-screen' mode here. I think that these icons are more intuitive than the '&gt;' icon, and it has allowed me to include an icon on the 'Dump' screen to return to the home page, too – I think that a back button is probably unnecessary but if the user has it in their mind that the current page is an "expansion" rather than a new page, a button to shrink again would make sense. This helps to create the sense that the app's full functionality is within one main screen, and removes the need to rely on the 'Home' button in the corner.</p>
+  </section>
 
-    <p>I will tell users in the test that the 'Home' button is there if they ever feel like they need to start again from the beginning, but isn't a feature of the app.</p>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>Notes App UX Case Study - Personal Project</p>
+    </div>
+  </footer>
 
-    <p>I also removed the '&gt;' from the 'Notebooks' section heading, as it had no functionality, which would be confusing for users in tests. It can also be re-added at a later date if tests show that there is a need for a full-page notebooks screen.</p>
-
-    <h2>Test 2</h2>
-    <p>This is the second user test for the product. This time, the test will have more structure as I examine how users interact with the existing flows.</p>
-
-    <h3>Aims:</h3>
-    <ul>
-      <li>To see if users can understand what the app is and does.</li>
-      <li>To compare what users <em>would</em> do with how the app is actually structured.</li>
-      <li>To find areas where users are confused or frustrated, so that the user experience can be improved.</li>
-      <li>To see what users think that the buttons with no functionality will do when the product is complete.</li>
-    </ul>
-
-    <h3>Methodology:</h3>
-    <ol>
-      <li>Ask the user what phone they use and how often they spend using it each day.</li>
-      <li>Warn the user that this is not a fully-functioning app:
-        <ol>
-          <li>Tell them that many of the buttons don't do anything.</li>
-          <li>Let them know that most of the graphical elements of the design haven't been added yet, and that we are just testing the overall functionality of the app.</li>
-          <li>Let them know that later in the test, a "home" button will appear in the corner if they ever get stuck and want to return to the start, but this is a feature of the test and not the app.</li>
-        </ol>
-      </li>
-      <li>Warn the user that you will be reading from a script to maintain consistency across tests with other users.</li>
-      <li>Tell the user to think out loud throughout the test, and particularly to point out anything that feels unintuitive or unexpected to them, at any time.</li>
-      <li>Ask the user to look at the home screen and give me their first impressions on what the app is and does, from top to bottom.</li>
-      <li>Home screen tasks:
-        <ol>
-          <li>What is the list in the middle showing? What can you infer from how it's structured?</li>
-          <li>How would you see notes from the 'Journal' notebook?</li>
-          <li>How do you feel about the layout here [in the 'Journal' section]?</li>
-          <li>What kinds of notebooks/how many would you keep if you were using this app for yourself?</li>
-          <li>What do you think the 'Dump' is? [If they haven't said anything already]</li>
-          <li>How would you add content to your Dump?</li>
-          <li>Before you do that, what do you think the other buttons around the Dump do?</li>
-          <li>How do you feel about the Dump right now?</li>
-        </ol>
-      </li>
-      <li>Dump tasks:
-        <ol>
-          <li>First, where are you now? [In the Dump section]</li>
-          <li>What are your first impressions of what you see?
-            <ol>
-              <li>Do you see the bar above your keyboard? What do you think it does?</li>
-            </ol>
-          </li>
-          <li>Go ahead and try out some of the buttons on the toolbar. Your changes won't be able to be applied simultaneously, so you'll have to undo your changes to try other buttons. Make sure to tell me what you're thinking before and after you press each button.</li>
-          <li>Would you make use of the Dump if it was a feature in your favourite note-taking app?</li>
-          <li>On your own phone, how would you go back to the home screen (without using the home button)?</li>
-        </ol>
-      </li>
-      <li>Questions after tasks:
-        <ol>
-          <li>What do you think of what you've seen today? Do you have any broad opinions about the app right now?</li>
-          <li>Supposing that this app was in a finished condition, do you think that you would use it over your current note-taking method?</li>
-        </ol>
-      </li>
-    </ol>
-
-    <h3>Results</h3>
-    <h4>User 1</h4>
-    <p><em>(Results to be added)</em></p>
-
-    <h4>User 2</h4>
-    <p><em>(Results to be added)</em></p>
-
-    <h4>User 3</h4>
-    <p><em>(Results to be added)</em></p>
-
-    <h3>Action</h3>
-    <p><em>(Actions to be determined based on test results)</em></p>
-
+  <!-- Zoom Modal -->
+  <div id="zoomModal" class="zoom-modal">
+    <span class="zoom-close">&times;</span>
+    <img id="zoomImage" src="" alt="Zoomed image">
+    <div class="zoom-hint">Click anywhere to close</div>
   </div>
+
+  <script>
+    // Image zoom functionality
+    const zoomModal = document.getElementById('zoomModal');
+    const zoomImage = document.getElementById('zoomImage');
+    const zoomClose = document.querySelector('.zoom-close');
+
+    // Get all zoomable images
+    const zoomableImages = document.querySelectorAll('.full-image, .wireframe-gallery img, .iteration-image, .prototype-image, .inline-screenshot, .mobile-proto, .toolbar-image, .feature-example img, .centered-image');
+
+    // Add click event to each image
+    zoomableImages.forEach(img => {
+      img.addEventListener('click', function() {
+        zoomModal.classList.add('active');
+        zoomImage.src = this.src;
+        document.body.style.overflow = 'hidden'; // Prevent scrolling
+      });
+    });
+
+    // Close modal when clicking the X button
+    zoomClose.addEventListener('click', function(e) {
+      e.stopPropagation();
+      closeZoom();
+    });
+
+    // Close modal when clicking anywhere on the modal
+    zoomModal.addEventListener('click', function() {
+      closeZoom();
+    });
+
+    // Close modal with Escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && zoomModal.classList.contains('active')) {
+        closeZoom();
+      }
+    });
+
+    function closeZoom() {
+      zoomModal.classList.remove('active');
+      document.body.style.overflow = ''; // Re-enable scrolling
+    }
+  </script>
+
 </body>
 </html>
