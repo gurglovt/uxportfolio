@@ -160,6 +160,10 @@ main {
 .notyet .cardlink:hover em {
   color: rgb(230, 127, 175);
 }
+.notyet .cardlink:hover .orchard_thumb,
+.notyet .cardlink:hover .vegan_thumb {
+  opacity: 0.7;
+}
 
 a {
   color: #2e2e2e;
