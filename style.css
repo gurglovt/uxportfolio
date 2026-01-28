@@ -150,8 +150,15 @@ main {
 .card:hover {
   transform: scale(1.02);
 }
+.card:hover.notyet p {
+  color: #929292;
+}
+
 .cardlink:hover em {
   color: rgb(218, 15, 110);
+}
+.notyet .cardlink:hover em {
+  color: rgb(230, 127, 175);
 }
 
 a {
@@ -184,9 +191,12 @@ button {
   font-size: 16px;
   border-radius: 100px;
   border: none;
-  padding: 8px 15px;
+  padding: 5px 15px;
+  margin-top: 15px;
   background-color: #efefef;
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
 }
 
 button:hover,
@@ -202,6 +212,17 @@ img {
   object-fit: cover;
   object-position: top;
   margin-top: 10px;
+}
+
+.gdlogo,
+.figmalogo {
+  max-width: 10px;
+  height: 100%;
+  border-radius: 0;
+  padding-right: 3px;
+  display: block;
+  position: relative;
+  top: -5px;
 }
 
 .email {
