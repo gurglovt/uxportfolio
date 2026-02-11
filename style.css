@@ -147,6 +147,10 @@ main {
   transition: transform 0.2s;
 }
 
+.card2 {
+  display: none;
+}
+
 .card:hover {
   transform: scale(1.02);
 }
@@ -247,3 +251,4 @@ img {
   font-family: "Syne Mono";
   font-size: 14px;
 }
+
