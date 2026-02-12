@@ -147,7 +147,7 @@ main {
   transition: transform 0.2s;
 }
 
-.card2 {
+.project2 {
   display: none;
 }
 
@@ -251,4 +251,5 @@ img {
   font-family: "Syne Mono";
   font-size: 14px;
 }
+
 
