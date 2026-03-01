@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>George Lovitt's UX Portfolio</title>
-    <link href="style.css" rel="stylesheet" />
+    <link href="style2.css" rel="stylesheet" />
     <link rel="icon" href="images/doggy.ico" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <!-- fonts -->
@@ -26,10 +26,14 @@
     />
   </head>
   <header>
-    <h1><span class="h1left">(~:</span> <span class="h1geo">George</span> <span class="h1lov">Lovitt</span> <span class="h1right">:~p</span></h1>
-    <h2><span class="h2span">UX Portfolio</span></h2>
+    <h1>
+      <span class="h1left">(~:</span> <span class="h1geo">George</span>
+      <span class="h1lov">Lovitt</span> <span class="h1right">:~p</span>
+    </h1>
+    <h2><span class="h2span">UX design, research & prototyping</span></h2>
     <p>
-      I've collected some of my personal projects here.<br />Please
+      I'm a UX designer interested in evidence-based product design and user
+      advocacy.<br />Please
       <a href="mailto:golovitt@gmail.com" target="_blank" class="email"
         ><span>reach out</span></a
       >
@@ -37,59 +41,822 @@
     </p>
   </header>
   <main>
-    <div class="card project1">
-      <a href="notes/notes.html" class="cardlink">
-      <img src="images/notes_thumbnail.png" class="notes_thumb" />
-      <p>
-        <em>Notes app</em><br />Leave nothing unwritten.<br/>Dump your ideas as fast as possible.
-      </p>
-      </a>
-      <a
-        href="https://docs.google.com/document/d/1LjraqgbOgO4HHJ3uaGVgmpgqbiAe4POeaR53wqbvQhI/edit?usp=sharing"
-        target="_blank"
-        ><button><img src="images/GoogleDocsLogo.svg.png" class="gdlogo">Design docs</button></a
-      >
-      <a
-        href="https://www.figma.com/design/4TuwjqRtZhNU3WHvyz7wY1/Notes-Low-Fi-Prototype?node-id=0-1&t=1IFTSjhs2ybs9scy-1"
-        target="_blank"
-        ><button><img src="images/Figma-logo.svg" class="figmalogo">Open in Figma</button></a
-      >
-    </div>
-    <div class="card project2 notyet">
-      <a class="cardlink mada" title="Case study coming soon">
-      <img src="images/orchard_thumbnail.png" class="orchard_thumb" />
-      <p>
-        <em>Apple Orchard website</em><br />Pick apples in rural Saga,
-        Japan.<br/>(in progress)
-      </p>
-      </a>
-      <a
-        href="https://docs.google.com/document/d/1Jl1C7t5vYSyaNSTNH69S13TX98I29H8Gd24eE_OqG8I/edit?usp=sharing"
-        target="_blank"
-        ><button><img src="images/GoogleDocsLogo.svg.png" class="gdlogo">Design docs</button></a
-      >
-      <a
-        href="https://www.figma.com/design/gJF48qmR4CEChEQAM7yDUY/Apple-Orchard-Wireframes?node-id=0-1&t=lqWfDpyy1D9JUg3A-1"
-        target="_blank"
-        ><button><img src="images/Figma-logo.svg" class="figmalogo">Open in Figma</button></a
-      >
-    </div>
-      <div class="card project3 notyet">
-        <a class="cardlink mada" title="Case study coming soon">
-        <div class="image-wrapper">
-          <img src="images/isitVegan_thumbnail.png" class="vegan_thumb" />
-        </div>
+    <section class="introduction">
+      <article class="text">
+        <h2>
+          <span class="h2span">Notetaking app: <i>Dumpy</i></span>
+        </h2>
+        <p>November 2025 - March 2026<br />(part-time)</p>
+        <h3 class="description">
+          <i>Dumpy</i> is a personal (no client) note-taking app project.
+        </h3>
+        <h3>Problem:</h3>
+        <ul>
+          <li>
+            Quickly taking new notes on other note-taking apps is inefficient
+            and requires too much micromanagement from users.
+          </li>
+          <li>
+            In my initial interviews, users told me that they tend to make a new
+            note for each new idea, which leads to disorganisation.
+          </li>
+        </ul>
+        <h3>Solution:</h3>
+        <ul>
+          <li>
+            Create a note-taking app that allows users to take and organise
+            notes as efficiently as possible.
+          </li>
+        </ul>
+        <hr />
+        <h3>Process:</h3>
+        <ol>
+          <li>
+            <b>Empathise:</b> Conduct user interviews, create personas, conduct
+            a competitive audit.
+          </li>
+          <li>
+            <b>Define:</b> Respond to research and create a feature list; Define
+            project scope.
+          </li>
+          <li>
+            <b>Initial wireframes:</b> Create a set of initial wireframes and
+            gather feedback from users.
+          </li>
+          <li>
+            <b>Low-fidelity prototype:</b> Ideate on intial design based on user
+            feedback, and create and test a low-fidelity prototype.
+          </li>
+          <li>
+            <b>High-fidelity prototype:</b> Ideate on feedback from the test of
+            the low-fidelity prototype, and create and test a high-fidelity
+            prototype.
+          </li>
+        </ol>
+        <hr />
+        <h3>Outcome:</h3>
+        <ul>
+          <li>
+            <b>Dumpy</b> is an organised, intuitive note-taking app that makes
+            use of a persistent "Dump", which lets users take notes and organise
+            them later from the app's homescreen, or even from a widget outside
+            of the app.
+          </li>
+          <li>
+            Users can rapidly record their ideas without being held back by file
+            setup or management.
+          </li>
+        </ul>
+      </article>
+      <article class="prototype">
+        <iframe
+          style="border: 1px solid rgba(0, 0, 0, 0.1)"
+          width="600"
+          height="850"
+          src="https://embed.figma.com/proto/qC1ojBEU5EbjDyhSfH26P4/Notes-Hi-Fi-Prototype?page-id=0%3A1&node-id=4002-1679&viewport=-1990%2C-56%2C0.75&scaling=scale-down&content-scaling=fixed&starting-point-node-id=4002%3A1679&embed-host=share"
+          allowfullscreen
+        ></iframe>
+      </article>
+    </section>
+    <h2><span class="h2span">1. Empathise</span></h2>
+    <section class="empathise">
+      <article class="text">
+        <h3>User interviews:</h3>
         <p>
-          <em>isitVegan?</em><br />You scan the barcode, we scan the ingredients.
+          To start the project, I conducted 4 interviews with regular people to
+          see how they take notes, and what role note-taking apps play in the
+          ideosyncratic memory-capture systems that they have each developed.
         </p>
-        </a>
+        <h3>Findings:</h3>
+        <ul>
+          <li>
+            Popular/pre-installed note-taking apps (iPhone Notes, Google Keep,
+            Samsung Notes) were routinely not fulfilling the needs of its users.
+          </li>
+          <li>
+            Users tend to reach for whatever has the least amount of friction to
+            take notes on -- users will sometimes use a chat with themselves on
+            Microsoft Teams, Discord, or ChatGPT if it is the thing that is most
+            convenient in the moment.
+          </li>
+          <li>
+            Interviewees found themselves making a whole new note for every new
+            idea, and accumulating a lot of junk notes over time. One
+            interviewee said that this was "messy and inconvenient".
+          </li>
+          <li>
+            Maintaining notes across Google Keep and Google Calendar required
+            routine maintenance if it was to remain a useful place to see plans
+            and ideas.
+          </li>
+          <li>
+            There seemed to be demand for a "whiteboard" feature, on the apps
+            that are convenient, that would allow users to very quickly add,
+            edit and delete information as it changes.
+          </li>
+          <li>
+            Interviewees made good use of notifications on notes and their
+            calendar.
+          </li>
+        </ul>
+        <hr />
+        <h3>Competitive Audit:</h3>
+        <p>
+          I conducted a competitive audit across three competitor note-taking
+          apps: Google Keep, Evernote, and Notion
+        </p>
+        <h3>Findings:</h3>
+        <ul>
+          <li>
+            Competitors have a number of impressive features, for example
+            Notion's hierarchical system of text "blocks", as well as "pages"
+            and subordinate "sub-pages" allowed users to easily distinguish and
+            edit entire paragraphs, and nest notes beneath related notes.
+          </li>
+          <li>
+            Notion also has a simple but powerful customisation system, where
+            users can set the header and (emoji) icon of their note.
+          </li>
+          <li>
+            Evernote and Google Keep had a confusing tile-based file navigation
+            system, which made it easy to see what was in a note, but made it
+            difficult to navigate and manage notes or visualise the higher
+            structure of notes.
+          </li>
+          <li>
+            Other apps didn't offer a folder system to group notes together
+            without paying for premium versions.
+          </li>
+          <li>
+            Evernote's "Scratchpad" served the use of the 'whiteboard'-type
+            feature that my interviewees from this phase seemed to demand.
+          </li>
+        </ul>
         <a
-          href="https://www.figma.com/design/gnG8XpBuhJ2cqF1LnQMzgK/isitvegan?node-id=0-1&t=Sdvb0LDW8LC2CrDa-1"
-          target="_blank"
-          ><button><img src="images/Figma-logo.svg" class="figmalogo">Open in Figma</button></a
+          href="https://docs.google.com/spreadsheets/d/1CIaSqfdV3nMtzBq9Lat-D7YgCt-TjuKtjeHT_BFdZWI/edit?usp=sharing"
         >
-      </div>
-    </div>
+          <p class="ext-link">
+            <img src="images/sheets-logo.svg" class="sheetslogo" />The full
+            audit spreadsheet can be found here.
+          </p></a
+        >
+      </article>
+      <article class="text">
+        <h3>Personas:</h3>
+        <p>
+          I created some personas to keep in mind while designing the app. These
+          "people" summarise my interviewee's gripes and give me a usefully
+          small and concrete "audience" to design for.
+        </p>
+        <p class="lalign">→ <i>You can hover over images to expand them.</i></p>
+        <article class="persona_images">
+          <figure class="persona">
+            <img
+              class="persona-img"
+              src="images/persona1.png"
+              alt="Persona 1: Lily Keane, a journalist who has lots of ideas all the time."
+            />
+            <figcaption>
+              Lily needs an app that collects her ideas cohesively and
+              effortlessly. Note-taking shouldn’t be an active task, but one
+              that is ready for her whenever her brain conjures something up.
+              She needs a net that catches and catalogues her ideas as they
+              appear.
+            </figcaption>
+          </figure>
+          <figure class="persona">
+            <img
+              class="persona-img"
+              src="images/persona2.png"
+              alt="Persona 2: Alan Fidarichi, a family man and tour-guide who wants to take vocabulary notes mid-conversation with foreign language speakers."
+            />
+            <figcaption>
+              Alan needs an app that can hold onto all the things he wants to
+              remember, for business and for pleasure. He needs something that’s
+              ready for him whenever he needs it without complication. He needs
+              impermanent lists and reminders, but also permanent study notes.
+            </figcaption>
+          </figure>
+        </article>
+      </article>
+    </section>
+    <h2><span class="h2span">2. Define</span></h2>
+    <section class="define">
+      <p>
+        Defining scope is crucial for ensuring that a project can have positive
+        and complete outcomes.
+      </p>
+      <p>
+        Responding to my user interviews, personas, and competitive audit, I
+        gathered a shortlist of user problems and mind-mapped solutions in
+        FigJam.
+      </p>
+      <article class="text">
+        <p>→ <i>You can hover over images to expand them.</i></p>
+        <img
+          src="images/define.png"
+          alt="A mind map of user problems and proposed solutions in order to define the scope of the project."
+          class="define-img"
+        />
+      </article>
+      <article class="text">
+        <h3>Initial feature list:</h3>
+        <ul>
+          <li>
+            <b>Evernote-style scratchpad system:</b> Users need a way to quickly
+            make notes, and I can make this immitate the situations where users
+            quickly reach for Teams or Discord to make notes by making it
+            resemble a messenger app.
+            <ul>
+              <li>
+                Messenger apps are incredibly finely-tuned to be able to imitate
+                the speed and ease of normal conversation, so imitating that
+                design would help ease of use.
+              </li>
+              <li>
+                Users should be able to pipe what they put on their
+                scratchpad/whiteboard into their notes.
+              </li>
+              <li>
+                I believe that
+                <b
+                  >this is the best way to enable users to make notes as quickly
+                  as possible</b
+                >, so have focused on it as a <b>USP</b>.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <b>Clear, hierarchical file structure:</b> Users can keep notes in
+            "notebooks", which act as folders, and nest "subnotes" beneath
+            "notes".
+          </li>
+          <li>
+            <b>Notion-style "block" system:</b> Notion's "block" system allowed
+            for impressive speed when formatting text and tokenising paragraphs.
+          </li>
+          <li>
+            <b>Ability to put a notification on any block:</b> Users made good
+            use of notifications, so implementing a system to notify them of
+            notes that they've created would be very useful.
+          </li>
+          <li>
+            <b>Lists section:</b> Creating a separate "Lists" section seemed, at
+            the time, to be a good way to increase the speed at which users
+            could make lists.
+          </li>
+        </ul>
+      </article>
+    </section>
+    <h2><span class="h2span">3. Initial wireframes</span></h2>
+    <section class="initial">
+      <article class="description-article">
+        <p>
+          The initial iteration divided the app into four major sections:
+          "Create", "Lists", "Notebooks", and "Dump".
+        </p>
+        <p>
+          In this section you can see the different sections' purposes and
+          <b>user flows</b>
+        </p>
+      </article>
+      <article class="persona_images">
+        <img
+          src="images/initial1.png"
+          alt="'Create' section wireframe"
+          class="initial-img"
+        />
+        <img
+          src="images/initial3.png"
+          alt="'Lists' section wireframe"
+          class="initial-img"
+        />
+        <img
+          src="images/initial2.png"
+          alt="'Notebooks' section wireframe"
+          class="initial-img img-right"
+        />
+        <img
+          src="images/initial4.png"
+          alt="'Dump' section wireframe"
+          class="initial-img img-right"
+        />
+      </article>
+    </section>
+    <h2><span class="h2span">Gathering user feedback - Test 1</span></h2>
+    <section class="empathise">
+      <article class="text">
+        <h3>Goals:</h3>
+        <p class="lalign">
+          I presented these screenshots to 2 users to gather their responses and
+          feedback. I wanted to:
+        </p>
+        <ul>
+          <li>find out if the function of the app was easy to work out.</li>
+          <li>find out if the structure of the app made sense.</li>
+          <li>collect points of confusion to prioritise for improvement.</li>
+        </ul>
+        <hr />
+        <h3>Methodology:</h3>
+        <ol>
+          <li>Show one of the four screenshots.</li>
+          <li>
+            Ask:
+            <ol type="i">
+              <li>Could you tell me what this is?</li>
+              <li>Could you tell me what you think you can do here?</li>
+            </ol>
+          </li>
+          <li>Move onto the next screenshot and repeat.</li>
+          <li>
+            When we have looked at every screenshot, ask:
+            <ol type="i">
+              <li>
+                What are your overall thoughts when you look at the four screens
+                together?
+              </li>
+            </ol>
+          </li>
+        </ol>
+        <hr />
+        <h3>Findings:</h3>
+        <ul>
+          <li>
+            Lists being present in both the 'Notebooks' and 'Lists' section was
+            confusing.
+          </li>
+          <li>
+            There was a broader issue of things looking the same and doing the
+            same thing but being in different places causing confusion.
+          </li>
+          <li>
+            Some concerns raised about a lack of consolidation within the app,
+            and a lack of clarity about how the different sections interact.
+          </li>
+          <li>
+            Confusion around the 'Dump' section: Users didn't understand what it
+            was, what it did, or why it was called 'Dump'.
+          </li>
+        </ul>
+      </article>
+      <article class="text">
+        <h3>Responses and action:</h3>
+        <ul>
+          <li>
+            <b>Make the 'Dump' clear:</b> New users should be taken more into
+            account when presenting the 'Dump' to them. It is crucial to ensure
+            that new users are able to quickly grasp and be able to use the
+            'Dump' so that they can get the most out of this app and see value
+            in using it over its competitors.
+          </li>
+          <li>
+            <b>Consolidation of sections:</b> The 'Lists' and 'Notebooks'
+            sections could be consolidated. Since the ability to create lists
+            within notes was already a planned feature, I could eliminate
+            confusion by removing the lists section -- Users can feel more
+            confident that anything that they would want to do can be found in
+            roughly the same place.
+          </li>
+          <ul>
+            <li>
+              Effort was made in further iteration to remove the bottom
+              navigation entirely, to keep the apps main features all in one
+              place.
+            </li>
+          </ul>
+          <li>
+            <b>Reduce similarity & number of buttons:</b> There was a need to
+            reduce the number of buttons that look similar. There were lots of
+            buttons with arrows on them, and the app's structure can be reworked
+            to reduce the number of buttons that are necessary in the first
+            place.
+          </li>
+        </ul>
+        <p class="arrow"><span class="h2span">↓</span></p>
+      </article>
+    </section>
+    <h2><span class="h2span">Ideating from user feedback</span></h2>
+    <section class="empathise">
+      <article class="text">
+        <img
+          src="images/paper-iteration.png"
+          alt="Paper-based iterations of reworks on the initial design."
+          class="paper-ideation"
+        />
+      </article>
+      <article class="text">
+        <h3>Second iteration (paper wireframes):</h3>
+        <ol>
+          <li>
+            (top left) Reduced the number of sections from 4 to 3, with a
+            'Notebooks', 'Home', and 'Dump' section only.
+          </li>
+          <ul>
+            <li>
+              Notebooks section has a full page of all the users notebooks which
+              they can quickly tap into.
+            </li>
+            <li>
+              Opted quickly to abandon this idea because of the reduced access
+              to the 'Dump', and the app seemed to emphasise having a lot of
+              notebooks too much. I predict that users will only end up using
+              3-5 notebooks on average, so emphasis on notebooks isn't useful.
+            </li>
+          </ul>
+          <li>
+            (top right) Only one page. An idea where I move the emphasis from
+            the notebooks to the 'Dump' by having a drawer for notebooks, and
+            the 'Dump' right at "thumb access" level.
+          </li>
+          <ul>
+            <li>
+              Beginning to bring in ideas that components can be reworked into
+              homescreen widgets at the end of the project.
+            </li>
+            <li>
+              I thought that changing the 'active' notebook through a hidden
+              drawer might be unintuitive; it was clear this idea needed work
+              quite quickly.
+            </li>
+          </ul>
+          <li>
+            (bottom left) I develop the idea from [2] by changing the notebook
+            drawer to a quick access bar along the top of the app, above the
+            notes' file navigation system.
+          </li>
+          <ul>
+            <li>
+              Seemed to start to look like a good idea, but needed further
+              refinement.
+            </li>
+          </ul>
+          <li>
+            (bottom right) A refinement of [3], and the option I chose to use to
+            develop my low-fidelity prototype.
+          </li>
+          <ul>
+            <li>
+              Dump takes up the bottom section of the screen while note file
+              navigation takes up the top part.
+            </li>
+            <li>
+              Ideas floating around at this point that the height of these
+              sections can be adjustable depending on what the user is doing.
+            </li>
+          </ul>
+        </ol>
+      </article>
+    </section>
+    <h2><span class="h2span">4. Low-fidelity prototype</span></h2>
+    <section class="introduction">
+      <article class="prototype">
+        <iframe
+          style="border: 1px solid rgba(0, 0, 0, 0.1)"
+          width="600"
+          height="850"
+          src="https://embed.figma.com/proto/4TuwjqRtZhNU3WHvyz7wY1/Notes-Low-Fi-Prototype?page-id=0%3A1&node-id=2002-105&p=f&viewport=137%2C115%2C0.21&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2055%3A25&show-proto-sidebar=0&embed-host=share"
+          allowfullscreen
+        ></iframe>
+      </article>
+      <article class="text">
+        <h3>Goals:</h3>
+        <p class="lalign">This version of the app was built to test:</p>
+        <ul>
+          <li>
+            the use of the 'Dump' and how it integrates into the broader app.
+          </li>
+          <li>the text tools within the 'Dump'.</li>
+          <li>
+            user reactions to the overall layout of the app, file navigation,
+            and information structure.
+          </li>
+        </ul>
+        <h3>Design explanation:</h3>
+        <ul>
+          <li>
+            The main screen when you open the app shows (top to bottom) a search
+            bar, a horizontal scroll of the 'notebooks' (folders) that the user
+            has made, the active 'notebook', all of the notes and sub-notes
+            within it (including a note in the 'Travel' notebook that show the
+            ability to create checkbox list items), and finally the 'Dump' at
+            the bottom, which can be contracted to hide (showing more of the
+            file navigation space), or expanded to fullscreen.
+          </li>
+          <li>
+            When the 'Dump' section is expanded to fullscreen, the user can see
+            the text editor screen. The plan is to have this be largely the same
+            across the 'Dump' and with normal notes and sub-notes. The user can
+            add a sample block of text by tapping the keyboard, and use the
+            toolbar above the keyboard to manipulate that active block.
+          </li>
+          <li>
+            To avoid unnecessary over-designing, and to get back to user testing
+            quicker (and partly due to limitations with Figma prototypes), large
+            sections of the app don't do anything.
+          </li>
+          <li>
+            The button with a picture of a house on it that appears in the
+            corner is strictly for the prototype, and served as a quick way to
+            allow the user to start again from the beginning. This was done in
+            response to Figma not supporting the usual
+            swipe-from-the-left-to-go-back function that many phone OSs use.
+            Users were informed about this in the test.
+          </li>
+        </ul>
+      </article>
+    </section>
+    <h2>
+      <span class="h2span">Testing the low-fidelity prototype - Test 2</span>
+    </h2>
+    <section class="empathise">
+      <article class="text">
+        <h3>Goals:</h3>
+        <p class="lalign">
+          I let 3 people use the prototype alongside a number of tasks (detailed
+          below). I wanted to:
+        </p>
+        <ul>
+          <li>see if users understand what the app is and does.</li>
+          <li>
+            compare users expectations of what buttons do with what they
+            actually do.
+          </li>
+          <li>
+            find areas of confusion and frustration to target in subsequent
+            iterations.
+          </li>
+        </ul>
+      </article>
+      <article class="text">
+        <h3>Methodology (user test script):</h3>
+        <article class="methodology">
+          <ol>
+            <li>
+              Ask the user background information: what phone do they use, how
+              long per day, and which notes app.
+            </li>
+            <li>
+              Warn the user that the app is very early in development; many
+              buttons don't work, many graphical elements haven't been developed
+              yet, and that the test is focused on the app's overall
+              functionality.
+            </li>
+            <li>
+              Warn the user that I will be reading from a script and request
+              that they think out loud as much as possible, especially whenever
+              something seems unintuitive or unexpected.
+            </li>
+            <li>
+              Ask the user to give me their impressions of the homescreen from
+              top to bottom.
+            </li>
+            <li>
+              Ask the following questions, skipping wherever the user already
+              answered in response to the previous question:
+            </li>
+            <ol type="1">
+              <li>
+                What is the list in the middle showing? What can you infer from
+                how it's structured?
+              </li>
+              <li>How would you see notes from the 'Journal' notebook?</li>
+              <li>
+                What kinds of notebooks/how many would you keep if you were
+                using this app for yourself?
+              </li>
+              <li>What do you think the 'Dump' is?</li>
+              <li>How would you add content to the 'Dump'?</li>
+              <li>
+                Before you do that, what do you think the other buttons around
+                the Dump do?
+              </li>
+              <li>How do you eel about the 'Dump' right now?</li>
+            </ol>
+            <li>
+              Ask the user to try and make the 'Dump' fullscreen, and then ask:
+            </li>
+            <ol type="1">
+              <li>Where are you now?</li>
+              <li>What are your impressions of what you see?</li>
+              <li>
+                Do you see the bar above your keyboard? What do you think it
+                does?
+              </li>
+              <li>
+                Go ahead and try out some of the buttons on the toolbar. [Warn
+                the user that they will have to undo their changes to apply
+                more].
+              </li>
+              <li>
+                Would you make use of the 'Dump' if it was a feature in your
+                favourite note-taking app?
+              </li>
+              <li>
+                On your own phone, how would you go back to the home screen
+                (without using the home button in the corner)?
+              </li>
+            </ol>
+            <li>Finally ask some post-test questions:</li>
+            <ol type="1">
+              <li>
+                What do you think of what you've seen today? Do you have any
+                broad opinions about the app right now?
+              </li>
+              <li>
+                Supposing that this app was in a finished condition, do you
+                htink that you would use it over your current note-taking
+                method?
+              </li>
+            </ol>
+          </ol>
+        </article>
+      </article>
+    </section>
+    <section class="initial affinity">
+      <article class="description-article">
+        <h3>Findings (affinity diagram):</h3>
+        <p>
+          I conducted 3 user tests in accordance with the methodology above, and
+          turned the data into an affinity diagram
+        </p>
+        <p class="lalign">
+          → <i>You can click this image to open it in a new tab.</i>
+        </p>
+        <a
+          href="images/affinitydiagram.png"
+          title="Click to open the image in new tab 🚀"
+          ><img
+            src="images/affinitydiagram.png"
+            alt="Affinity diagram of user feedback on the test of the low-fidelity prototype."
+            class="affinity-img"
+        /></a>
+      </article>
+    </section>
+    <section class="empathise">
+      <article class="text">
+        <h3>Responses and action:</h3>
+        <p class="lalign">
+          I created a shortlist of goals for the high-fidelity prototype.
+        </p>
+        <ul>
+          <li>
+            <b>Fill in placeholders:</b> The prototype should look like a
+            finished product with no placeholder wireframes. This will make the
+            product easier to imagine and users won't be required to fill in the
+            blanks in their mind as much in user tests.
+          </li>
+          <li>
+            <b>Create a dark mode:</b> Dark mode was requested and one user even
+            implied that it would be necessary for the app to be useable for
+            them.
+          </li>
+          <li>
+            <b>Allow users to manually adjust the height of the 'Dump':</b>
+            This will also allow me to consolidate buttons around the 'Dump',
+            which looked similar but did different things.
+          </li>
+          <li>
+            <b>Segregate/distinguish the 'Dump' section:</b> To improve users'
+            understanding of the 'Dump' as quickly as possible, it seemed
+            important to make sure that the 'Dump' was a separate part of the
+            app that interacted with the saved notes, and not child of the
+            selected notebook.
+          </li>
+          <li>
+            <b>Add functionality to menu buttons:</b> Users mentioned that a
+            'settings' screen was missing, so it was important to add options to
+            the 'Dump', notes, subnotes, and notebooks, so that the app felt
+            more like a finished product.
+          </li>
+          <li>
+            <b>Rework icons that caused confusion:</b> Some of the toolbar icons
+            were confusing to users, or their hit-zone was unclear, and some
+            were just unattractive due to their low fidelity. I planned to
+            remake most of the buttons from scratch.
+          </li>
+          <li>
+            <b
+              >Make the functionality of the 'notification' button more
+              clear:</b
+            >
+            Even though a little icon appeared next to the block to which a
+            notification was applied, one user was confused about what that
+            'notification' button did. It seemed important to highlight blocks
+            that had had a notification applied clearly and noticeablely, but
+            not in a way that could be distracting.
+          </li>
+          <li>
+            <b>Add search within the text editor:</b> One user requested this
+            and it would be very simple to add at this stage. Users in the next
+            test will be able to see the button and imagine its functionality.
+          </li>
+        </ul>
+
+        <p>
+          Here are the results from implementing these changes:<br /><span
+            class="arrow low-lineheight h2span"
+            >→</span
+          >
+        </p>
+        <p>Design explanation and process is below.</p>
+      </article>
+      <article class="text">
+        <iframe
+          style="border: 1px solid rgba(0, 0, 0, 0.1)"
+          width="600"
+          height="850"
+          src="https://embed.figma.com/proto/qC1ojBEU5EbjDyhSfH26P4/Notes-Hi-Fi-Prototype?page-id=0%3A1&node-id=4002-1679&viewport=-1990%2C-56%2C0.75&scaling=scale-down&content-scaling=fixed&starting-point-node-id=4002%3A1679&embed-host=share"
+          allowfullscreen
+        ></iframe>
+      </article>
+    </section>
+    <h2><span class="h2span">5. High-fidelity prototype</span></h2>
+    <section class="empathise">
+      <article class="persona_images">
+        <img
+          src="images/colors.png"
+          alt="The colour variables for the high-fidelity prototype."
+          class="colors-text"
+        />
+        <img
+          src="images/text.png"
+          alt="The text styles for the high-fidelity prototype."
+          class="colors-text text-side"
+        />
+      </article>
+      <article class="text">
+        <h3>Colours:</h3>
+        <ul>
+          <li>
+            I learned how to create a colour mode system so that I could
+            implement a light mode at a later date.
+          </li>
+          <li>
+            The prototype uses 3 dark colours, an overlay/text light colour, a
+            colour for links, and a colour for warnings.
+          </li>
+        </ul>
+        <h3>Text:</h3>
+        <ul>
+          <li>
+            I created text styles for a serif and non-serif version of the text
+            in the prototype.
+          </li>
+          <li>
+            I used the fonts IBM Plex Sans and IBM Plex Serif because they can
+            be easily interchanged. These fonts allow the serif toggle in the
+            text editor to work seamlessly.
+          </li>
+        </ul>
+      </article>
+    </section>
+    <section class="empathise">
+      <article class="text">
+        <h3>Components:</h3>
+        <ul>
+          <li>
+            I created components for all of the atoms and molecules for the
+            design.
+          </li>
+          <li>
+            I started by making small buttons and icons, which served as the
+            "atoms", and then combined them into slightly larger "molecules",
+            such as the box that contains a note's name, options and the ability
+            to add a new sub-note beneath it.
+          </li>
+          <li>
+            I learnt a lot about atomic design before starting this part of the
+            project, and how to use components in Figma to create more efficient
+            and easily-iterable designs.
+          </li>
+          <li>
+            I was surprised to find how much simpler designing and building
+            prototypes was with this approach. I'll certainly be implementing it
+            into my future workflow.
+          </li>
+          <li>
+            The 'Dump' took the most effort to make, because it had to change
+            size when its handle was swiped up or down.
+          </li>
+          <li>
+            The only pre-built assets I used were the fonts, and the iPhone
+            keyboard assets from Apple.
+          </li>
+        </ul>
+      </article>
+      <article>
+        <a
+          href="images/components.png"
+          title="Click to open the image in new tab 🚀"
+          ><img
+            src="images/components.png"
+            alt="An overview within Figma of all of the components that make up the atoms and molecules of the design."
+            class="initial-img img-right components-img"
+        /></a>
+        <p class="lalign">
+          → <i>You can click this image to open it in a new tab.</i>
+        </p>
+      </article>
+    </section>
   </main>
-  <footer>© 2026 George Lovitt. All rights reserved.</footer>
 </html>

@@ -76,17 +76,22 @@
 /* Styles */
 html {
   font-family: "Syne Mono", Arial, sans-serif;
-  background-color: #efefef;
+  background-color: #232323;
+  color: rgb(209, 209, 209);
 }
 
 h1,
 h2 {
   text-align: center;
   cursor: default;
+  color: rgb(209, 209, 209);
 }
 h2 {
   display: flex;
   justify-content: center;
+}
+h3 {
+  color: rgb(209, 209, 209);
 }
 
 .h1left:hover,
@@ -94,13 +99,9 @@ h2 {
 .h1lov:hover,
 .h1right:hover,
 .h2span:hover {
-  color: rgb(218, 15, 110);
+  color: rgb(255, 43, 142);
 }
 
-header,
-footer {
-  color: #171717;
-}
 header p {
   font-size: 120%;
 }
@@ -113,6 +114,8 @@ h1 {
 h2 {
   font-size: 2.4rem;
   margin: 20px;
+  margin-top: 40px;
+  margin-bottom: 10px;
 }
 em {
   font-size: 120%;
@@ -126,13 +129,7 @@ p {
 }
 
 main {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 15px;
-  justify-content: center;
-  margin: 400px;
-  overflow: visible;
+  margin: 20px 40px;
 }
 
 .card {
@@ -166,7 +163,7 @@ main {
 }
 
 a {
-  color: #2e2e2e;
+  color: rgb(209, 209, 209);
   cursor: pointer;
 }
 
@@ -194,7 +191,7 @@ footer {
 button {
   font-family: "Cairo", Arial, sans-serif;
   font-size: 16px;
-  border-radius: 100px;
+  border-radius: 20px;
   border: none;
   padding: 5px 15px;
   margin-top: 15px;
@@ -202,11 +199,12 @@ button {
   cursor: pointer;
   display: inline-flex;
   align-items: center;
+  max-width: 250px;
 }
 
 button:hover,
 button:focus {
-  background-color: rgb(218, 15, 110);
+  background-color: rgb(15, 218, 69);
   color: white;
 }
 
@@ -229,6 +227,15 @@ img {
   position: relative;
   top: -5px;
 }
+.sheetslogo {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  border-radius: 0;
+  position: relative;
+  top: 5px;
+  padding-right: 10px;
+}
 
 .email {
   line-height: 16px;
@@ -244,7 +251,7 @@ img {
 }
 .email:hover:before {
   content: "[golovitt@gmail.com]";
-  color: rgb(218, 15, 110);
+  color: rgb(255, 43, 142);
   font-family: "Syne Mono";
   font-size: 14px;
 }
@@ -252,19 +259,168 @@ img {
 iframe {
   display: block;
   margin: auto;
+  margin-top: 20px;
   overflow: hidden;
 }
 
-ul {
+ul,
+ol {
   font-family: "Cairo", Arial, sans-serif;
   margin: 0;
 }
 
-h3,
 li {
   margin-top: 0px;
+  line-height: 120%;
+  margin-bottom: 10px;
 }
 
 h3 {
+  margin: 0px;
   margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.introduction,
+.empathise,
+.define,
+.initial {
+  justify-content: center;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.text {
+  max-width: 500px;
+}
+
+hr {
+  margin-top: 30px;
+}
+
+.persona,
+.persona-img {
+  width: 100%;
+  height: 100%;
+  transform-origin: top right;
+  box-shadow: 3px 3px 10px black;
+  transition: 100ms;
+}
+.persona-img:hover {
+  transform: scale(1.8);
+}
+
+.define-img {
+  width: 100%;
+  height: 100%;
+  max-width: 500px;
+  transform-origin: top left;
+  box-shadow: 3px 3px 10px black;
+  transition: 100ms;
+}
+.define-img:hover {
+  transform: scale(2);
+}
+
+.paper-ideation {
+  width: 100%;
+  height: 100%;
+  max-width: 400px;
+  transform-origin: center left;
+  box-shadow: 3px 3px 10px black;
+  transition: 100ms;
+}
+.paper-ideation:hover {
+  transform: scale(1.4);
+}
+
+.affinity-img {
+  width: 100%;
+  height: 100%;
+  max-width: 600px;
+  transform-origin: center;
+  box-shadow: 3px 3px 10px black;
+  transition: 100ms;
+}
+.affinity-img:hover {
+  transform: scale(2.2);
+}
+
+.initial-img {
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  transform-origin: top left;
+  box-shadow: 3px 3px 10px black;
+  transition: 100ms;
+}
+.img-right {
+  transform-origin: top right;
+}
+
+.initial-img:hover {
+  transform: scale(2);
+}
+
+.components-img {
+  max-width: 400px;
+}
+
+.colors-text {
+  width: 100%;
+  height: 100%;
+  max-width: 150px;
+  transform-origin: top left;
+  box-shadow: 3px 3px 10px black;
+  transition: 100ms;
+}
+.text-side {
+  max-width: 300px;
+}
+.colors-text:hover {
+  transform: scale(2);
+}
+
+.persona_images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.ext-link {
+  font-size: 120%;
+}
+
+.lalign {
+  text-align: left;
+}
+
+figcaption {
+  font-family: "Cairo", Arial, sans-serif;
+  line-height: 130%;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.arrow {
+  font-size: 200px;
+}
+
+.methodology {
+  max-height: 400px;
+  overflow: auto;
+}
+
+.affinity {
+  text-align: center;
+}
+
+.low-lineheight {
+  line-height: 60%;
+  top: 20px;
+  font-size: 100px;
 }
