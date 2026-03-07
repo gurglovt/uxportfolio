@@ -430,6 +430,11 @@ figcaption {
   transform-origin: top right;
 }
 
+.pink {
+  color: rgb(255, 43, 142);
+  text-align: center;
+}
+
 .mobile-warning {
   display: none;
 }
