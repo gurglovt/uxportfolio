@@ -295,6 +295,12 @@ h3 {
 .text {
   max-width: 500px;
 }
+.img-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 
 hr {
   margin-top: 30px;
@@ -355,9 +361,6 @@ hr {
   transform-origin: top left;
   box-shadow: 3px 3px 10px black;
   transition: 100ms;
-}
-.img-right {
-  transform-origin: top right;
 }
 
 .initial-img:hover {
@@ -423,4 +426,7 @@ figcaption {
   line-height: 60%;
   top: 20px;
   font-size: 100px;
+}
+.img-right {
+  transform-origin: top right;
 }
