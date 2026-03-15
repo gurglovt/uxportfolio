@@ -445,13 +445,21 @@ figcaption {
   list-style: none;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  padding: 1rem 2rem 0.5rem 2rem;
   gap: 5rem;
-  padding: 2rem 3rem 1rem 3rem;
   text-align: center;
+  outline: 1px solid white;
 }
 .nav-list a {
   text-decoration: none;
+}
+nav {
+  display: flex;
+  padding: 2rem 0rem 1rem 0rem;
+  width: fit-content;
+  justify-content: center;
+  width: 100%;
 }
 
 @media (max-width: 768px) {
