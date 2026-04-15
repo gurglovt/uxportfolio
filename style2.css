@@ -189,6 +189,11 @@ body {
   color: var(--accent);
 }
 
+/* Smiley face chars: normal text colour, turn pink on hover */
+.h1face {
+  color: var(--text);
+}
+
 .header-sub {
   font-family: var(--font-body);
   font-size: 1.05rem;

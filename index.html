@@ -24,6 +24,7 @@
         <a href="#sect-init" class="sidebar-toc-link">03 — Initial wireframes</a>
         <a href="#sect-lofi" class="sidebar-toc-link">04 — Lo-fi prototype</a>
         <a href="#sect-hifi" class="sidebar-toc-link">05 — Hi-fi prototype</a>
+        <a href="#sect-finalise" class="sidebar-toc-link">06 — Finalise</a>
 
         <div class="sidebar-section-label sidebar-section-label--spaced">Redesigning <em>HelloTalk</em>'s<br>Hostile Message Interactions</div>
         <a href="#hellotalk" class="sidebar-toc-link">Overview &amp; prototype</a>
@@ -46,7 +47,7 @@
       <header id="site-header">
         <div class="header-inner">
           <h1>
-            <span class="h1accent h1lface">(</span><span class="h1accent h1lface">~</span><span class="h1accent h1lface">:</span> <span class="h1geo">George</span> <span class="h1lov">Lovitt</span> <span class="h1accent h1rface">:</span><span class="h1accent h1rface">~</span><span class="h1accent h1rface">p</span>
+            <span class="h1face">(</span><span class="h1face">~</span><span class="h1face">:</span> <span class="h1geo">George</span> <span class="h1lov">Lovitt</span> <span class="h1face">:</span><span class="h1face">~</span><span class="h1face">p</span>
           </h1>
           <p class="header-sub">UX design, research &amp; prototyping</p>
           <p class="header-desc">I'm a UX designer interested in evidence-based product design and user advocacy.</p>
@@ -58,7 +59,7 @@
         <!-- ===== PROJECT 1: DUMPY ===== -->
         <section id="notes" class="project-block">
           <div class="project-header">
-            <div class="project-meta">Nov 2025 – Mar 2026 &nbsp;·&nbsp; Personal project</div>
+            <div class="project-meta">Nov 2025 – Apr 2026 &nbsp;·&nbsp; Personal project</div>
             <h2>Note-taking app: <em>Dumpy</em></h2>
             <p class="project-tagline">A note-taking app built for the frantic moment an idea strikes.</p>
           </div>
@@ -81,6 +82,7 @@
                   <li><a href="#sect-init">Initial wireframes</a> — paper sketches &amp; user feedback</li>
                   <li><a href="#sect-lofi">Low-fidelity prototype</a> — build &amp; test</li>
                   <li><a href="#sect-hifi">High-fidelity prototype</a> — build &amp; test</li>
+                  <li><a href="#sect-finalise">Finalise</a> — further iteration &amp; AI-assisted prototyping</li>
                 </ol>
               </div>
             </div>
@@ -348,6 +350,9 @@
                 <li>Note/notebook navigation and note creation</li>
                 <li>Text editor, toolbar, and property editing (title, icon)</li>
               </ul>
+              <h4>Findings (affinity diagram)</h4>
+              <p class="hint">Click to expand.</p>
+              <img src="images/affinity2.png" alt="Affinity diagram from hi-fi user test" class="affinity-img expandable" />
             </div>
             <div class="col-text">
               <details class="methodology-details">
@@ -364,6 +369,96 @@
                   <li>Post-test: phone, favourite app, reactions to "notebook" and "pipe" as terms, and… what do you think of the name "Dumpy"?</li>
                 </ol>
               </details>
+
+              <h4 style="margin-top:1.5rem;">Key findings</h4>
+              <ul>
+                <li><strong>Praise for the Dump</strong> — users liked the concept and grasped it quickly. The navigation system was well-received.</li>
+                <li><strong>Toolbar icons were confusing</strong> — block up/down buttons unclear; serif toggle not intuitive. Missing: undo, bullet points.</li>
+                <li><strong>Visual hierarchy too dense</strong> — headings too small; overall layout felt tight. Fonts too small.</li>
+                <li><strong>The Dump's relationship to notes was still unclear</strong> — some users weren't sure if it was part of the notebook or separate.</li>
+                <li><strong>"Pipe" didn't land</strong> — users preferred "Move". The name "Dumpy" got a mixed but curious reception.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <hr class="section-hr" />
+
+        <!-- 6. FINALISE -->
+        <section id="sect-finalise" class="case-section">
+          <h2 class="step-heading"><span class="step-num">06</span> Finalise</h2>
+
+          <!-- More wireframing -->
+          <div class="two-col">
+            <div class="col-text">
+              <h3>Further wireframing</h3>
+              <p>Taking stock of test 3's feedback, I explored new iterations focused on making the layout <strong>less overwhelming</strong>, separating the Dump more clearly, and giving everything more room to breathe.</p>
+              <p class="hint">Click to expand.</p>
+              <div class="wireframe-grid" style="justify-content:flex-start;">
+                <figure>
+                  <img src="images/wireframenew.png" alt="New wireframe iterations" class="initial-img expandable" />
+                  <figcaption>New iterations exploring Dump placement &amp; layout density</figcaption>
+                </figure>
+                <figure>
+                  <img src="images/newidea1.png" alt="New UI idea 1" class="initial-img expandable" />
+                  <figcaption>Iteration 1</figcaption>
+                </figure>
+                <figure>
+                  <img src="images/newidea2.png" alt="New UI idea 2" class="initial-img expandable" />
+                  <figcaption>Iteration 2</figcaption>
+                </figure>
+                <figure>
+                  <img src="images/newidea3.png" alt="New UI idea 3" class="initial-img expandable" />
+                  <figcaption>Iteration 3</figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="col-text">
+              <h3>What changed</h3>
+              <ul>
+                <li><strong>Dump as a floating bubble</strong> — tapping it expands it and darkens the background, clearly separating "note view mode" from "Dump mode".</li>
+                <li><strong>Notebook tabs as pills</strong> — replacing the icon grid with a horizontal pill row. More scannable, less visual noise.</li>
+                <li><strong>Notes and Dump extended edge-to-edge</strong> — removing the tight card borders that made the layout feel cramped.</li>
+                <li><strong>Reduced thin lines</strong> — fewer dividers throughout; more whitespace, more playful tone.</li>
+                <li><strong>"Pipe" → "Move"</strong> — responding directly to user feedback.</li>
+                <li>Tapping a note title edits it in place; pencil icon replaces the old "edit name" menu item.</li>
+              </ul>
+            </div>
+          </div>
+
+          <hr class="section-hr" style="margin: 2rem 0;" />
+
+          <!-- AI-assisted prototyping -->
+          <h3 style="margin-bottom:1rem;">AI-assisted prototyping</h3>
+          <p style="max-width:700px; margin-bottom:2rem;">Part of this project's later phase was exploring how AI tools fit into a UX workflow. I used three tools to iterate on and realise the design.</p>
+
+          <div class="two-col">
+            <div class="col-text">
+              <div class="callout" style="border-left-color: var(--accent);">
+                <h3 style="color:var(--accent);">Claude by Anthropic</h3>
+                <p>I fed in rough wireframes and a frame from the hi-fi prototype and asked for more UI iterations. Claude suggested <strong>expanding notes and Dump to the full screen width</strong>, converting notebook icons to pills, and removing the thin divider lines — ideas that fed directly into the next round of wireframes above.</p>
+                <p class="hint">Click to expand.</p>
+                <img src="images/claudeimage1.webp" alt="Wireframes fed into Claude" class="expandable" style="width:100%; border-radius:8px; margin-bottom:0.8rem;" />
+                <img src="images/claudeimage2.png" alt="Claude's UI iteration suggestions" class="expandable" style="width:100%; border-radius:8px;" />
+              </div>
+            </div>
+            <div class="col-text">
+              <div class="callout" style="border-left-color: #555; margin-bottom:1rem;">
+                <h3>v0 by Vercel</h3>
+                <p>I fed the main hi-fi frames into v0 and iterated through back-and-forth prompting to produce a <strong>functional interactive prototype</strong> — a useful proof of concept for the overall layout.</p>
+                <img src="images/v0image1.png" alt="v0 interactive prototype screenshot" class="expandable" style="width:100%; border-radius:8px; margin: 0.8rem 0;" />
+                <a href="https://v0-notebook-organization.vercel.app/" target="_blank" class="proto-link" style="display:inline-block; font-size:0.85rem; padding:0.5rem 1rem;">☞ Open v0 prototype ☜</a>
+              </div>
+
+              <div class="callout" style="border-left-color: #555;">
+                <h3>Figma Make</h3>
+                <p>Using v0's output as a base, I fed the files into Figma Make and used prompts to develop Dumpy into a <strong>near-complete functional app</strong> with relatively little effort.</p>
+                <div style="display:flex; gap:0.8rem; flex-wrap:wrap; margin: 0.8rem 0;">
+                  <img src="images/dumpyrec1.gif" alt="Figma Make Dumpy recording 1" class="expandable" style="flex:1; min-width:120px; border-radius:8px;" />
+                  <img src="images/dumpyrec2.gif" alt="Figma Make Dumpy recording 2" class="expandable" style="flex:1; min-width:120px; border-radius:8px;" />
+                </div>
+                <a href="https://mark-rival-37678981.figma.site" target="_blank" class="proto-link" style="display:inline-block; font-size:0.85rem; padding:0.5rem 1rem;">☞ Open Figma Make prototype ☜</a>
+              </div>
             </div>
           </div>
         </section>
@@ -412,7 +507,7 @@
 
     <script>
       // Highlight active section in sidebar
-      const sectionIds = ['notes','sect-empathise','sect-define','sect-init','sect-lofi','sect-hifi','hellotalk'];
+      const sectionIds = ['notes','sect-empathise','sect-define','sect-init','sect-lofi','sect-hifi','sect-finalise','hellotalk'];
 
       function updateActiveTOC() {
         const links = document.querySelectorAll('.sidebar-toc-link');
