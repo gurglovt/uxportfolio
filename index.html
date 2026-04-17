@@ -35,6 +35,9 @@
       </div>
     </aside>
 
+    <!-- Mobile sidebar overlay -->
+    <div id="sidebar-overlay" onclick="closeMobileSidebar()"></div>
+
     <!-- Mobile header -->
     <div class="mobile-header">
       <span class="mobile-name">George Lovitt</span>
@@ -208,7 +211,21 @@
               </ul>
             </div>
             <div class="col-text">
-              <h3>Responses &amp; actions</h3>
+              <details class="methodology-details">
+                <summary>Test script (click to expand)</summary>
+                <p style="padding: 0.5rem 1rem 0; font-style:italic; font-size:0.85rem;">Preface by saying that these are screenshots and aren't interactable.</p>
+                <p style="padding: 0 1rem 0.5rem; font-size:0.85rem;">For each of the four screens, ask:</p>
+                <ol>
+                  <li>Could you tell me what this is?</li>
+                  <li>Could you tell me what you think you can do here?</li>
+                </ol>
+                <p style="padding: 0 1rem 0.5rem; font-size:0.85rem;">And finally:</p>
+                <ol start="3">
+                  <li>What are your overall thoughts when you look at the four screens together?</li>
+                </ol>
+              </details>
+
+              <h4 style="margin-top:1.5rem;">Responses &amp; actions</h4>
               <ul>
                 <li><strong>Make the Dump self-explanatory.</strong> New users must grasp it instantly — it's the app's core differentiator.</li>
                 <li><strong>Consolidate Lists into Notebooks.</strong> Since lists-within-notes was already planned, a separate Lists section only adds confusion. Aim to remove the bottom navigation entirely.</li>
@@ -274,11 +291,47 @@
               <h3>Test 2 — Lo-fi user test</h3>
               <p>3 users, think-aloud protocol. Testing comprehension, expected vs actual button behaviour, and friction points.</p>
               <h4>Findings (affinity diagram)</h4>
-              <p class="hint">Click the image to open in a new tab.</p>
+              <p class="hint">Click to expand.</p>
               <img src="images/affinitydiagram.png" alt="Affinity diagram of user feedback on the low-fidelity prototype" class="affinity-img expandable" />
             </div>
             <div class="col-text">
-              <h3>Actions for the hi-fi</h3>
+              <details class="methodology-details">
+                <summary>Test script (click to expand)</summary>
+                <ol>
+                  <li>Ask the user what phone they use and how much time they spend using it each day.</li>
+                  <li>Warn the user that this is not a fully-functioning app: Tell them that many of the buttons don't do anything. Let them know that most of the graphical elements of the design haven't been added yet, and that we are just testing the overall functionality of the app. Let them know that later in the test, a "home" button will appear in the corner if they ever get stuck and want to return to the start, but this is a feature of the test and not the app.</li>
+                  <li>Warn the user that you will be reading from a script to maintain consistency across tests with other users.</li>
+                  <li>Tell the user to think out loud throughout the test, and particularly to point out anything that feels unintuitive or unexpected to them, at any time.</li>
+                  <li>Ask the user to look at the home screen and give me their first impressions on what the app is and does, from top to bottom.</li>
+                </ol>
+                <p style="padding: 0 1rem 0.3rem; font-weight:700; font-size:0.85rem;">Home screen tasks:</p>
+                <ol start="6">
+                  <li>What is the list in the middle showing? What can you infer from how it's structured?</li>
+                  <li>How would you see notes from the 'Journal' notebook?</li>
+                  <li>How do you feel about the layout here [in the 'Journal' section]?</li>
+                  <li>What kinds of notebooks/how many would you keep if you were using this app for yourself?</li>
+                  <li>What do you think the 'Dump' is? [If they haven't said anything already]</li>
+                  <li>How would you add content to your Dump?</li>
+                  <li>Before you do that, what do you think the other buttons around the Dump do?</li>
+                  <li>How do you feel about the Dump right now?</li>
+                </ol>
+                <p style="padding: 0 1rem 0.3rem; font-weight:700; font-size:0.85rem;">Dump tasks:</p>
+                <ol start="14">
+                  <li>First, where are you now? [In the Dump section]</li>
+                  <li>What are your first impressions of what you see?</li>
+                  <li>Do you see the bar above your keyboard? What do you think it does?</li>
+                  <li>Go ahead and try out some of the buttons on the toolbar. Your changes won't be able to be applied simultaneously, so you'll have to undo your changes to try other buttons. Make sure to tell me what you're thinking before and after you press each button.</li>
+                  <li>Would you make use of the Dump if it was a feature in your favourite note-taking app?</li>
+                  <li>On your own phone, how would you go back to the home screen (without using the home button)?</li>
+                </ol>
+                <p style="padding: 0 1rem 0.3rem; font-weight:700; font-size:0.85rem;">Questions after tasks:</p>
+                <ol start="20">
+                  <li>What do you think of what you've seen today? Do you have any broad opinions about the app right now?</li>
+                  <li>Supposing that this app was in a finished condition, do you think that you would use it over your current note-taking method?</li>
+                </ol>
+              </details>
+
+              <h4 style="margin-top:1.5rem;">Actions for the hi-fi</h4>
               <ul>
                 <li><strong>Fill placeholders</strong> — make it look like a finished product so users don't have to imagine.</li>
                 <li><strong>Add dark mode</strong> — one user called it a dealbreaker.</li>
@@ -358,15 +411,45 @@
               <details class="methodology-details">
                 <summary>Test script (click to expand)</summary>
                 <ol>
-                  <li>Let the user know you'll read from a script for consistency.</li>
-                  <li>Welcome &amp; frame: <em>"I'm not testing you — you're testing the prototype. Think out loud; complaints are gold."</em></li>
-                  <li>Ask for first impressions before any taps. What is this? What can it do?</li>
-                  <li>Focus on the Dump: reactions before exploring.</li>
-                  <li>Task: find out what the Dump does. Then: <em>"Would you use this feature in your favourite note-taking app?"</em></li>
-                  <li>Reset prototype, contract Dump. Task: figure out how navigation works. Debrief: how are notes organised? Does this system make sense?</li>
-                  <li>Task: add text to a note or the Dump (Biscuit Recipe note or fullscreen Dump).</li>
-                  <li>Walk through every toolbar icon — predict then test. Undo between each.</li>
-                  <li>Post-test: phone, favourite app, reactions to "notebook" and "pipe" as terms, and… what do you think of the name "Dumpy"?</li>
+                  <li>Let them know that you will read from a script for consistency across tests.</li>
+                  <li>Welcome to the test! I'll first ask you to keep in mind that I'm not testing you. Rather, today you'll be testing a prototype of an app, and we'll be checking to see how easy the app is to understand and use. By "prototype", we mean that this is not a real, fully-developed app, but instead a blueprint of how the final product should look and feel. Many of the buttons don't have any functionality assigned to them, but you will still be able to do everything we hope to, provided that the app is easy enough to use.</li>
+                  <li>Before we get started, I'd like to thank you for participating and let you know that it really helps us to know how to develop the product. In order for us to get the most out of the session today, I'd like to urge you to think out loud as much as possible. Any time something is unintuitive, or isn't where you expect it to be, or is frustrating, please let me know. Don't worry about hurting anyone's feelings – we really do want to hear all your reactions, complaints and all.</li>
+                  <li>Let's get started. Please open the app and, before you tap anything, let me know your initial reactions to what you think the app broadly is, and what you think it can do.
+                    <ol type="a">
+                      <li>What sticks out to you?</li>
+                      <li>Is there anything that has an unclear function?</li>
+                    </ol>
+                  </li>
+                  <li>Let's look at the 'Dump' on the lower half of the screen. Let me know your reactions to it if you haven't already.</li>
+                  <li>Your task now is to find out what the 'Dump' is, and what it can do. Remember to think and react out loud, and let me know if anything is frustrating or unintuitive.</li>
+                  <li>Tell the user to finish exploring for now. Could you summarise your reactions to the 'Dump'?
+                    <ol type="a">
+                      <li>Could you figure out what it was/did?</li>
+                      <li>Would you use this feature if it was in your favourite note-taking app?</li>
+                    </ol>
+                  </li>
+                  <li><em>Restart the prototype, contract the Dump.</em> Your next task is to figure out how this navigation system works. Remember to think and react out loud, and let me know if anything is frustrating or unintuitive.</li>
+                  <li><em>Tell the user to finish exploring for now.</em> What did you learn?
+                    <ol type="a">
+                      <li>How are notes in this app organised?</li>
+                      <li>Does this system make sense to you?</li>
+                      <li>How does this compare to the note organisation system on your favourite note-taking app?</li>
+                    </ol>
+                  </li>
+                  <li>Your next task is to add some text to a note or to the 'Dump'. You can do this in the 'Biscuit Recipe' note, or in the full-screen 'Dump'.</li>
+                  <li>How does this text editor view compare to your expectations for a note-taking app?</li>
+                  <li>Finally, please go through the icons on the toolbar, and let me know what you expect each one to do. You can test these buttons too, but bear in mind that, due to the limitations of the prototype, only one button can be active at a time. Please undo your changes after you apply them in order to apply a different change. Again, remember to state your predictions, and to think and react out loud.</li>
+                  <li>That concludes the tasks for this test! Finally, I'll just ask a few questions about you and your experience today.
+                    <ol type="a">
+                      <li>What phone do you use?</li>
+                      <li>What is your favourite note-taking app?</li>
+                      <li>Did the term "notebook" make sense to you? How would you explain what a "notebook" is in this app?</li>
+                      <li>Did the term "pipe" make sense to you? How would you explain what "piping [content]" is in this app?</li>
+                      <li>Would you use this app over your favourite note-taking app? Why/Why not? What key features are present/absent?</li>
+                      <li>This app is called "Dumpy". What are your reactions to that name?</li>
+                    </ol>
+                  </li>
+                  <li>Thank you very much for all of your help today! Have a wonderful day!</li>
                 </ol>
               </details>
 
@@ -423,6 +506,21 @@
                 <li><strong>"Pipe" → "Move"</strong> — responding directly to user feedback.</li>
                 <li>Tapping a note title edits it in place; pencil icon replaces the old "edit name" menu item.</li>
               </ul>
+            </div>
+          </div>
+
+          <hr class="section-hr" style="margin: 2rem 0;" />
+
+          <!-- New icons & fonts -->
+          <div class="two-col" style="margin-bottom:2rem;">
+            <div class="col-text">
+              <h3>New toolbar icons &amp; fonts</h3>
+              <p>I also redesigned all the toolbar icons, and chose new typefaces. Both changes improve readability, but the playful serif (<strong>Crimson Pro</strong>) on note titles and the neater sans-serif (<strong>Rubik</strong>) for body text also increase the app's sense of warmth and playfulness.</p>
+              <p class="hint">Click to expand.</p>
+              <img src="images/newtoolbar.png" alt="Redesigned toolbar icons" class="affinity-img expandable" />
+            </div>
+            <div class="col-text" style="display:flex; align-items:center;">
+              <img src="images/1776418202274_image.png" alt="Toolbar icon context from case study document" class="affinity-img expandable" />
             </div>
           </div>
 
@@ -546,8 +644,23 @@
       });
 
       function toggleMobileSidebar() {
-        document.getElementById('sidebar').classList.toggle('mobile-open');
+        const sidebar = document.getElementById('sidebar');
+        const overlay = document.getElementById('sidebar-overlay');
+        const isOpen = sidebar.classList.toggle('mobile-open');
+        overlay.classList.toggle('active', isOpen);
       }
+
+      function closeMobileSidebar() {
+        document.getElementById('sidebar').classList.remove('mobile-open');
+        document.getElementById('sidebar-overlay').classList.remove('active');
+      }
+
+      // Close sidebar on mobile when a nav link is tapped
+      document.querySelectorAll('.sidebar-toc-link').forEach(link => {
+        link.addEventListener('click', () => {
+          if (window.innerWidth <= 860) closeMobileSidebar();
+        });
+      });
 
       window.addEventListener('scroll', updateActiveTOC);
       window.addEventListener('load', updateActiveTOC);

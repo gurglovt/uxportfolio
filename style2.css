@@ -747,6 +747,21 @@ footer {
 }
 
 /* ============================================
+   MOBILE OVERLAY (for sidebar)
+   ============================================ */
+#sidebar-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  z-index: 99;
+}
+
+#sidebar-overlay.active {
+  display: block;
+}
+
+/* ============================================
    MOBILE
    ============================================ */
 .mobile-header {
@@ -758,13 +773,14 @@ footer {
 
   #sidebar {
     transform: translateX(-100%);
-    width: 260px;
-    transition: transform 0.25s ease;
+    width: 280px;
+    transition: transform 0.22s ease;
+    z-index: 200;
   }
 
   #sidebar.mobile-open {
     transform: translateX(0);
-    box-shadow: 4px 0 24px rgba(0,0,0,0.6);
+    box-shadow: 4px 0 32px rgba(0,0,0,0.7);
   }
 
   #page-wrap {
@@ -780,7 +796,7 @@ footer {
     padding: 0.8rem 1.2rem;
     position: sticky;
     top: 0;
-    z-index: 99;
+    z-index: 98;
   }
 
   .mobile-name {
@@ -793,9 +809,15 @@ footer {
     border: 1px solid var(--border);
     color: var(--text);
     font-size: 1.1rem;
-    padding: 0.3rem 0.6rem;
+    padding: 0.3rem 0.7rem;
     border-radius: 5px;
     cursor: pointer;
+    transition: border-color var(--transition), color var(--transition);
+  }
+
+  .mobile-menu-btn:hover {
+    border-color: var(--accent);
+    color: var(--accent);
   }
 
   main, #site-header {
