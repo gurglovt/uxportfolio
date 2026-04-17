@@ -8,30 +8,45 @@
     <link rel="icon" href="images/doggy.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&family=Syne+Mono&family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&family=Syne+Mono&family=Cairo:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-
     <!-- Sidebar -->
     <aside id="sidebar">
-      <div class="sidebar-name"><span class="sidebar-emoji">:~)</span><br>George<br>Lovitt<br><span class="sidebar-role">UX Portfolio</span></div>
+      <div class="sidebar-name">
+        <span class="sidebar-emoji">:~)</span
+        ><br />George<br />Lovitt<br /><span class="sidebar-role"
+          >UX Portfolio</span
+        >
+      </div>
       <nav class="sidebar-nav">
-
         <div class="sidebar-section-label">Note-taking app: <em>Dumpy</em></div>
         <a href="#notes" class="sidebar-toc-link">Overview</a>
         <a href="#sect-empathise" class="sidebar-toc-link">01 — Empathise</a>
         <a href="#sect-define" class="sidebar-toc-link">02 — Define</a>
-        <a href="#sect-init" class="sidebar-toc-link">03 — Initial wireframes</a>
+        <a href="#sect-init" class="sidebar-toc-link"
+          >03 — Initial wireframes</a
+        >
         <a href="#sect-lofi" class="sidebar-toc-link">04 — Lo-fi prototype</a>
         <a href="#sect-hifi" class="sidebar-toc-link">05 — Hi-fi prototype</a>
         <a href="#sect-finalise" class="sidebar-toc-link">06 — Finalise</a>
 
-        <div class="sidebar-section-label sidebar-section-label--spaced">Redesigning <em>HelloTalk</em>'s<br>Hostile Message Interactions</div>
-        <a href="#hellotalk" class="sidebar-toc-link">Overview &amp; prototype</a>
-
+        <div class="sidebar-section-label sidebar-section-label--spaced">
+          Redesigning <em>HelloTalk</em>'s<br />Hostile Message Interactions
+        </div>
+        <a href="#hellotalk" class="sidebar-toc-link"
+          >Overview &amp; prototype</a
+        >
       </nav>
       <div class="sidebar-contact">
-        <a href="/cdn-cgi/l/email-protection#d5b2bab9baa3bca1a195b2b8b4bcb9fbb6bab8" class="email-link">Contact ✉</a>
+        <a
+          href="/cdn-cgi/l/email-protection#d5b2bab9baa3bca1a195b2b8b4bcb9fbb6bab8"
+          class="email-link"
+          >Contact ✉</a
+        >
       </div>
     </aside>
 
@@ -41,57 +56,102 @@
     <!-- Mobile header -->
     <div class="mobile-header">
       <span class="mobile-name">George Lovitt</span>
-      <button class="mobile-menu-btn" onclick="toggleMobileSidebar()">☰</button>
+      <button class="mobile-menu-btn" onclick="toggleMobileSidebar()">
+        ☰
+      </button>
     </div>
 
     <!-- Main content -->
     <div id="page-wrap">
-
       <header id="site-header">
         <div class="header-inner">
           <h1>
-            <span class="h1face">(</span><span class="h1face">~</span><span class="h1face">:</span> <span class="h1geo">George</span> <span class="h1lov">Lovitt</span> <span class="h1face">:</span><span class="h1face">~</span><span class="h1face">p</span>
+            <span class="h1face">(</span><span class="h1face">~</span
+            ><span class="h1face">:</span> <span class="h1geo">George</span>
+            <span class="h1lov">Lovitt</span> <span class="h1face">:</span
+            ><span class="h1face">~</span><span class="h1face">p</span>
           </h1>
           <p class="header-sub">UX design, research &amp; prototyping</p>
-          <p class="header-desc">I'm a UX designer interested in evidence-based product design and user advocacy.</p>
+          <p class="header-desc">
+            I'm a UX designer interested in evidence-based product design and
+            user advocacy.
+          </p>
         </div>
       </header>
 
       <main>
-
         <!-- ===== PROJECT 1: DUMPY ===== -->
         <section id="notes" class="project-block">
           <div class="project-header">
-            <div class="project-meta">Nov 2025 – Apr 2026 &nbsp;·&nbsp; Personal project</div>
+            <div class="project-meta">
+              Nov 2025 – Apr 2026 &nbsp;·&nbsp; Personal project
+            </div>
             <h2>Note-taking app: <em>Dumpy</em></h2>
-            <p class="project-tagline">A note-taking app built for the frantic moment an idea strikes.</p>
+            <p class="project-tagline">
+              A note-taking app built for the frantic moment an idea strikes.
+            </p>
           </div>
 
           <div class="two-col">
             <div class="col-text">
               <div class="callout problem">
                 <h3>Problem</h3>
-                <p>Current note-taking apps create friction at exactly the wrong moment. To capture a fleeting idea you need to open the app, locate or create a note, and start typing — all while the idea is already fading. The result: fumbling, frustration, and a graveyard of disorganised notes where good ideas go to be buried.</p>
+                <p>
+                  Current note-taking apps create friction at exactly the wrong
+                  moment. To capture a fleeting idea you need to open the app,
+                  locate or create a note, and start typing — all while the idea
+                  is already fading. The result: fumbling, frustration, and a
+                  graveyard of disorganised notes where good ideas go to be
+                  buried.
+                </p>
               </div>
               <div class="callout solution">
                 <h3>Solution</h3>
-                <p><em>Dumpy</em> treats rapid capture as the <strong>primary use case</strong>. Its core feature — the <strong>'Dump'</strong> — works like a text feed you can scrawl into before the app is even fully open. A clean hierarchical notebook system then gives every scrawl a home when there's time to organise.</p>
+                <p>
+                  <em>Dumpy</em> treats rapid capture as the
+                  <strong>primary use case</strong>. Its core feature — the
+                  <strong>'Dump'</strong> — works like a text feed you can
+                  scrawl into before the app is even fully open. A clean
+                  hierarchical notebook system then gives every scrawl a home
+                  when there's time to organise.
+                </p>
               </div>
               <div class="process-steps">
                 <h3>Process</h3>
                 <ol>
-                  <li><a href="#sect-empathise">Empathise</a> — user interviews, personas, competitive audit</li>
-                  <li><a href="#sect-define">Define</a> — feature list &amp; project scope</li>
-                  <li><a href="#sect-init">Initial wireframes</a> — paper sketches &amp; user feedback</li>
-                  <li><a href="#sect-lofi">Low-fidelity prototype</a> — build &amp; test</li>
-                  <li><a href="#sect-hifi">High-fidelity prototype</a> — build &amp; test</li>
-                  <li><a href="#sect-finalise">Finalise</a> — further iteration &amp; AI-assisted prototyping</li>
+                  <li>
+                    <a href="#sect-empathise">Empathise</a> — user interviews,
+                    personas, competitive audit
+                  </li>
+                  <li>
+                    <a href="#sect-define">Define</a> — feature list &amp;
+                    project scope
+                  </li>
+                  <li>
+                    <a href="#sect-init">Initial wireframes</a> — paper sketches
+                    &amp; user feedback
+                  </li>
+                  <li>
+                    <a href="#sect-lofi">Low-fidelity prototype</a> — build
+                    &amp; test
+                  </li>
+                  <li>
+                    <a href="#sect-hifi">High-fidelity prototype</a> — build
+                    &amp; test
+                  </li>
+                  <li>
+                    <a href="#sect-finalise">Finalise</a> — further iteration
+                    &amp; AI-assisted prototyping
+                  </li>
                 </ol>
               </div>
             </div>
             <div class="col-proto">
               <iframe
-                style="border: 1px solid rgba(0,0,0,0.1); border-radius: 12px;"
+                style="
+                  border: 1px solid rgba(0, 0, 0, 0.1);
+                  border-radius: 12px;
+                "
                 width="100%"
                 height="820"
                 src="https://embed.figma.com/proto/qC1ojBEU5EbjDyhSfH26P4/Notes-Hi-Fi-Prototype?page-id=0%3A1&node-id=4002-1679&viewport=-1990%2C-56%2C0.75&scaling=scale-down&content-scaling=fixed&starting-point-node-id=4002%3A1679&embed-host=share"
@@ -105,29 +165,66 @@
 
         <!-- 1. EMPATHISE -->
         <section id="sect-empathise" class="case-section">
-          <h2 class="step-heading"><span class="step-num">01</span> Empathise</h2>
+          <h2 class="step-heading">
+            <span class="step-num">01</span> Empathise
+          </h2>
 
           <div class="two-col">
             <div class="col-text">
               <h3>User interviews</h3>
               <p>4 interviews with regular phone users. Key findings:</p>
               <ul>
-                <li><strong>Apps weren't cutting it.</strong> Pre-installed apps (iPhone Notes, Google Keep, Samsung Notes) consistently fell short. Users often reached for whatever had least friction — chat apps like Teams, Discord, or ChatGPT.</li>
-                <li><strong>Every idea = a new note.</strong> Users accumulated junk notes with no structure; one called it "messy and inconvenient".</li>
-                <li><strong>Demand for a scratchpad.</strong> Users wanted a 'whiteboard' — somewhere to quickly dump and delete shifting information.</li>
-                <li><strong>Notifications were well-used</strong> across Keep and Calendar, but required constant maintenance.</li>
+                <li>
+                  <strong>Apps weren't cutting it.</strong> Pre-installed apps
+                  (iPhone Notes, Google Keep, Samsung Notes) consistently fell
+                  short. Users often reached for whatever had least friction —
+                  chat apps like Teams, Discord, or ChatGPT.
+                </li>
+                <li>
+                  <strong>Every idea = a new note.</strong> Users accumulated
+                  junk notes with no structure; one called it "messy and
+                  inconvenient".
+                </li>
+                <li>
+                  <strong>Demand for a scratchpad.</strong> Users wanted a
+                  'whiteboard' — somewhere to quickly dump and delete shifting
+                  information.
+                </li>
+                <li>
+                  <strong>Notifications were well-used</strong> across Keep and
+                  Calendar, but required constant maintenance.
+                </li>
               </ul>
 
               <h3>Competitive audit</h3>
               <p>Audited Google Keep, Evernote, and Notion. Highlights:</p>
               <ul>
-                <li><strong>Notion's block system</strong> is impressively flexible — hierarchical pages, sub-pages, and paragraph-level editing.</li>
-                <li><strong>Keep &amp; Evernote's tile navigation</strong> shows note previews but makes higher-level structure hard to visualise.</li>
-                <li><strong>Evernote's Scratchpad</strong> was the closest thing to the whiteboard feature users wanted.</li>
-                <li>Free folder/notebook grouping was largely paywalled across competitors.</li>
+                <li>
+                  <strong>Notion's block system</strong> is impressively
+                  flexible — hierarchical pages, sub-pages, and paragraph-level
+                  editing.
+                </li>
+                <li>
+                  <strong>Keep &amp; Evernote's tile navigation</strong> shows
+                  note previews but makes higher-level structure hard to
+                  visualise.
+                </li>
+                <li>
+                  <strong>Evernote's Scratchpad</strong> was the closest thing
+                  to the whiteboard feature users wanted.
+                </li>
+                <li>
+                  Free folder/notebook grouping was largely paywalled across
+                  competitors.
+                </li>
               </ul>
-              <a href="https://docs.google.com/spreadsheets/d/1CIaSqfdV3nMtzBq9Lat-D7YgCt-TjuKtjeHT_BFdZWI/edit?usp=sharing" class="ext-link" target="_blank">
-                <img src="images/sheets-logo.svg" class="sheetslogo" /> Full audit spreadsheet
+              <a
+                href="https://docs.google.com/spreadsheets/d/1CIaSqfdV3nMtzBq9Lat-D7YgCt-TjuKtjeHT_BFdZWI/edit?usp=sharing"
+                class="ext-link"
+                target="_blank"
+              >
+                <img src="images/sheets-logo.svg" class="sheetslogo" /> Full
+                audit spreadsheet
               </a>
             </div>
             <div class="col-text">
@@ -135,12 +232,28 @@
               <p class="hint">Hover over images to expand.</p>
               <div class="persona_images">
                 <figure class="persona">
-                  <img class="persona-img expandable" src="images/persona1.png" alt="Persona 1: Lily Keane" />
-                  <figcaption><strong>Lily</strong> needs effortless, organised capture. Note-taking shouldn't be a task — it should be a net that catches ideas as they appear.</figcaption>
+                  <img
+                    class="persona-img expandable"
+                    src="images/persona1.png"
+                    alt="Persona 1: Lily Keane"
+                  />
+                  <figcaption>
+                    <strong>Lily</strong> needs effortless, organised capture.
+                    Note-taking shouldn't be a task — it should be a net that
+                    catches ideas as they appear.
+                  </figcaption>
                 </figure>
                 <figure class="persona">
-                  <img class="persona-img expandable" src="images/persona2.png" alt="Persona 2: Alan Fidarichi" />
-                  <figcaption><strong>Alan</strong> needs to grab vocab mid-conversation without being rude, plus track family commitments. Quick capture + reliable reminders.</figcaption>
+                  <img
+                    class="persona-img expandable"
+                    src="images/persona2.png"
+                    alt="Persona 2: Alan Fidarichi"
+                  />
+                  <figcaption>
+                    <strong>Alan</strong> needs to grab vocab mid-conversation
+                    without being rude, plus track family commitments. Quick
+                    capture + reliable reminders.
+                  </figcaption>
                 </figure>
               </div>
             </div>
@@ -155,18 +268,42 @@
 
           <div class="two-col">
             <div class="col-text">
-              <p>Responding to research, I mind-mapped user problems against proposed solutions in FigJam to define scope.</p>
+              <p>
+                Responding to research, I mind-mapped user problems against
+                proposed solutions in FigJam to define scope.
+              </p>
               <p class="hint">Hover to expand the image.</p>
-              <img src="images/define.png" alt="Mind map of user problems and proposed solutions" class="define-img expandable" />
+              <img
+                src="images/define.png"
+                alt="Mind map of user problems and proposed solutions"
+                class="define-img expandable"
+              />
             </div>
             <div class="col-text">
               <h3>Initial feature list</h3>
               <ul>
-                <li><strong>Scratchpad / 'Dump':</strong> The headline feature. Modelled on messenger apps for speed — minimal friction to capture, with the option to pipe content into a saved note. <em>Core USP.</em></li>
-                <li><strong>Hierarchical file structure:</strong> Notes live in Notebooks; sub-notes nest under notes.</li>
-                <li><strong>Notion-style blocks:</strong> Paragraph-level formatting and tokenisation.</li>
-                <li><strong>Block-level notifications:</strong> Attach a reminder to any block of text.</li>
-                <li><strong>Lists section:</strong> A dedicated space for grocery/chore-style lists with reminder integration.</li>
+                <li>
+                  <strong>Scratchpad / 'Dump':</strong> The headline feature.
+                  Modelled on messenger apps for speed — minimal friction to
+                  capture, with the option to pipe content into a saved note.
+                  <em>Core USP.</em>
+                </li>
+                <li>
+                  <strong>Hierarchical file structure:</strong> Notes live in
+                  Notebooks; sub-notes nest under notes.
+                </li>
+                <li>
+                  <strong>Notion-style blocks:</strong> Paragraph-level
+                  formatting and tokenisation.
+                </li>
+                <li>
+                  <strong>Block-level notifications:</strong> Attach a reminder
+                  to any block of text.
+                </li>
+                <li>
+                  <strong>Lists section:</strong> A dedicated space for
+                  grocery/chore-style lists with reminder integration.
+                </li>
               </ul>
             </div>
           </div>
@@ -176,77 +313,156 @@
 
         <!-- 3. INITIAL WIREFRAMES -->
         <section id="sect-init" class="case-section">
-          <h2 class="step-heading"><span class="step-num">03</span> Initial wireframes</h2>
-          <p>The initial design divided the app into four sections: <strong>Create</strong>, <strong>Lists</strong>, <strong>Notebooks</strong>, and <strong>Dump</strong>.</p>
+          <h2 class="step-heading">
+            <span class="step-num">03</span> Initial wireframes
+          </h2>
+          <p>
+            The initial design divided the app into four sections:
+            <strong>Create</strong>, <strong>Lists</strong>,
+            <strong>Notebooks</strong>, and <strong>Dump</strong>.
+          </p>
           <p class="hint">Hover over images to expand.</p>
 
           <div class="wireframe-grid">
             <figure>
-              <img src="images/initial1.png" alt="'Create' section wireframe" class="initial-img expandable" />
+              <img
+                src="images/initial1.png"
+                alt="'Create' section wireframe"
+                class="initial-img expandable"
+              />
               <figcaption>"Create" section</figcaption>
             </figure>
             <figure>
-              <img src="images/initial3.png" alt="'Lists' section wireframe" class="initial-img expandable" />
+              <img
+                src="images/initial3.png"
+                alt="'Lists' section wireframe"
+                class="initial-img expandable"
+              />
               <figcaption>"Lists" section</figcaption>
             </figure>
             <figure>
-              <img src="images/initial2.png" alt="'Notebooks' section wireframe" class="initial-img expandable" />
+              <img
+                src="images/initial2.png"
+                alt="'Notebooks' section wireframe"
+                class="initial-img expandable"
+              />
               <figcaption>"Notebooks" section</figcaption>
             </figure>
             <figure>
-              <img src="images/initial4.png" alt="'Dump' section wireframe" class="initial-img expandable" />
+              <img
+                src="images/initial4.png"
+                alt="'Dump' section wireframe"
+                class="initial-img expandable"
+              />
               <figcaption>"Dump" section</figcaption>
             </figure>
           </div>
 
-          <div class="two-col" style="margin-top: 2rem;">
+          <div class="two-col" style="margin-top: 2rem">
             <div class="col-text">
               <h3>Test 1 — Feedback on initial wireframes</h3>
-              <p>Showed screenshots to 2 users. Goals: could they understand the app; where was it confusing?</p>
+              <p>
+                Showed screenshots to 2 users. Goals: could they understand the
+                app; where was it confusing?
+              </p>
               <h4>Findings</h4>
               <ul>
-                <li>Lists appearing in both Notebooks <em>and</em> a separate Lists section was confusing.</li>
-                <li>Similar-looking elements doing different things in different places caused disorientation.</li>
-                <li><strong>The 'Dump' was opaque</strong> — users didn't understand what it was, what it did, or why it had that name.</li>
+                <li>
+                  Lists appearing in both Notebooks <em>and</em> a separate
+                  Lists section was confusing.
+                </li>
+                <li>
+                  Similar-looking elements doing different things in different
+                  places caused disorientation.
+                </li>
+                <li>
+                  <strong>The 'Dump' was opaque</strong> — users didn't
+                  understand what it was, what it did, or why it had that name.
+                </li>
               </ul>
             </div>
             <div class="col-text">
               <details class="methodology-details">
                 <summary>Test script (click to expand)</summary>
-                <p style="padding: 0.5rem 1rem 0; font-style:italic; font-size:0.85rem;">Preface by saying that these are screenshots and aren't interactable.</p>
-                <p style="padding: 0 1rem 0.5rem; font-size:0.85rem;">For each of the four screens, ask:</p>
+                <p
+                  style="
+                    padding: 0.5rem 1rem 0;
+                    font-style: italic;
+                    font-size: 0.85rem;
+                  "
+                >
+                  Preface by saying that these are screenshots and aren't
+                  interactable.
+                </p>
+                <p style="padding: 0 1rem 0.5rem; font-size: 0.85rem">
+                  For each of the four screens, ask:
+                </p>
                 <ol>
                   <li>Could you tell me what this is?</li>
                   <li>Could you tell me what you think you can do here?</li>
                 </ol>
-                <p style="padding: 0 1rem 0.5rem; font-size:0.85rem;">And finally:</p>
+                <p style="padding: 0 1rem 0.5rem; font-size: 0.85rem">
+                  And finally:
+                </p>
                 <ol start="3">
-                  <li>What are your overall thoughts when you look at the four screens together?</li>
+                  <li>
+                    What are your overall thoughts when you look at the four
+                    screens together?
+                  </li>
                 </ol>
               </details>
 
-              <h4 style="margin-top:1.5rem;">Responses &amp; actions</h4>
+              <h4 style="margin-top: 1.5rem">Responses &amp; actions</h4>
               <ul>
-                <li><strong>Make the Dump self-explanatory.</strong> New users must grasp it instantly — it's the app's core differentiator.</li>
-                <li><strong>Consolidate Lists into Notebooks.</strong> Since lists-within-notes was already planned, a separate Lists section only adds confusion. Aim to remove the bottom navigation entirely.</li>
-                <li><strong>Reduce button count and visual similarity.</strong> Too many arrow-style buttons; rework the structure to need fewer.</li>
+                <li>
+                  <strong>Make the Dump self-explanatory.</strong> New users
+                  must grasp it instantly — it's the app's core differentiator.
+                </li>
+                <li>
+                  <strong>Consolidate Lists into Notebooks.</strong> Since
+                  lists-within-notes was already planned, a separate Lists
+                  section only adds confusion. Aim to remove the bottom
+                  navigation entirely.
+                </li>
+                <li>
+                  <strong>Reduce button count and visual similarity.</strong>
+                  Too many arrow-style buttons; rework the structure to need
+                  fewer.
+                </li>
               </ul>
               <p class="arrow-down">↓</p>
             </div>
           </div>
 
-          <div class="two-col" style="margin-top:1rem;">
+          <div class="two-col" style="margin-top: 1rem">
             <div class="col-text">
               <h3>Paper iterations</h3>
-              <img src="images/paper-iteration.png" alt="Paper-based iteration sketches" class="paper-ideation expandable" />
+              <img
+                src="images/paper-iteration.png"
+                alt="Paper-based iteration sketches"
+                class="paper-ideation expandable"
+              />
             </div>
             <div class="col-text">
               <h3>What changed</h3>
               <ol>
-                <li><strong>4 sections → 3.</strong> Notebooks, Home, Dump only. (Quickly abandoned — too much emphasis on notebooks.)</li>
-                <li><strong>Dump at thumb level.</strong> Move emphasis to the Dump; put Notebooks in a drawer. (Drawer felt unintuitive.)</li>
-                <li><strong>Quick-access notebook bar.</strong> A horizontal scroll above the file navigation. Better.</li>
-                <li><strong>Final paper concept:</strong> Dump at the bottom, file navigation above, with adjustable split height. ✓ Chosen for the lo-fi prototype.</li>
+                <li>
+                  <strong>4 sections → 3.</strong> Notebooks, Home, Dump only.
+                  (Quickly abandoned — too much emphasis on notebooks.)
+                </li>
+                <li>
+                  <strong>Dump at thumb level.</strong> Move emphasis to the
+                  Dump; put Notebooks in a drawer. (Drawer felt unintuitive.)
+                </li>
+                <li>
+                  <strong>Quick-access notebook bar.</strong> A horizontal
+                  scroll above the file navigation. Better.
+                </li>
+                <li>
+                  <strong>Final paper concept:</strong> Dump at the bottom, file
+                  navigation above, with adjustable split height. ✓ Chosen for
+                  the lo-fi prototype.
+                </li>
               </ol>
             </div>
           </div>
@@ -256,12 +472,17 @@
 
         <!-- 4. LO-FI PROTOTYPE -->
         <section id="sect-lofi" class="case-section">
-          <h2 class="step-heading"><span class="step-num">04</span> Low-fidelity prototype</h2>
+          <h2 class="step-heading">
+            <span class="step-num">04</span> Low-fidelity prototype
+          </h2>
 
           <div class="two-col">
             <div class="col-proto">
               <iframe
-                style="border: 1px solid rgba(0,0,0,0.1); border-radius: 12px;"
+                style="
+                  border: 1px solid rgba(0, 0, 0, 0.1);
+                  border-radius: 12px;
+                "
                 width="100%"
                 height="820"
                 src="https://embed.figma.com/proto/4TuwjqRtZhNU3WHvyz7wY1/Notes-Low-Fi-Prototype?page-id=0%3A1&node-id=2002-105&p=f&viewport=137%2C115%2C0.21&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2055%3A25&show-proto-sidebar=0&embed-host=share"
@@ -278,69 +499,199 @@
 
               <h3>Design decisions</h3>
               <ul>
-                <li><strong>Home screen (top → bottom):</strong> Search bar → horizontal notebook scroll → active notebook with file tree (including checkbox list items) → Dump section. The Dump can collapse or expand to fullscreen.</li>
-                <li><strong>Dump fullscreen</strong> reveals the text editor. Same editor used for normal notes — toolbar above the keyboard edits the active block.</li>
-                <li>Large parts left unbuilt intentionally — faster to ship and test the key interactions.</li>
-                <li>A 🏠 button served as a prototype-only "restart" workaround for Figma's lack of swipe-back support.</li>
+                <li>
+                  <strong>Home screen (top → bottom):</strong> Search bar →
+                  horizontal notebook scroll → active notebook with file tree
+                  (including checkbox list items) → Dump section. The Dump can
+                  collapse or expand to fullscreen.
+                </li>
+                <li>
+                  <strong>Dump fullscreen</strong> reveals the text editor. Same
+                  editor used for normal notes — toolbar above the keyboard
+                  edits the active block.
+                </li>
+                <li>
+                  Large parts left unbuilt intentionally — faster to ship and
+                  test the key interactions.
+                </li>
+                <li>
+                  A 🏠 button served as a prototype-only "restart" workaround
+                  for Figma's lack of swipe-back support.
+                </li>
               </ul>
             </div>
           </div>
 
-          <div class="two-col" style="margin-top:2rem;">
+          <div class="two-col" style="margin-top: 2rem">
             <div class="col-text">
               <h3>Test 2 — Lo-fi user test</h3>
-              <p>3 users, think-aloud protocol. Testing comprehension, expected vs actual button behaviour, and friction points.</p>
+              <p>
+                3 users, think-aloud protocol. Testing comprehension, expected
+                vs actual button behaviour, and friction points.
+              </p>
               <h4>Findings (affinity diagram)</h4>
               <p class="hint">Click to expand.</p>
-              <img src="images/affinitydiagram.png" alt="Affinity diagram of user feedback on the low-fidelity prototype" class="affinity-img expandable" />
+              <img
+                src="images/affinitydiagram.png"
+                alt="Affinity diagram of user feedback on the low-fidelity prototype"
+                class="affinity-img expandable"
+              />
             </div>
             <div class="col-text">
               <details class="methodology-details">
                 <summary>Test script (click to expand)</summary>
                 <ol>
-                  <li>Ask the user what phone they use and how much time they spend using it each day.</li>
-                  <li>Warn the user that this is not a fully-functioning app: Tell them that many of the buttons don't do anything. Let them know that most of the graphical elements of the design haven't been added yet, and that we are just testing the overall functionality of the app. Let them know that later in the test, a "home" button will appear in the corner if they ever get stuck and want to return to the start, but this is a feature of the test and not the app.</li>
-                  <li>Warn the user that you will be reading from a script to maintain consistency across tests with other users.</li>
-                  <li>Tell the user to think out loud throughout the test, and particularly to point out anything that feels unintuitive or unexpected to them, at any time.</li>
-                  <li>Ask the user to look at the home screen and give me their first impressions on what the app is and does, from top to bottom.</li>
+                  <li>
+                    Ask the user what phone they use and how much time they
+                    spend using it each day.
+                  </li>
+                  <li>
+                    Warn the user that this is not a fully-functioning app: Tell
+                    them that many of the buttons don't do anything. Let them
+                    know that most of the graphical elements of the design
+                    haven't been added yet, and that we are just testing the
+                    overall functionality of the app. Let them know that later
+                    in the test, a "home" button will appear in the corner if
+                    they ever get stuck and want to return to the start, but
+                    this is a feature of the test and not the app.
+                  </li>
+                  <li>
+                    Warn the user that you will be reading from a script to
+                    maintain consistency across tests with other users.
+                  </li>
+                  <li>
+                    Tell the user to think out loud throughout the test, and
+                    particularly to point out anything that feels unintuitive or
+                    unexpected to them, at any time.
+                  </li>
+                  <li>
+                    Ask the user to look at the home screen and give me their
+                    first impressions on what the app is and does, from top to
+                    bottom.
+                  </li>
                 </ol>
-                <p style="padding: 0 1rem 0.3rem; font-weight:700; font-size:0.85rem;">Home screen tasks:</p>
+                <p
+                  style="
+                    padding: 0 1rem 0.3rem;
+                    font-weight: 700;
+                    font-size: 0.85rem;
+                  "
+                >
+                  Home screen tasks:
+                </p>
                 <ol start="6">
-                  <li>What is the list in the middle showing? What can you infer from how it's structured?</li>
+                  <li>
+                    What is the list in the middle showing? What can you infer
+                    from how it's structured?
+                  </li>
                   <li>How would you see notes from the 'Journal' notebook?</li>
-                  <li>How do you feel about the layout here [in the 'Journal' section]?</li>
-                  <li>What kinds of notebooks/how many would you keep if you were using this app for yourself?</li>
-                  <li>What do you think the 'Dump' is? [If they haven't said anything already]</li>
+                  <li>
+                    How do you feel about the layout here [in the 'Journal'
+                    section]?
+                  </li>
+                  <li>
+                    What kinds of notebooks/how many would you keep if you were
+                    using this app for yourself?
+                  </li>
+                  <li>
+                    What do you think the 'Dump' is? [If they haven't said
+                    anything already]
+                  </li>
                   <li>How would you add content to your Dump?</li>
-                  <li>Before you do that, what do you think the other buttons around the Dump do?</li>
+                  <li>
+                    Before you do that, what do you think the other buttons
+                    around the Dump do?
+                  </li>
                   <li>How do you feel about the Dump right now?</li>
                 </ol>
-                <p style="padding: 0 1rem 0.3rem; font-weight:700; font-size:0.85rem;">Dump tasks:</p>
+                <p
+                  style="
+                    padding: 0 1rem 0.3rem;
+                    font-weight: 700;
+                    font-size: 0.85rem;
+                  "
+                >
+                  Dump tasks:
+                </p>
                 <ol start="14">
                   <li>First, where are you now? [In the Dump section]</li>
                   <li>What are your first impressions of what you see?</li>
-                  <li>Do you see the bar above your keyboard? What do you think it does?</li>
-                  <li>Go ahead and try out some of the buttons on the toolbar. Your changes won't be able to be applied simultaneously, so you'll have to undo your changes to try other buttons. Make sure to tell me what you're thinking before and after you press each button.</li>
-                  <li>Would you make use of the Dump if it was a feature in your favourite note-taking app?</li>
-                  <li>On your own phone, how would you go back to the home screen (without using the home button)?</li>
+                  <li>
+                    Do you see the bar above your keyboard? What do you think it
+                    does?
+                  </li>
+                  <li>
+                    Go ahead and try out some of the buttons on the toolbar.
+                    Your changes won't be able to be applied simultaneously, so
+                    you'll have to undo your changes to try other buttons. Make
+                    sure to tell me what you're thinking before and after you
+                    press each button.
+                  </li>
+                  <li>
+                    Would you make use of the Dump if it was a feature in your
+                    favourite note-taking app?
+                  </li>
+                  <li>
+                    On your own phone, how would you go back to the home screen
+                    (without using the home button)?
+                  </li>
                 </ol>
-                <p style="padding: 0 1rem 0.3rem; font-weight:700; font-size:0.85rem;">Questions after tasks:</p>
+                <p
+                  style="
+                    padding: 0 1rem 0.3rem;
+                    font-weight: 700;
+                    font-size: 0.85rem;
+                  "
+                >
+                  Questions after tasks:
+                </p>
                 <ol start="20">
-                  <li>What do you think of what you've seen today? Do you have any broad opinions about the app right now?</li>
-                  <li>Supposing that this app was in a finished condition, do you think that you would use it over your current note-taking method?</li>
+                  <li>
+                    What do you think of what you've seen today? Do you have any
+                    broad opinions about the app right now?
+                  </li>
+                  <li>
+                    Supposing that this app was in a finished condition, do you
+                    think that you would use it over your current note-taking
+                    method?
+                  </li>
                 </ol>
               </details>
 
-              <h4 style="margin-top:1.5rem;">Actions for the hi-fi</h4>
+              <h4 style="margin-top: 1.5rem">Actions for the hi-fi</h4>
               <ul>
-                <li><strong>Fill placeholders</strong> — make it look like a finished product so users don't have to imagine.</li>
-                <li><strong>Add dark mode</strong> — one user called it a dealbreaker.</li>
-                <li><strong>Adjustable Dump height</strong> — a drag handle replaces multiple confusing buttons.</li>
-                <li><strong>Visually distinguish the Dump</strong> — make clear it's separate from the notebook hierarchy.</li>
-                <li><strong>Add menu options</strong> — settings, note/notebook options, so the app feels complete.</li>
-                <li><strong>Rework toolbar icons</strong> — several were confusing or had unclear hit zones.</li>
-                <li><strong>Highlight notified blocks clearly</strong> — but not distractingly.</li>
-                <li><strong>Add text search in editor</strong> — simple request, easy to add at this stage.</li>
+                <li>
+                  <strong>Fill placeholders</strong> — make it look like a
+                  finished product so users don't have to imagine.
+                </li>
+                <li>
+                  <strong>Add dark mode</strong> — one user called it a
+                  dealbreaker.
+                </li>
+                <li>
+                  <strong>Adjustable Dump height</strong> — a drag handle
+                  replaces multiple confusing buttons.
+                </li>
+                <li>
+                  <strong>Visually distinguish the Dump</strong> — make clear
+                  it's separate from the notebook hierarchy.
+                </li>
+                <li>
+                  <strong>Add menu options</strong> — settings, note/notebook
+                  options, so the app feels complete.
+                </li>
+                <li>
+                  <strong>Rework toolbar icons</strong> — several were confusing
+                  or had unclear hit zones.
+                </li>
+                <li>
+                  <strong>Highlight notified blocks clearly</strong> — but not
+                  distractingly.
+                </li>
+                <li>
+                  <strong>Add text search in editor</strong> — simple request,
+                  easy to add at this stage.
+                </li>
               </ul>
             </div>
           </div>
@@ -350,12 +701,17 @@
 
         <!-- 5. HI-FI PROTOTYPE -->
         <section id="sect-hifi" class="case-section">
-          <h2 class="step-heading"><span class="step-num">05</span> High-fidelity prototype</h2>
+          <h2 class="step-heading">
+            <span class="step-num">05</span> High-fidelity prototype
+          </h2>
 
           <div class="two-col">
             <div class="col-proto">
               <iframe
-                style="border: 1px solid rgba(0,0,0,0.1); border-radius: 12px;"
+                style="
+                  border: 1px solid rgba(0, 0, 0, 0.1);
+                  border-radius: 12px;
+                "
                 width="100%"
                 height="820"
                 src="https://embed.figma.com/proto/qC1ojBEU5EbjDyhSfH26P4/Notes-Hi-Fi-Prototype?page-id=0%3A1&node-id=4002-1679&viewport=-1990%2C-56%2C0.75&scaling=scale-down&content-scaling=fixed&starting-point-node-id=4002%3A1679&embed-host=share"
@@ -366,100 +722,252 @@
               <div class="design-system-block">
                 <h3>Colours &amp; typography</h3>
                 <p class="hint">Hover to expand images.</p>
-                <div style="display:flex; gap:1rem; flex-wrap:wrap; align-items:flex-start;">
-                  <img src="images/colors.png" alt="Colour variables" class="colors-text expandable" />
-                  <img src="images/text.png" alt="Text styles" class="colors-text expandable" />
+                <div
+                  style="
+                    display: flex;
+                    gap: 1rem;
+                    flex-wrap: wrap;
+                    align-items: flex-start;
+                  "
+                >
+                  <img
+                    src="images/colors.png"
+                    alt="Colour variables"
+                    class="colors-text expandable"
+                  />
+                  <img
+                    src="images/text.png"
+                    alt="Text styles"
+                    class="colors-text expandable"
+                  />
                 </div>
-                <ul style="margin-top:1rem;">
-                  <li>Light/dark colour mode system built with variables — easy to extend to light mode.</li>
-                  <li>3 background darks + overlay/text light + link + warning colours.</li>
-                  <li><strong>IBM Plex Sans &amp; Serif</strong> — swappable pair that makes the serif toggle in the editor seamless.</li>
-                  <li>5 text sizes: H1 (21px) → Extra Small (10px), base value 14px.</li>
+                <ul style="margin-top: 1rem">
+                  <li>
+                    Light/dark colour mode system built with variables — easy to
+                    extend to light mode.
+                  </li>
+                  <li>
+                    3 background darks + overlay/text light + link + warning
+                    colours.
+                  </li>
+                  <li>
+                    <strong>IBM Plex Sans &amp; Serif</strong> — swappable pair
+                    that makes the serif toggle in the editor seamless.
+                  </li>
+                  <li>
+                    5 text sizes: H1 (21px) → Extra Small (10px), base value
+                    14px.
+                  </li>
                 </ul>
               </div>
 
-              <div class="design-system-block" style="margin-top:1.5rem;">
+              <div class="design-system-block" style="margin-top: 1.5rem">
                 <h3>Component library</h3>
                 <p class="hint">Click to open full image.</p>
-                <img src="images/components.png" alt="Figma component overview" class="components-img expandable" />
-                <ul style="margin-top:1rem;">
-                  <li>Atomic design: <strong>atoms</strong> (icons, buttons) → <strong>molecules</strong> (note row with options &amp; sub-note toggle).</li>
-                  <li>Vastly simplified iteration — changing one atom updates the whole system.</li>
-                  <li>The Dump was the most complex component: size-variable with a swipeable handle.</li>
-                  <li>Only external assets: the fonts, and Apple's keyboard assets.</li>
+                <img
+                  src="images/components.png"
+                  alt="Figma component overview"
+                  class="components-img expandable"
+                />
+                <ul style="margin-top: 1rem">
+                  <li>
+                    Atomic design: <strong>atoms</strong> (icons, buttons) →
+                    <strong>molecules</strong> (note row with options &amp;
+                    sub-note toggle).
+                  </li>
+                  <li>
+                    Vastly simplified iteration — changing one atom updates the
+                    whole system.
+                  </li>
+                  <li>
+                    The Dump was the most complex component: size-variable with
+                    a swipeable handle.
+                  </li>
+                  <li>
+                    Only external assets: the fonts, and Apple's keyboard
+                    assets.
+                  </li>
                 </ul>
               </div>
             </div>
           </div>
 
           <!-- Test 3 -->
-          <div class="two-col" style="margin-top:2rem;">
+          <div class="two-col" style="margin-top: 2rem">
             <div class="col-text">
               <h3>Test 3 — Hi-fi user test</h3>
               <p>3 users, think-aloud. Testing:</p>
               <ul>
-                <li>Can users identify what the app is and does at first glance?</li>
+                <li>
+                  Can users identify what the app is and does at first glance?
+                </li>
                 <li>Reactions to the Dump and its functionality</li>
                 <li>Note/notebook navigation and note creation</li>
-                <li>Text editor, toolbar, and property editing (title, icon)</li>
+                <li>
+                  Text editor, toolbar, and property editing (title, icon)
+                </li>
               </ul>
               <h4>Findings (affinity diagram)</h4>
               <p class="hint">Click to expand.</p>
-              <img src="images/affinity2.png" alt="Affinity diagram from hi-fi user test" class="affinity-img expandable" />
+              <img
+                src="images/affinity2.png"
+                alt="Affinity diagram from hi-fi user test"
+                class="affinity-img expandable"
+              />
             </div>
             <div class="col-text">
               <details class="methodology-details">
                 <summary>Test script (click to expand)</summary>
                 <ol>
-                  <li>Let them know that you will read from a script for consistency across tests.</li>
-                  <li>Welcome to the test! I'll first ask you to keep in mind that I'm not testing you. Rather, today you'll be testing a prototype of an app, and we'll be checking to see how easy the app is to understand and use. By "prototype", we mean that this is not a real, fully-developed app, but instead a blueprint of how the final product should look and feel. Many of the buttons don't have any functionality assigned to them, but you will still be able to do everything we hope to, provided that the app is easy enough to use.</li>
-                  <li>Before we get started, I'd like to thank you for participating and let you know that it really helps us to know how to develop the product. In order for us to get the most out of the session today, I'd like to urge you to think out loud as much as possible. Any time something is unintuitive, or isn't where you expect it to be, or is frustrating, please let me know. Don't worry about hurting anyone's feelings – we really do want to hear all your reactions, complaints and all.</li>
-                  <li>Let's get started. Please open the app and, before you tap anything, let me know your initial reactions to what you think the app broadly is, and what you think it can do.
+                  <li>
+                    Let them know that you will read from a script for
+                    consistency across tests.
+                  </li>
+                  <li>
+                    Welcome to the test! I'll first ask you to keep in mind that
+                    I'm not testing you. Rather, today you'll be testing a
+                    prototype of an app, and we'll be checking to see how easy
+                    the app is to understand and use. By "prototype", we mean
+                    that this is not a real, fully-developed app, but instead a
+                    blueprint of how the final product should look and feel.
+                    Many of the buttons don't have any functionality assigned to
+                    them, but you will still be able to do everything we hope
+                    to, provided that the app is easy enough to use.
+                  </li>
+                  <li>
+                    Before we get started, I'd like to thank you for
+                    participating and let you know that it really helps us to
+                    know how to develop the product. In order for us to get the
+                    most out of the session today, I'd like to urge you to think
+                    out loud as much as possible. Any time something is
+                    unintuitive, or isn't where you expect it to be, or is
+                    frustrating, please let me know. Don't worry about hurting
+                    anyone's feelings – we really do want to hear all your
+                    reactions, complaints and all.
+                  </li>
+                  <li>
+                    Let's get started. Please open the app and, before you tap
+                    anything, let me know your initial reactions to what you
+                    think the app broadly is, and what you think it can do.
                     <ol type="a">
                       <li>What sticks out to you?</li>
                       <li>Is there anything that has an unclear function?</li>
                     </ol>
                   </li>
-                  <li>Let's look at the 'Dump' on the lower half of the screen. Let me know your reactions to it if you haven't already.</li>
-                  <li>Your task now is to find out what the 'Dump' is, and what it can do. Remember to think and react out loud, and let me know if anything is frustrating or unintuitive.</li>
-                  <li>Tell the user to finish exploring for now. Could you summarise your reactions to the 'Dump'?
+                  <li>
+                    Let's look at the 'Dump' on the lower half of the screen.
+                    Let me know your reactions to it if you haven't already.
+                  </li>
+                  <li>
+                    Your task now is to find out what the 'Dump' is, and what it
+                    can do. Remember to think and react out loud, and let me
+                    know if anything is frustrating or unintuitive.
+                  </li>
+                  <li>
+                    Tell the user to finish exploring for now. Could you
+                    summarise your reactions to the 'Dump'?
                     <ol type="a">
                       <li>Could you figure out what it was/did?</li>
-                      <li>Would you use this feature if it was in your favourite note-taking app?</li>
+                      <li>
+                        Would you use this feature if it was in your favourite
+                        note-taking app?
+                      </li>
                     </ol>
                   </li>
-                  <li><em>Restart the prototype, contract the Dump.</em> Your next task is to figure out how this navigation system works. Remember to think and react out loud, and let me know if anything is frustrating or unintuitive.</li>
-                  <li><em>Tell the user to finish exploring for now.</em> What did you learn?
+                  <li>
+                    <em>Restart the prototype, contract the Dump.</em> Your next
+                    task is to figure out how this navigation system works.
+                    Remember to think and react out loud, and let me know if
+                    anything is frustrating or unintuitive.
+                  </li>
+                  <li>
+                    <em>Tell the user to finish exploring for now.</em> What did
+                    you learn?
                     <ol type="a">
                       <li>How are notes in this app organised?</li>
                       <li>Does this system make sense to you?</li>
-                      <li>How does this compare to the note organisation system on your favourite note-taking app?</li>
+                      <li>
+                        How does this compare to the note organisation system on
+                        your favourite note-taking app?
+                      </li>
                     </ol>
                   </li>
-                  <li>Your next task is to add some text to a note or to the 'Dump'. You can do this in the 'Biscuit Recipe' note, or in the full-screen 'Dump'.</li>
-                  <li>How does this text editor view compare to your expectations for a note-taking app?</li>
-                  <li>Finally, please go through the icons on the toolbar, and let me know what you expect each one to do. You can test these buttons too, but bear in mind that, due to the limitations of the prototype, only one button can be active at a time. Please undo your changes after you apply them in order to apply a different change. Again, remember to state your predictions, and to think and react out loud.</li>
-                  <li>That concludes the tasks for this test! Finally, I'll just ask a few questions about you and your experience today.
+                  <li>
+                    Your next task is to add some text to a note or to the
+                    'Dump'. You can do this in the 'Biscuit Recipe' note, or in
+                    the full-screen 'Dump'.
+                  </li>
+                  <li>
+                    How does this text editor view compare to your expectations
+                    for a note-taking app?
+                  </li>
+                  <li>
+                    Finally, please go through the icons on the toolbar, and let
+                    me know what you expect each one to do. You can test these
+                    buttons too, but bear in mind that, due to the limitations
+                    of the prototype, only one button can be active at a time.
+                    Please undo your changes after you apply them in order to
+                    apply a different change. Again, remember to state your
+                    predictions, and to think and react out loud.
+                  </li>
+                  <li>
+                    That concludes the tasks for this test! Finally, I'll just
+                    ask a few questions about you and your experience today.
                     <ol type="a">
                       <li>What phone do you use?</li>
                       <li>What is your favourite note-taking app?</li>
-                      <li>Did the term "notebook" make sense to you? How would you explain what a "notebook" is in this app?</li>
-                      <li>Did the term "pipe" make sense to you? How would you explain what "piping [content]" is in this app?</li>
-                      <li>Would you use this app over your favourite note-taking app? Why/Why not? What key features are present/absent?</li>
-                      <li>This app is called "Dumpy". What are your reactions to that name?</li>
+                      <li>
+                        Did the term "notebook" make sense to you? How would you
+                        explain what a "notebook" is in this app?
+                      </li>
+                      <li>
+                        Did the term "pipe" make sense to you? How would you
+                        explain what "piping [content]" is in this app?
+                      </li>
+                      <li>
+                        Would you use this app over your favourite note-taking
+                        app? Why/Why not? What key features are present/absent?
+                      </li>
+                      <li>
+                        This app is called "Dumpy". What are your reactions to
+                        that name?
+                      </li>
                     </ol>
                   </li>
-                  <li>Thank you very much for all of your help today! Have a wonderful day!</li>
+                  <li>
+                    Thank you very much for all of your help today! Have a
+                    wonderful day!
+                  </li>
                 </ol>
               </details>
 
-              <h4 style="margin-top:1.5rem;">Key findings</h4>
+              <h4 style="margin-top: 1.5rem">Key findings</h4>
               <ul>
-                <li><strong>Praise for the Dump</strong> — users liked the concept and grasped it quickly. The navigation system was well-received.</li>
-                <li><strong>Toolbar icons were confusing</strong> — block up/down buttons unclear; serif toggle not intuitive. Missing: undo, bullet points.</li>
-                <li><strong>Visual hierarchy too dense</strong> — headings too small; overall layout felt tight. Fonts too small.</li>
-                <li><strong>The Dump's relationship to notes was still unclear</strong> — some users weren't sure if it was part of the notebook or separate.</li>
-                <li><strong>"Pipe" didn't land</strong> — users preferred "Move". The name "Dumpy" got a mixed but curious reception.</li>
+                <li>
+                  <strong>Praise for the Dump</strong> — users liked the concept
+                  and grasped it quickly. The navigation system was
+                  well-received.
+                </li>
+                <li>
+                  <strong>Toolbar icons were confusing</strong> — block up/down
+                  buttons unclear; serif toggle not intuitive. Missing: undo,
+                  bullet points.
+                </li>
+                <li>
+                  <strong>Visual hierarchy too dense</strong> — headings too
+                  small; overall layout felt tight. Fonts too small.
+                </li>
+                <li>
+                  <strong
+                    >The Dump's relationship to notes was still unclear</strong
+                  >
+                  — some users weren't sure if it was part of the notebook or
+                  separate.
+                </li>
+                <li>
+                  <strong>"Pipe" didn't land</strong> — users preferred "Move".
+                  The name "Dumpy" got a mixed but curious reception.
+                </li>
               </ul>
             </div>
           </div>
@@ -469,29 +977,54 @@
 
         <!-- 6. FINALISE -->
         <section id="sect-finalise" class="case-section">
-          <h2 class="step-heading"><span class="step-num">06</span> Finalise</h2>
+          <h2 class="step-heading">
+            <span class="step-num">06</span> Finalise
+          </h2>
 
           <!-- More wireframing -->
           <div class="two-col">
             <div class="col-text">
               <h3>Further wireframing</h3>
-              <p>Taking stock of test 3's feedback, I explored new iterations focused on making the layout <strong>less overwhelming</strong>, separating the Dump more clearly, and giving everything more room to breathe.</p>
+              <p>
+                Taking stock of test 3's feedback, I explored new iterations
+                focused on making the layout <strong>less overwhelming</strong>,
+                separating the Dump more clearly, and giving everything more
+                room to breathe.
+              </p>
               <p class="hint">Click to expand.</p>
-              <div class="wireframe-grid" style="justify-content:flex-start;">
+              <div class="wireframe-grid" style="justify-content: flex-start">
                 <figure>
-                  <img src="images/wireframenew.png" alt="New wireframe iterations" class="initial-img expandable" />
-                  <figcaption>New iterations exploring Dump placement &amp; layout density</figcaption>
+                  <img
+                    src="images/wireframenew.png"
+                    alt="New wireframe iterations"
+                    class="initial-img expandable"
+                  />
+                  <figcaption>
+                    New iterations exploring Dump placement &amp; layout density
+                  </figcaption>
                 </figure>
                 <figure>
-                  <img src="images/newidea1.png" alt="New UI idea 1" class="initial-img expandable" />
+                  <img
+                    src="images/newidea1.png"
+                    alt="New UI idea 1"
+                    class="initial-img expandable"
+                  />
                   <figcaption>Iteration 1</figcaption>
                 </figure>
                 <figure>
-                  <img src="images/newidea2.png" alt="New UI idea 2" class="initial-img expandable" />
+                  <img
+                    src="images/newidea2.png"
+                    alt="New UI idea 2"
+                    class="initial-img expandable"
+                  />
                   <figcaption>Iteration 2</figcaption>
                 </figure>
                 <figure>
-                  <img src="images/newidea3.png" alt="New UI idea 3" class="initial-img expandable" />
+                  <img
+                    src="images/newidea3.png"
+                    alt="New UI idea 3"
+                    class="initial-img expandable"
+                  />
                   <figcaption>Iteration 3</figcaption>
                 </figure>
               </div>
@@ -499,63 +1032,168 @@
             <div class="col-text">
               <h3>What changed</h3>
               <ul>
-                <li><strong>Dump as a floating bubble</strong> — tapping it expands it and darkens the background, clearly separating "note view mode" from "Dump mode".</li>
-                <li><strong>Notebook tabs as pills</strong> — replacing the icon grid with a horizontal pill row. More scannable, less visual noise.</li>
-                <li><strong>Notes and Dump extended edge-to-edge</strong> — removing the tight card borders that made the layout feel cramped.</li>
-                <li><strong>Reduced thin lines</strong> — fewer dividers throughout; more whitespace, more playful tone.</li>
-                <li><strong>"Pipe" → "Move"</strong> — responding directly to user feedback.</li>
-                <li>Tapping a note title edits it in place; pencil icon replaces the old "edit name" menu item.</li>
+                <li>
+                  <strong>Dump as a floating bubble</strong> — tapping it
+                  expands it and darkens the background, clearly separating
+                  "note view mode" from "Dump mode".
+                </li>
+                <li>
+                  <strong>Notebook tabs as pills</strong> — replacing the icon
+                  grid with a horizontal pill row. More scannable, less visual
+                  noise.
+                </li>
+                <li>
+                  <strong>Notes and Dump extended edge-to-edge</strong> —
+                  removing the tight card borders that made the layout feel
+                  cramped.
+                </li>
+                <li>
+                  <strong>Reduced thin lines</strong> — fewer dividers
+                  throughout; more whitespace, more playful tone.
+                </li>
+                <li>
+                  <strong>"Pipe" → "Move"</strong> — responding directly to user
+                  feedback.
+                </li>
+                <li>
+                  Tapping a note title edits it in place; pencil icon replaces
+                  the old "edit name" menu item.
+                </li>
               </ul>
             </div>
           </div>
 
-          <hr class="section-hr" style="margin: 2rem 0;" />
+          <hr class="section-hr" style="margin: 2rem 0" />
 
           <!-- New icons & fonts -->
-          <div class="two-col" style="margin-bottom:2rem;">
+          <div class="two-col" style="margin-bottom: 2rem">
             <div class="col-text">
               <h3>New toolbar icons &amp; fonts</h3>
-              <p>I also redesigned all the toolbar icons, and chose new typefaces. Both changes improve readability, but the playful serif (<strong>Crimson Pro</strong>) on note titles and the neater sans-serif (<strong>Rubik</strong>) for body text also increase the app's sense of warmth and playfulness.</p>
+              <p>
+                I also redesigned all the toolbar icons, and chose new
+                typefaces. Both changes improve readability, but the playful
+                serif (<strong>Crimson Pro</strong>) on note titles and the
+                neater sans-serif (<strong>Rubik</strong>) for body text also
+                increase the app's sense of warmth and playfulness.
+              </p>
               <p class="hint">Click to expand.</p>
-              <img src="images/newtoolbar.png" alt="Redesigned toolbar icons" class="affinity-img expandable" />
-            </div>
-            <div class="col-text" style="display:flex; align-items:center;">
-              <img src="images/1776418202274_image.png" alt="Toolbar icon context from case study document" class="affinity-img expandable" />
+              <img
+                src="images/newtoolbar.png"
+                alt="Redesigned toolbar icons"
+                class="affinity-img expandable"
+              />
             </div>
           </div>
 
-          <hr class="section-hr" style="margin: 2rem 0;" />
+          <hr class="section-hr" style="margin: 2rem 0" />
 
           <!-- AI-assisted prototyping -->
-          <h3 style="margin-bottom:1rem;">AI-assisted prototyping</h3>
-          <p style="max-width:700px; margin-bottom:2rem;">Part of this project's later phase was exploring how AI tools fit into a UX workflow. I used three tools to iterate on and realise the design.</p>
+          <h3 style="margin-bottom: 1rem">AI-assisted prototyping</h3>
+          <p style="max-width: 700px; margin-bottom: 2rem">
+            Part of this project's later phase was exploring how AI tools fit
+            into a UX workflow. I used three tools to iterate on and realise the
+            design.
+          </p>
 
           <div class="two-col">
             <div class="col-text">
-              <div class="callout" style="border-left-color: var(--accent);">
-                <h3 style="color:var(--accent);">Claude by Anthropic</h3>
-                <p>I fed in rough wireframes and a frame from the hi-fi prototype and asked for more UI iterations. Claude suggested <strong>expanding notes and Dump to the full screen width</strong>, converting notebook icons to pills, and removing the thin divider lines — ideas that fed directly into the next round of wireframes above.</p>
+              <div class="callout" style="border-left-color: var(--accent)">
+                <h3 style="color: var(--accent)">Claude by Anthropic</h3>
+                <p>
+                  I fed in rough wireframes and a frame from the hi-fi prototype
+                  and asked for more UI iterations. Claude suggested
+                  <strong
+                    >expanding notes and Dump to the full screen width</strong
+                  >, converting notebook icons to pills, and removing the thin
+                  divider lines — ideas that fed directly into the next round of
+                  wireframes above.
+                </p>
                 <p class="hint">Click to expand.</p>
-                <img src="images/claudeimage1.webp" alt="Wireframes fed into Claude" class="expandable" style="width:100%; border-radius:8px; margin-bottom:0.8rem;" />
-                <img src="images/claudeimage2.png" alt="Claude's UI iteration suggestions" class="expandable" style="width:100%; border-radius:8px;" />
+                <img
+                  src="images/claudeimage1.webp"
+                  alt="Wireframes fed into Claude"
+                  class="expandable"
+                  style="width: 100%; border-radius: 8px; margin-bottom: 0.8rem"
+                />
+                <img
+                  src="images/claudeimage2.png"
+                  alt="Claude's UI iteration suggestions"
+                  class="expandable"
+                  style="width: 100%; border-radius: 8px"
+                />
               </div>
             </div>
             <div class="col-text">
-              <div class="callout" style="border-left-color: #555; margin-bottom:1rem;">
+              <div
+                class="callout"
+                style="border-left-color: #555; margin-bottom: 1rem"
+              >
                 <h3>v0 by Vercel</h3>
-                <p>I fed the main hi-fi frames into v0 and iterated through back-and-forth prompting to produce a <strong>functional interactive prototype</strong> — a useful proof of concept for the overall layout.</p>
-                <img src="images/v0image1.png" alt="v0 interactive prototype screenshot" class="expandable" style="width:100%; border-radius:8px; margin: 0.8rem 0;" />
-                <a href="https://v0-notebook-organization.vercel.app/" target="_blank" class="proto-link" style="display:inline-block; font-size:0.85rem; padding:0.5rem 1rem;">☞ Open v0 prototype ☜</a>
+                <p>
+                  I fed the main hi-fi frames into v0 and iterated through
+                  back-and-forth prompting to produce a
+                  <strong>functional interactive prototype</strong> — a useful
+                  proof of concept for the overall layout.
+                </p>
+                <img
+                  src="images/v0image1.png"
+                  alt="v0 interactive prototype screenshot"
+                  class="expandable"
+                  style="width: 100%; border-radius: 8px; margin: 0.8rem 0"
+                />
+                <a
+                  href="https://v0-notebook-organization.vercel.app/"
+                  target="_blank"
+                  class="proto-link"
+                  style="
+                    display: inline-block;
+                    font-size: 0.85rem;
+                    padding: 0.5rem 1rem;
+                  "
+                  >☞ Open v0 prototype ☜</a
+                >
               </div>
 
-              <div class="callout" style="border-left-color: #555;">
+              <div class="callout" style="border-left-color: #555">
                 <h3>Figma Make</h3>
-                <p>Using v0's output as a base, I fed the files into Figma Make and used prompts to develop Dumpy into a <strong>near-complete functional app</strong> with relatively little effort.</p>
-                <div style="display:flex; gap:0.8rem; flex-wrap:wrap; margin: 0.8rem 0;">
-                  <img src="images/dumpyrec1.gif" alt="Figma Make Dumpy recording 1" class="expandable" style="flex:1; min-width:120px; border-radius:8px;" />
-                  <img src="images/dumpyrec2.gif" alt="Figma Make Dumpy recording 2" class="expandable" style="flex:1; min-width:120px; border-radius:8px;" />
+                <p>
+                  Using v0's output as a base, I fed the files into Figma Make
+                  and used prompts to develop Dumpy into a
+                  <strong>near-complete functional app</strong> with relatively
+                  little effort.
+                </p>
+                <div
+                  style="
+                    display: flex;
+                    gap: 0.8rem;
+                    flex-wrap: wrap;
+                    margin: 0.8rem 0;
+                  "
+                >
+                  <img
+                    src="images/dumpyrec1.gif"
+                    alt="Figma Make Dumpy recording 1"
+                    class="expandable"
+                    style="flex: 1; min-width: 120px; border-radius: 8px"
+                  />
+                  <img
+                    src="images/dumpyrec2.gif"
+                    alt="Figma Make Dumpy recording 2"
+                    class="expandable"
+                    style="flex: 1; min-width: 120px; border-radius: 8px"
+                  />
                 </div>
-                <a href="https://mark-rival-37678981.figma.site" target="_blank" class="proto-link" style="display:inline-block; font-size:0.85rem; padding:0.5rem 1rem;">☞ Open Figma Make prototype ☜</a>
+                <a
+                  href="https://mark-rival-37678981.figma.site"
+                  target="_blank"
+                  class="proto-link"
+                  style="
+                    display: inline-block;
+                    font-size: 0.85rem;
+                    padding: 0.5rem 1rem;
+                  "
+                  >☞ Open Figma Make prototype ☜</a
+                >
               </div>
             </div>
           </div>
@@ -566,31 +1204,43 @@
         <!-- ===== PROJECT 2: HELLOTALK ===== -->
         <section id="hellotalk" class="project-block">
           <div class="project-header">
-            <div class="project-meta">March 2026 &nbsp;·&nbsp; Short-term project</div>
-            <h2>Redesigning <em>HelloTalk</em>'s Hostile Message Interactions</h2>
-            <p class="project-tagline">Proposal to replace dark design patterns in <em>HelloTalk</em>.</p>
+            <div class="project-meta">
+              March 2026 &nbsp;·&nbsp; Short-term project
+            </div>
+            <h2>
+              Redesigning <em>HelloTalk</em>'s Hostile Message Interactions
+            </h2>
+            <p class="project-tagline">
+              Proposal to replace dark design patterns in <em>HelloTalk</em>.
+            </p>
           </div>
 
           <div class="two-col">
             <div class="col-proto">
               <iframe
-                style="border: 1px solid rgba(0,0,0,0.1); border-radius: 12px;"
+                style="
+                  border: 1px solid rgba(0, 0, 0, 0.1);
+                  border-radius: 12px;
+                "
                 width="100%"
                 height="550"
                 src="https://embed.figma.com/proto/alufuhq1xt3zFdU71AyEFO/HelloTalk---Hostile-Message-Interactions?page-id=104%3A1556&node-id=104-1557&p=f&viewport=161%2C100%2C0.09&scaling=contain&content-scaling=fixed&starting-point-node-id=104%3A1557&embed-host=share"
                 allowfullscreen
               ></iframe>
             </div>
-            <div class="col-text" style="display:flex; align-items:center;">
+            <div class="col-text" style="display: flex; align-items: center">
               <p>
-                <a target="_blank" href="https://www.figma.com/proto/alufuhq1xt3zFdU71AyEFO/HelloTalk-Hostile-Message-Interactions?node-id=0-1&p=f&viewport=-680%2C-64%2C0.1&t=sw0NzihfyDlaw8OD-0&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=63%3A185" class="proto-link">
+                <a
+                  target="_blank"
+                  href="https://www.figma.com/proto/alufuhq1xt3zFdU71AyEFO/HelloTalk-Hostile-Message-Interactions?node-id=0-1&p=f&viewport=-680%2C-64%2C0.1&t=sw0NzihfyDlaw8OD-0&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=63%3A185"
+                  class="proto-link"
+                >
                   ☞ Open prototype in full ☜
                 </a>
               </p>
             </div>
           </div>
         </section>
-
       </main>
 
       <footer>
@@ -605,65 +1255,74 @@
 
     <script>
       // Highlight active section in sidebar
-      const sectionIds = ['notes','sect-empathise','sect-define','sect-init','sect-lofi','sect-hifi','sect-finalise','hellotalk'];
+      const sectionIds = [
+        "notes",
+        "sect-empathise",
+        "sect-define",
+        "sect-init",
+        "sect-lofi",
+        "sect-hifi",
+        "sect-finalise",
+        "hellotalk",
+      ];
 
       function updateActiveTOC() {
-        const links = document.querySelectorAll('.sidebar-toc-link');
+        const links = document.querySelectorAll(".sidebar-toc-link");
         let current = sectionIds[0];
-        sectionIds.forEach(id => {
+        sectionIds.forEach((id) => {
           const el = document.getElementById(id);
           if (el && window.scrollY >= el.offsetTop - 140) current = id;
         });
-        links.forEach(link => {
-          const href = link.getAttribute('href');
-          link.classList.toggle('active', href === '#' + current);
+        links.forEach((link) => {
+          const href = link.getAttribute("href");
+          link.classList.toggle("active", href === "#" + current);
         });
       }
 
       // Lightbox for expandable images
-      document.addEventListener('DOMContentLoaded', () => {
-        document.querySelectorAll('img.expandable').forEach(img => {
-          img.style.cursor = 'zoom-in';
-          img.addEventListener('click', e => {
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll("img.expandable").forEach((img) => {
+          img.style.cursor = "zoom-in";
+          img.addEventListener("click", (e) => {
             e.stopPropagation();
-            const lb = document.getElementById('lightbox');
-            const lbImg = document.getElementById('lightbox-img');
+            const lb = document.getElementById("lightbox");
+            const lbImg = document.getElementById("lightbox-img");
             lbImg.src = img.src;
             lbImg.alt = img.alt;
-            lb.classList.add('open');
+            lb.classList.add("open");
           });
         });
       });
 
       function closeLightbox() {
-        document.getElementById('lightbox').classList.remove('open');
+        document.getElementById("lightbox").classList.remove("open");
       }
 
-      document.addEventListener('keydown', e => {
-        if (e.key === 'Escape') closeLightbox();
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeLightbox();
       });
 
       function toggleMobileSidebar() {
-        const sidebar = document.getElementById('sidebar');
-        const overlay = document.getElementById('sidebar-overlay');
-        const isOpen = sidebar.classList.toggle('mobile-open');
-        overlay.classList.toggle('active', isOpen);
+        const sidebar = document.getElementById("sidebar");
+        const overlay = document.getElementById("sidebar-overlay");
+        const isOpen = sidebar.classList.toggle("mobile-open");
+        overlay.classList.toggle("active", isOpen);
       }
 
       function closeMobileSidebar() {
-        document.getElementById('sidebar').classList.remove('mobile-open');
-        document.getElementById('sidebar-overlay').classList.remove('active');
+        document.getElementById("sidebar").classList.remove("mobile-open");
+        document.getElementById("sidebar-overlay").classList.remove("active");
       }
 
       // Close sidebar on mobile when a nav link is tapped
-      document.querySelectorAll('.sidebar-toc-link').forEach(link => {
-        link.addEventListener('click', () => {
+      document.querySelectorAll(".sidebar-toc-link").forEach((link) => {
+        link.addEventListener("click", () => {
           if (window.innerWidth <= 860) closeMobileSidebar();
         });
       });
 
-      window.addEventListener('scroll', updateActiveTOC);
-      window.addEventListener('load', updateActiveTOC);
+      window.addEventListener("scroll", updateActiveTOC);
+      window.addEventListener("load", updateActiveTOC);
     </script>
   </body>
 </html>
