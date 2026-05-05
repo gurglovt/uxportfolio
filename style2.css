@@ -708,6 +708,25 @@ iframe {
 
 .proto-link:hover { background: rgba(255,43,142,0.25); opacity: 1; }
 
+/* CrowdFinder wide images (Figma exports — need padding, transparent-friendly) */
+.cf-wide-img {
+  width: 60%;
+  height: auto;
+  margin: 1.2rem 0;
+  padding: 1rem;
+  background: #e8e8e8;
+  border-radius: var(--radius);
+  box-shadow: 0 2px 16px rgba(0,0,0,0.4);
+  object-fit: contain;
+}
+
+.cf-persona-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
 /* ============================================
    LIGHTBOX
    ============================================ */
