@@ -4,7 +4,7 @@
    ============================================ */
 
 /* ---- Fonts ---- */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&family=Syne+Mono&family=Cairo:wght@300;400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&family=Syne+Mono&family=Cairo:wght@300;400;600;700&display=swap");
 
 /* ---- Variables ---- */
 :root {
@@ -15,20 +15,26 @@
   --text: #d8d8d8;
   --text-muted: #888;
   --accent: #ff2b8e;
-  --accent-dim: rgba(255,43,142,0.15);
+  --accent-dim: rgba(255, 43, 142, 0.15);
   --green: #0fda45;
   --sidebar-w: 240px;
   --content-max: 1100px;
   --radius: 10px;
-  --font-mono: 'Syne Mono', monospace;
-  --font-body: 'Cairo', sans-serif;
-  --font-ui: 'Lato', sans-serif;
-  --transition: 0.25s ease;   /* fade OUT (off hover) */
-  --transition-in: 0s;        /* snap IN (on hover)   */
+  --font-mono: "Syne Mono", monospace;
+  --font-body: "Cairo", sans-serif;
+  --font-ui: "Lato", sans-serif;
+  --transition: 0.25s ease; /* fade OUT (off hover) */
+  --transition-in: 0s; /* snap IN (on hover)   */
 }
 
 /* ---- Reset & Base ---- */
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 html {
   font-family: var(--font-body);
@@ -104,7 +110,9 @@ body {
   padding: 0.3rem 0.5rem;
   border-radius: 5px;
   margin-bottom: 0.2rem;
-  transition: color var(--transition), background var(--transition);
+  transition:
+    color var(--transition),
+    background var(--transition);
   line-height: 1.4;
 }
 
@@ -119,7 +127,9 @@ body {
 .sidebar-toc-link.active {
   color: var(--accent);
   background: var(--accent-dim);
-  transition: color var(--transition-in), background var(--transition-in);
+  transition:
+    color var(--transition-in),
+    background var(--transition-in);
 }
 
 .sidebar-contact {
@@ -341,7 +351,9 @@ main {
 /* ============================================
    TYPOGRAPHY
    ============================================ */
-h2 { /* case study subheadings already handled above */ }
+h2 {
+  /* case study subheadings already handled above */
+}
 
 h3 {
   font-family: var(--font-ui);
@@ -352,7 +364,9 @@ h3 {
   letter-spacing: 0.02em;
 }
 
-h3:first-child { margin-top: 0; }
+h3:first-child {
+  margin-top: 0;
+}
 
 h4 {
   font-family: var(--font-ui);
@@ -372,7 +386,8 @@ p {
   margin-bottom: 0.7rem;
 }
 
-ul, ol {
+ul,
+ol {
   font-family: var(--font-body);
   font-size: 1rem;
   line-height: 1.65;
@@ -384,7 +399,8 @@ li {
   margin-bottom: 0.6rem;
 }
 
-li ul, li ol {
+li ul,
+li ol {
   margin-top: 0.3rem;
   margin-bottom: 0;
 }
@@ -396,7 +412,10 @@ strong {
 }
 
 /* Em stays same colour as surrounding text */
-em { font-style: italic; color: inherit; }
+em {
+  font-style: italic;
+  color: inherit;
+}
 
 a {
   color: var(--accent);
@@ -404,7 +423,9 @@ a {
   transition: opacity var(--transition);
 }
 
-a:hover { opacity: 0.8; }
+a:hover {
+  opacity: 0.8;
+}
 
 .hint {
   font-family: var(--font-mono);
@@ -432,12 +453,26 @@ a:hover { opacity: 0.8; }
   border-left: 3px solid transparent;
 }
 
-.callout.problem { border-left-color: #ff6b6b; }
-.callout.solution { border-left-color: var(--green); }
+.callout.problem {
+  border-left-color: #ff6b6b;
+}
+.callout.solution {
+  border-left-color: var(--green);
+}
 
-.callout h3 { margin-top: 0; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); }
-.callout.problem h3 { color: #ff6b6b; }
-.callout.solution h3 { color: var(--green); }
+.callout h3 {
+  margin-top: 0;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+}
+.callout.problem h3 {
+  color: #ff6b6b;
+}
+.callout.solution h3 {
+  color: var(--green);
+}
 
 /* ============================================
    PROCESS STEPS (TOC inside article)
@@ -471,7 +506,9 @@ a:hover { opacity: 0.8; }
   font-weight: 700;
 }
 
-.process-steps a:hover { color: var(--accent); }
+.process-steps a:hover {
+  color: var(--accent);
+}
 
 /* ============================================
    IMAGES
@@ -485,12 +522,14 @@ img {
 
 img.expandable {
   cursor: zoom-in;
-  transition: opacity var(--transition), box-shadow var(--transition);
+  transition:
+    opacity var(--transition),
+    box-shadow var(--transition);
 }
 
 img.expandable:hover {
   opacity: 0.9;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.5);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
 }
 
 /* Persona images */
@@ -522,7 +561,7 @@ img.expandable:hover {
   transform: scale(1.5);
   z-index: 10;
   position: relative;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.7);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.7);
 }
 
 figcaption {
@@ -541,52 +580,68 @@ figcaption {
   width: 100%;
   transform-origin: top left;
   transition: transform 0.15s ease;
-  box-shadow: 3px 3px 12px rgba(0,0,0,0.5);
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.5);
 }
 
-.define-img:hover { transform: scale(1.8); z-index: 10; position: relative; }
+.define-img:hover {
+  transform: scale(1.8);
+  z-index: 10;
+  position: relative;
+}
 
 .affinity-img {
   max-width: 100%;
   width: 100%;
-  box-shadow: 3px 3px 12px rgba(0,0,0,0.5);
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.5);
 }
 
 .paper-ideation {
   max-width: 380px;
   width: 100%;
-  box-shadow: 3px 3px 12px rgba(0,0,0,0.5);
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.5);
   transform-origin: top left;
   transition: transform 0.15s ease;
 }
 
-.paper-ideation:hover { transform: scale(1.4); z-index: 10; position: relative; }
+.paper-ideation:hover {
+  transform: scale(1.4);
+  z-index: 10;
+  position: relative;
+}
 
 .initial-img {
   max-width: 100%;
   width: 100%;
   height: auto;
-  box-shadow: 3px 3px 12px rgba(0,0,0,0.5);
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.5);
   transform-origin: top center;
   transition: transform 0.15s ease;
 }
 
-.initial-img:hover { transform: scale(1.6); z-index: 10; position: relative; }
+.initial-img:hover {
+  transform: scale(1.6);
+  z-index: 10;
+  position: relative;
+}
 
 .colors-text {
   max-width: 160px;
   height: auto;
   transform-origin: top left;
   transition: transform 0.15s ease;
-  box-shadow: 3px 3px 12px rgba(0,0,0,0.5);
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.5);
 }
 
-.colors-text:hover { transform: scale(2); z-index: 10; position: relative; }
+.colors-text:hover {
+  transform: scale(2);
+  z-index: 10;
+  position: relative;
+}
 
 .components-img {
   max-width: 100%;
   width: 100%;
-  box-shadow: 3px 3px 12px rgba(0,0,0,0.5);
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.5);
 }
 
 /* Wireframe grid */
@@ -626,7 +681,9 @@ figcaption {
   transition: color var(--transition);
 }
 
-.ext-link:hover { color: var(--accent); }
+.ext-link:hover {
+  color: var(--accent);
+}
 
 .sheetslogo {
   width: 20px;
@@ -635,7 +692,8 @@ figcaption {
   display: inline-block;
 }
 
-.gdlogo, .figmalogo {
+.gdlogo,
+.figmalogo {
   width: 12px;
   height: auto;
   border-radius: 0;
@@ -659,7 +717,9 @@ iframe {
   padding: 1rem 1.2rem;
 }
 
-.design-system-block h3 { margin-top: 0; }
+.design-system-block h3 {
+  margin-top: 0;
+}
 
 /* ============================================
    METHODOLOGY / TEST SCRIPT
@@ -682,10 +742,19 @@ iframe {
   transition: color var(--transition);
 }
 
-.methodology-details summary::-webkit-details-marker { display: none; }
-.methodology-details summary::before { content: '▶  '; font-size: 0.7rem; }
-.methodology-details[open] summary::before { content: '▼  '; }
-.methodology-details summary:hover { color: var(--text); }
+.methodology-details summary::-webkit-details-marker {
+  display: none;
+}
+.methodology-details summary::before {
+  content: "▶  ";
+  font-size: 0.7rem;
+}
+.methodology-details[open] summary::before {
+  content: "▼  ";
+}
+.methodology-details summary:hover {
+  color: var(--text);
+}
 
 .methodology-details ol {
   padding: 0 1rem 1rem 2rem;
@@ -706,7 +775,10 @@ iframe {
   transition: background var(--transition);
 }
 
-.proto-link:hover { background: rgba(255,43,142,0.25); opacity: 1; }
+.proto-link:hover {
+  background: rgba(255, 43, 142, 0.25);
+  opacity: 1;
+}
 
 /* CrowdFinder wide images (Figma exports — need padding, transparent-friendly) */
 .cf-wide-img {
@@ -714,10 +786,18 @@ iframe {
   height: auto;
   margin: 1.2rem 0;
   padding: 1rem;
-  background: #e8e8e8;
+  background: #f5f5f5;
   border-radius: var(--radius);
-  box-shadow: 0 2px 16px rgba(0,0,0,0.4);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.4);
   object-fit: contain;
+}
+
+.cf-wide-img--no-pad {
+  padding: 0;
+}
+
+.cf-wide-img--half-pad {
+  padding: 0.2rem 0.5rem 0.5rem 0.2rem;
 }
 
 .cf-persona-stack {
@@ -734,7 +814,7 @@ iframe {
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.88);
+  background: rgba(0, 0, 0, 0.88);
   z-index: 1000;
   align-items: center;
   justify-content: center;
@@ -750,7 +830,7 @@ iframe {
   max-height: 90vh;
   object-fit: contain;
   border-radius: var(--radius);
-  box-shadow: 0 8px 60px rgba(0,0,0,0.8);
+  box-shadow: 0 8px 60px rgba(0, 0, 0, 0.8);
 }
 
 /* ============================================
@@ -772,7 +852,7 @@ footer {
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.55);
+  background: rgba(0, 0, 0, 0.55);
   z-index: 99;
 }
 
@@ -788,7 +868,9 @@ footer {
 }
 
 @media (max-width: 860px) {
-  :root { --sidebar-w: 0px; }
+  :root {
+    --sidebar-w: 0px;
+  }
 
   #sidebar {
     transform: translateX(-100%);
@@ -799,7 +881,7 @@ footer {
 
   #sidebar.mobile-open {
     transform: translateX(0);
-    box-shadow: 4px 0 32px rgba(0,0,0,0.7);
+    box-shadow: 4px 0 32px rgba(0, 0, 0, 0.7);
   }
 
   #page-wrap {
@@ -831,7 +913,9 @@ footer {
     padding: 0.3rem 0.7rem;
     border-radius: 5px;
     cursor: pointer;
-    transition: border-color var(--transition), color var(--transition);
+    transition:
+      border-color var(--transition),
+      color var(--transition);
   }
 
   .mobile-menu-btn:hover {
@@ -839,15 +923,26 @@ footer {
     color: var(--accent);
   }
 
-  main, #site-header {
+  main,
+  #site-header {
     padding-left: 1.2rem;
     padding-right: 1.2rem;
   }
 
-  .two-col { flex-direction: column; }
+  .two-col {
+    flex-direction: column;
+  }
 
-  .col-text, .col-proto { min-width: 0; }
+  .col-text,
+  .col-proto {
+    min-width: 0;
+  }
 
-  #site-header h1 { font-size: 1.6rem; }
-  .project-block h2, .step-heading { font-size: 1.2rem; }
+  #site-header h1 {
+    font-size: 1.6rem;
+  }
+  .project-block h2,
+  .step-heading {
+    font-size: 1.2rem;
+  }
 }

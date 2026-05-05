@@ -1319,7 +1319,7 @@
           <img
             src="images/Initial_brainstorm.png"
             alt="CrowdFinder initial brainstorm"
-            class="expandable cf-wide-img"
+            class="expandable cf-wide-img" data-lightbox-bg="light"
           />
 
           <!-- Competitive landscape -->
@@ -1350,7 +1350,7 @@
           <img
             src="images/competitors.png"
             alt="Competitive landscape map"
-            class="expandable cf-wide-img"
+            class="expandable cf-wide-img cf-wide-img--no-pad" data-lightbox-bg="light"
           />
 
           <!-- Personas -->
@@ -1378,17 +1378,17 @@
             <img
               src="images/persona_john.png"
               alt="Persona: John Seafoam — librarian, poet, writer"
-              class="expandable cf-wide-img"
+              class="expandable cf-wide-img cf-wide-img--half-pad" data-lightbox-bg="light"
             />
             <img
               src="images/persona_dalia.png"
               alt="Persona: Dalia Schultz — office worker, painter"
-              class="expandable cf-wide-img"
+              class="expandable cf-wide-img cf-wide-img--half-pad" data-lightbox-bg="light"
             />
             <img
               src="images/persona_telco.png"
               alt="Persona: The East Liverpool Co. — art collective"
-              class="expandable cf-wide-img"
+              class="expandable cf-wide-img cf-wide-img--half-pad" data-lightbox-bg="light"
             />
           </div>
 
@@ -1411,7 +1411,7 @@
           <img
             src="images/userproblems.png"
             alt="User problems across three themes: the social media game, the creative sharing problem, community-building"
-            class="expandable cf-wide-img"
+            class="expandable cf-wide-img" data-lightbox-bg="light"
           />
 
           <!-- HMWs -->
@@ -1430,7 +1430,7 @@
           <img
             src="images/hmws.png"
             alt="How might we questions"
-            class="expandable cf-wide-img"
+            class="expandable cf-wide-img" data-lightbox-bg="light"
           />
 
           <!-- User flow -->
@@ -1465,7 +1465,7 @@
           <img
             src="images/sitemap.png"
             alt="CrowdFinder user flow diagram"
-            class="expandable cf-wide-img"
+            class="expandable cf-wide-img" data-lightbox-bg="light"
           />
 
           <!-- Happy paths -->
@@ -1482,7 +1482,7 @@
           <img
             src="images/happypaths.png"
             alt="Happy paths diagram"
-            class="expandable cf-wide-img"
+            class="expandable cf-wide-img" data-lightbox-bg="light"
           />
         </section>
 
@@ -1588,6 +1588,7 @@
             const lbImg = document.getElementById("lightbox-img");
             lbImg.src = img.src;
             lbImg.alt = img.alt;
+            lbImg.style.background = img.dataset.lightboxBg === "light" ? "#f5f5f5" : "";
             lb.classList.add("open");
           });
         });
