@@ -762,6 +762,77 @@ iframe {
 }
 
 /* ============================================
+   PDF CASE STUDY CARD (Dumpy)
+   ============================================ */
+.pdf-card {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  background: var(--bg2);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius);
+  text-decoration: none;
+  transition:
+    transform var(--transition),
+    border-color var(--transition),
+    background var(--transition);
+}
+
+.pdf-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 43, 142, 0.4);
+  background: var(--bg3);
+}
+
+.pdf-card-mockup {
+  flex: 0 0 auto;
+  width: 500px;
+}
+
+.pdf-card-mockup img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.35));
+}
+
+.pdf-card-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.pdf-card-text h3 {
+  margin: 0 0 0.4rem;
+  color: var(--text);
+}
+
+.pdf-card-text p {
+  margin: 0 0 0.9rem;
+  color: var(--text-muted);
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+}
+
+.pdf-card-text .proto-link {
+  pointer-events: none;
+}
+
+@media (max-width: 560px) {
+  .pdf-card {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .pdf-card-mockup {
+    width: 400px;
+  }
+}
+
+/* ============================================
    PROTO LINK
    ============================================ */
 .proto-link {
