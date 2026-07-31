@@ -42,6 +42,8 @@ html {
   color: var(--text);
   scroll-behavior: smooth;
   font-size: 17px;
+  line-height: 1.6;
+  letter-spacing: 0.015em;
 }
 
 body {
@@ -480,9 +482,10 @@ h4 {
 p {
   font-family: var(--font-body);
   font-size: 1rem;
-  line-height: 1.7;
+  line-height: 1.4;
   color: var(--text);
   margin-bottom: 0.7rem;
+  font-weight: 500;
 }
 
 ul,
