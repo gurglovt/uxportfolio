@@ -16,21 +16,30 @@
   <body>
     <!-- Sidebar -->
     <aside id="sidebar">
-      <div class="sidebar-name">
+      <a
+        href="#"
+        class="sidebar-name"
+        onclick="
+          event.preventDefault();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        "
+      >
         <span class="sidebar-emoji">:~)</span
         ><br />George<br />Lovitt<br /><span class="sidebar-role"
           >UX Portfolio</span
         >
-      </div>
+      </a>
       <nav class="sidebar-nav">
-        <div class="sidebar-section-label">Note-taking app: <em>Dumpy</em></div>
-        <a href="#notes" class="sidebar-toc-link">Overview</a>
+        <a href="#about-me" class="sidebar-project-link">About me</a>
 
-        <div class="sidebar-section-label sidebar-section-label--spaced">
-          Redesigning <em>HelloTalk</em>'s<br />Hostile Message Interactions
-        </div>
-        <a href="#hellotalk" class="sidebar-toc-link"
-          >Overview &amp; prototype</a
+        <div class="sidebar-divider"></div>
+        <a href="#notes" class="sidebar-project-link"
+          >Note-taking app: <em>Dumpy</em></a
+        >
+
+        <div class="sidebar-divider"></div>
+        <a href="#hellotalk" class="sidebar-project-link"
+          >Redesigning <em>HelloTalk</em>'s<br />Hostile Message Interactions</a
         >
 
         <div class="sidebar-section-label sidebar-section-label--spaced">
@@ -69,6 +78,36 @@
             I design digital products that reduce the friction in people's
             lives.
           </p>
+
+          <div class="wiggly-hr" aria-hidden="true"></div>
+
+          <div class="about-me" id="about-me">
+            <div class="about-photo">
+              <img src="images/georgesface.png" alt="George Lovitt" />
+              <span class="about-photo-hover">:~)</span>
+            </div>
+            <div class="about-text">
+              <h2><em>Who</em>-ge <em>What</em>-itt?</h2>
+              <p>
+                I'm George, a UX/UI designer, researcher and linguist from the
+                Surrey/Hampshire border.
+              </p>
+              <p>
+                I use systematicity to nurture my own creativity and my
+                expression — whether that's by learning complex grammar rules to
+                speak another language (Norwegian, Japanese, Turkish), or music
+                theory to make songs, I've always enjoyed
+                <em>schematising</em> what the gifted among us find intuitive to
+                <em>cheat</em> my way to competency.
+              </p>
+              <p>
+                I love to teach myself to make things, and over the years I've
+                learnt how to use a myriad of tools and software in order to
+                make videos, drawings, conceptual artworks, animations, games,
+                songs and conlangs, and I hope to keep adding to that list!
+              </p>
+            </div>
+          </div>
         </div>
       </header>
 
@@ -466,10 +505,18 @@
 
     <script>
       // Highlight active section in sidebar
-      const sectionIds = ["notes", "hellotalk", "crowdfinder", "cf-empathise"];
+      const sectionIds = [
+        "about-me",
+        "notes",
+        "hellotalk",
+        "crowdfinder",
+        "cf-empathise",
+      ];
 
       function updateActiveTOC() {
-        const links = document.querySelectorAll(".sidebar-toc-link");
+        const links = document.querySelectorAll(
+          ".sidebar-toc-link, .sidebar-project-link",
+        );
         let current = sectionIds[0];
         sectionIds.forEach((id) => {
           const el = document.getElementById(id);
@@ -519,11 +566,13 @@
       }
 
       // Close sidebar on mobile when a nav link is tapped
-      document.querySelectorAll(".sidebar-toc-link").forEach((link) => {
-        link.addEventListener("click", () => {
-          if (window.innerWidth <= 860) closeMobileSidebar();
+      document
+        .querySelectorAll(".sidebar-toc-link, .sidebar-project-link")
+        .forEach((link) => {
+          link.addEventListener("click", () => {
+            if (window.innerWidth <= 860) closeMobileSidebar();
+          });
         });
-      });
 
       window.addEventListener("scroll", updateActiveTOC);
       window.addEventListener("load", updateActiveTOC);
