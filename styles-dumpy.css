@@ -1,0 +1,273 @@
+:root {
+  --dark: #1f1f1f;
+  --light: #efefef;
+  --grey: #727272;
+  --serif: "Crimson Pro", Georgia, serif;
+  --sans: "IBM Plex Sans", system-ui, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font: 400 1rem/1.6 var(--sans);
+  background: var(--dark);
+}
+.sec {
+  padding: 5rem 0 6rem;
+}
+.dark {
+  background: var(--dark);
+  color: #fff;
+}
+.light {
+  background: var(--light);
+  color: #1b1b1b;
+}
+.fade-d {
+  height: 90px;
+  background: linear-gradient(var(--light), var(--dark));
+}
+.fade-l {
+  height: 90px;
+  background: linear-gradient(var(--dark), var(--light));
+}
+.in {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+.sec > .in > h2 {
+  font: 600 clamp(2.2rem, 4.2vw, 3.4rem) / 1.1 var(--serif);
+  color: var(--grey);
+  margin: 0 0 3rem 8%;
+}
+.col {
+  width: 50%;
+  margin-left: 25%;
+}
+.col.wide {
+  width: 64%;
+  margin-left: 18%;
+}
+h1 {
+  font: 600 clamp(2rem, 3.4vw, 2.8rem) / 1.15 var(--serif);
+  margin: 0 0 1.5rem;
+}
+h1 em {
+  font-weight: 400;
+}
+h3 {
+  font: 600 clamp(1.6rem, 2.4vw, 2.1rem) / 1.2 var(--serif);
+  margin: 3rem 0 1rem;
+}
+h3:first-child {
+  margin-top: 0;
+}
+p {
+  margin: 0 0 1rem;
+}
+.center {
+  text-align: center;
+}
+.hero {
+  padding: 3rem 0 4rem;
+}
+.hero .phones {
+  display: flex;
+  justify-content: center;
+}
+.hero .phones {
+  gap: 2rem;
+}
+.hero .phones img {
+  width: min(46%, 340px);
+  display: block;
+}
+.logo {
+  position: absolute;
+  right: 8%;
+  top: 0;
+  width: 80px;
+}
+.hero .in {
+  position: relative;
+}
+.meta {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 0.95rem;
+}
+.meta span + span::before {
+  content: "•";
+  margin-right: 1.5rem;
+}
+.toc {
+  max-width: 46rem;
+  margin: 3rem auto 0;
+  border: 1px solid #777;
+  border-radius: 0.6rem;
+  padding: 1.1rem 1.5rem;
+  text-align: center;
+  font: 600 1.15rem/1.8 var(--serif);
+}
+.toc a {
+  color: inherit;
+  text-decoration: none;
+  margin: 0 0.6rem;
+}
+.toc a:hover {
+  text-decoration: underline;
+}
+.fig {
+  margin: 1.5rem 0;
+}
+.fig img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.fig.full {
+  width: min(100%, 1300px);
+  margin: 2rem auto;
+}
+.pt {
+  margin: 0 0 1.1rem;
+}
+.pt strong {
+  display: block;
+  font-weight: 600;
+}
+ul {
+  margin: 0.2rem 0 0;
+  padding-left: 1.5rem;
+}
+li {
+  margin-bottom: 0.3rem;
+}
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: center;
+  margin: 2rem 0;
+}
+.quote {
+  font: 600 clamp(1.8rem, 3vw, 2.5rem) / 1.2 var(--serif);
+  text-align: center;
+}
+a.proto {
+  color: var(--accent);
+  font-weight: 600;
+}
+.cap {
+  font-size: 0.9rem;
+  opacity: 0.75;
+}
+@media (max-width: 800px) {
+  .sec > .in > h2 {
+    margin-left: 0;
+  }
+  .col,
+  .col.wide {
+    width: 100%;
+    margin-left: 0;
+  }
+  .row {
+    grid-template-columns: 1fr;
+  }
+  .logo {
+    position: static;
+    display: block;
+    margin: 0 auto 1rem;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 1.5rem;
+  align-items: start;
+  margin: 1.5rem 0;
+}
+.grid2 .fig {
+  margin: 0;
+}
+.half {
+  overflow: hidden;
+  margin: 1.5rem 0;
+}
+.half img {
+  width: 200%;
+  max-width: none;
+  display: block;
+}
+.half.right img {
+  margin-left: -100%;
+}
+.fig img[src$=".gif"] {
+  border-radius: 1rem;
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 1.5rem;
+  align-items: start;
+  margin: 1.5rem 0;
+}
+.grid3 .fig {
+  margin: 0;
+}
+.row .fig {
+  margin: 0;
+}
+
+:root {
+  --accent: #ff2b8e;
+}
+
+a.btn {
+  display: block;
+  width: fit-content;
+  margin: 0 auto 0.5rem;
+  padding: 0.1rem 1rem 0.3rem 1rem;
+  text-align: center;
+  font-weight: 500;
+  text-decoration: underline;
+  color: var(--accent);
+  border: 1.5px solid var(--accent);
+  border-radius: 0.75rem;
+  font-family: var(--serif);
+  font-size: 1.2rem;
+}
+a.btn:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+a.proto:hover {
+  color: var(--light);
+  background-color: var(--accent);
+}
+
+.toc a:hover {
+  color: var(--accent);
+}
+a:focus-visible {
+  outline-color: var(--accent);
+}
